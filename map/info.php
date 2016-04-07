@@ -93,8 +93,9 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                     <div class="well">
                     <div id="floating-panel">
                         <!--Drop down Category -->
-                        <div class="btn-group">
-                            <select>
+                        
+                        <div id="travel">
+                            <select id = "mode">
                                 <option value="DRIVING">Mode of Travel: Driving</option>
                                 <option value="WALKING">Mode of Travel: Walking</option>
                                 <option value="BICYCLING">Mode of Travel: Bicycling</option>
@@ -109,6 +110,7 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                         <div id="acc"> <b class="nav"><span>Address Detail</span></b>
                             <div class="sub"><p><?php echo $address;?></p></div>
                             <b  class="nav"><span>Weather</span></b>
+                            <!--http://www.weatherzone.com.au/about/freeweatherbutton.jsp-->
                             <div class="sub1"><a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=<?php echo $postcode;?>"></script></a>
                                 <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=<?php echo $postcode;?>"></script></a></div>
                             <b class="nav"><span>Rate</span></b>
