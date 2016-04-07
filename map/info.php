@@ -1,4 +1,5 @@
-
+<!--Template from: http://derekeder.com/searchable_map_template-->
+<!--Php can latitude and longitude of category from previous map-->
 <?php
 $lat = $_GET['lat'];
 $lng = $_GET['lng'];
@@ -39,22 +40,11 @@ $postcode = $data->results['0']->address_components['5']->long_name;
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!--style of map-->
     <style type="text/css">
         #map {
             height: 100%;
-        }
-        #floating-panel {
-
-
-
-            z-index: 5;
-            background-color: #fff;
-            padding: 5px;
-            border: 1px solid #999;
-            text-align: center;
-            font-family: 'Roboto','sans-serif';
-            line-height: 30px;
-            padding-left: 10px;
         }
 
     </style>
@@ -102,16 +92,20 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                 <div class="col-md-4">
                     <div class="well">
                     <div id="floating-panel">
-                        <b>Mode of Travel: </b>
-                        <select id="mode">
-                            <option value="DRIVING">Driving</option>
-                            <option value="WALKING">Walking</option>
-                            <option value="BICYCLING">Bicycling</option>
-                            <option value="TRANSIT">Transit</option>
-                        </select><br>
+                        <!--Drop down Category -->
+                        <div class="btn-group">
+                            <select>
+                                <option value="DRIVING">Mode of Travel: Driving</option>
+                                <option value="WALKING">Mode of Travel: Walking</option>
+                                <option value="BICYCLING">Mode of Travel: Bicycling</option>
+                                <option value="TRANSIT">Mode of Travel: Transit</option>
+                            </select>
+                        </div>
+                        <br>
                         <button id="direct">Get Direction</button>
                         <!--    <button id="reset">Reset</button>-->
 
+                        <!--Display information details-->
                         <div id="acc"> <b class="nav"><span>Address Detail</span></b>
                             <div class="sub"><p><?php echo $address;?></p></div>
                             <b  class="nav"><span>Weather</span></b>
@@ -125,7 +119,8 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                             <div class="sub"> </div>
                         </div>
                         <div class="clearfix"></div>
-
+                        <!--display public details-->
+                        <!--weights source code from http://www.eventsvictoria.com/distribution-centre/widget/-->
                         <div>
                             <script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script><div class="atdw-event-widget"></div><script type="text/javascript">window.atdw.myevents.widget.load({
                                     mode:'List',
@@ -149,14 +144,19 @@ $postcode = $data->results['0']->address_components['5']->long_name;
     </section>
 
 <script>
+    //initialize google map which center is Melbourne
     function initMap() {
         var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
+        //set the lat and lng for the direction purpose
+        //according to the user's current location and the selected venue
         var startLat;
         var startLng;
         var endLat = <?php echo $lat;?>;
         var endLng = <?php echo $lng;?>;
+
         var pos;
+        //set the center of the map
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 13,
             center: {lat: -37.8141, lng: 144.9633}
@@ -194,7 +194,7 @@ $postcode = $data->results['0']->address_components['5']->long_name;
        document.getElementById('direct').addEventListener('click', onChangeHandler);
         //document.getElementById('reset').addEventListener('click', initMap);
     }
-
+    //calculate the direction and route
     function calculateAndDisplayRoute(directionsService, directionsDisplay, pos, endLat, endLng) {
         var selectedMode = document.getElementById('mode').value;
         directionsService.route({
