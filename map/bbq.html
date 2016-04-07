@@ -72,43 +72,40 @@
                 <h1 class="title">
                     BBQ
                                     </h1>
+                <div class="btn-group">
+                    <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pick a Category
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="drink.html">Drink Fountain</a></li>
+                        <li><a href="bbq.html">BBQ</a></li>
+                        <li><a href="dog.html">Dog Friendly Areas</a></li>
+                        <li><a href="bike.html">Bicycle Rails</a></li>
+                    </ul>
+                </div>
+                <hr>
                 <p>
                     <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' onfocus="document.getElementById('search_address').value=''" onclick="document.getElementById('search_address').value=''" />
 
                 </p>
-                <div class="btn-group">
-                <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pick a Category
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="drink.html">Drink Fountain</a></li>
-                    <li><a href="bbq.html">BBQ</a></li>
-                    <li><a href="dog.html">Dog Friendly Areas</a></li>
-                    <li><a href="bike.html">Bicycle Rails</a></li>
-                </ul>
-            </div>
-            <p> <br></p>
-                <p>
-                    <label>
-                        within
-                        <select id='search_radius' class="btn-lg">
-                            <option value='400'>2 blocks</option>
-                            <option value='805'>1/2 mile</option>
-                            <option value='1610'>1 mile</option>
-                            <option value='3220'>2 miles</option>
-                        </select>
-                    </label>
-                </p>
-
-
                 <a class='btn btn-primary btn-lg' id='search' href='#'>
                     <i class='glyphicon glyphicon-search'></i>
                     Search
                 </a>
                 <a id='find_me' href='#' class="btn btn-primary btn-lg">Locate</a>
-                
-            </div>
+            <p> <br></p>
+                <p>
+                    <label>
+                        <select id='search_radius' class="btn-lg">
+                            <option value='400'>Within 2 blocks</option>
+                            <option value='805'>Within 1/2 mile</option>
+                            <option value='1610'>Within 1 mile</option>
+                            <option value='3220'>Within 2 miles</option>
+                        </select>
+                    </label>
+                </p>
+                </div>
             <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
             
 
