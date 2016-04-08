@@ -282,8 +282,8 @@ select {
   font-weight: bold;
 }
 .header .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #000;
+  color: #000;
   padding: 8px 10px;
   margin-top: 5px;
   font-size: 13px;
