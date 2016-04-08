@@ -128,7 +128,7 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.address.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.map.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGqazZZTGC6-VtXBOUG9lOErR2mq-Ug58&callback=initMap"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKWfGBpeBLZ2vVsvEeFdJrOEkVH7sE9Uk&libraries=places"></script>
 <script type="text/javascript" src="js/maps_lib.js"></script>
 <script type='text/javascript'>
     //<![CDATA[
@@ -142,7 +142,6 @@
     $(function() {
         var myMap = new MapsLib({
             fusionTableId:      "1JBxYQ3W9JZKvy7nTeOiak-cI1E0vbNpxCltpAcX8",
-            googleApiKey:       "AIzaSyAKWfGBpeBLZ2vVsvEeFdJrOEkVH7sE9Uk",
             locationColumn:     "Location",
             map_center:         [-37.8141,144.9633]
 
@@ -236,9 +235,7 @@
                     <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="video-container">
-                        <iframe id="vimeo-video" src="//player.vimeo.com/video/28872840?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div><!--//video-container-->
+                    
                 </div><!--//modal-body-->
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
