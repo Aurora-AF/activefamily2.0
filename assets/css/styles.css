@@ -463,10 +463,10 @@ select {
 }
 /* ======= Promo ======= */
 .promo {
-  padding-top: 120px;
+  padding-top: 60px;
   position: relative;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   height: 620px;
   z-index: 10;
 }
