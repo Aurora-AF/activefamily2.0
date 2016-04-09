@@ -210,11 +210,11 @@ select {
 }
 .header h1.logo a {
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px 25px;
   display: inline-block;
   text-align: center;
   line-height: 1.4;
-  max-width: 155px;
+  max-width: 200px;
   background: #ec6952;
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 4px;
@@ -386,7 +386,7 @@ select {
   width: 100%;
   top: 0;
   left: 0;
-  height: 780px;
+  height: 480px;
   background: #373737;
 }
 .bg-slider-wrapper .flexslider {
@@ -406,7 +406,7 @@ select {
 }
 .bg-slider-wrapper .flexslider .slide {
   display: block;
-  height: 780px;
+  height: 580px;
 }
 .bg-slider-wrapper .flexslider .slide.slide-1 {
   background: #253340 url('../images/background/bg-header-1.jpg') no-repeat 50% top;
@@ -430,8 +430,8 @@ select {
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .flex-control-nav {
-  z-index: 30;
-  bottom: 30px;
+  z-index: 20;
+  bottom: 25px;
   position: relative;
 }
 .bg-slider-wrapper .flexslider .flex-control-nav li a {
@@ -535,7 +535,7 @@ select {
 }
 /* ======= Why ======= */
 .why {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 .why .title {
@@ -3312,7 +3312,7 @@ select {
     color: #ec6952;
     background: #fff;
     padding-left: 0;
-    padding-top: 25px;
+    padding-top: 20px;
   }
   .header.scrolled .main-nav .nav .nav-item a {
     color: #666666;
