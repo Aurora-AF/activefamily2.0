@@ -140,7 +140,7 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                             <hr>
                             <!--Display information details-->
                             <!--display Menu-->
-                            <p><b>Click for Detail Information</b></p>
+                            <p><b>Click for Detailed Information</b></p>
                             <div id="firstpane" class="menu_list">
                                 <!--Code for menu starts here-->
                                 <p class="menu_head">Address Detail</p>
