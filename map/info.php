@@ -12,7 +12,8 @@ $postcode = $data->results['0']->address_components['5']->long_name;
 ?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <title>Active Family</title>
     <!-- Meta -->
@@ -33,20 +34,45 @@ $postcode = $data->results['0']->address_components['5']->long_name;
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
-    <link href="http://localhost:8888/active-family/map/css/menu.css" type="text/css" rel="stylesheet">
-
+    <!--Menu CSS-->
+<!--    <link href="css/menu.css" type="text/css" rel="stylesheet">-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        <!--//---------------------------------+
+        //  Developed by Roshan Bhattarai
+        //  Visit http://roshanbh.com.np for this script and more.
+        // --------------------------------->
+        $(document).ready(function()
+        {
+            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked
+            $("#firstpane p.menu_head").click(function()
+            {
+                $(this).css({backgroundImage:"url(images/menu/down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings().css({backgroundImage:"url(images/menu/left.png)"});
+            });
 
+        });
+    </script>
     <!--style of map-->
     <style type="text/css">
         #map {
             height: 100%;
         }
-
+    </style>
+    <!--style of menu-->
+    <style type="text/css">
+        body {  }
+    .menu_list { width: 150px; }
+    .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
+    .mean_head2 {padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/down.png) center right no-repeat;}
+    .menu_body { display:none; }
+    .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
+    .menu_body a:hover { color: #000000; text-decoration:underline; }
     </style>
 </head>
 
@@ -91,59 +117,75 @@ $postcode = $data->results['0']->address_components['5']->long_name;
             <div class='row'>
                 <div class="col-md-4">
                     <div class="well">
-                    <div id="floating-panel">
-                        <!--Drop down Category -->
-                        
-                        <div id="travel">
-                            <select id = "mode">
-                                <option value="DRIVING">Mode of Travel: Driving</option>
-                                <option value="WALKING">Mode of Travel: Walking</option>
-                                <option value="BICYCLING">Mode of Travel: Bicycling</option>
-                                <option value="TRANSIT">Mode of Travel: Transit</option>
-                            </select>
-                        </div>
-                        <br>
-                        <button id="direct">Get Direction</button>
-                        <!--    <button id="reset">Reset</button>-->
+                        <div id="mapfuc">
+                            <!--Drop down Category -->
+                            <p>
+                                <label>
+                                    <select id = "mode" class="btn-lg">
+                                        <option value="DRIVING">Mode of Travel: Driving</option>
+                                        <option value="WALKING">Mode of Travel: Walking</option>
+                                        <option value="BICYCLING">Mode of Travel: Bicycling</option>
+                                        <option value="TRANSIT">Mode of Travel: Transit</option>
+                                    </select>
+                                </label>
+                            </p>
+                            <br>
+                            <!--Get direction button-->
+                            <a class='btn btn-primary btn-lg'>
+<!--                                <i class='glyphicon glyphicon-search' id="direct"></i>-->
+<!--                                <b class="glyphicon glyphicon-search" id="direct"></b>-->
+                                <i class="glyphicon glyphicon-search" id="direct"><b>&nbsp;GET&nbsp;DIRECTION</b></i>
+                                <!--                            <button id="direct" style="color: black;">Get Direction</button>                        </a>-->
+                            </a>
+                            <hr>
+                            <!--Display information details-->
+                            <!--display Menu-->
+                            <p><strong><b>Click for Detail Information</b></strong></p>
+                            <div id="firstpane" class="menu_list">
+                                <!--Code for menu starts here-->
+                                <p class="menu_head">Address Detail</p>
+                                <div class="menu_body">
+                                    <a><?php echo $address;?></a>
+                                </div>
+                                <p class="menu_head">Weather</p>
+                                <div class="menu_body">
+                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=<?php echo $postcode;?>"></script></a>
+                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=<?php echo $postcode;?>"></script></a>
+                                </div>
+                                <p class="menu_head">Rate</p>
+                                <div class="menu_body"> <a href="#">Link-1</a> <a href="#">Link-2</a> <a href="#">Link-3</a> </div>
+                                <p class="menu_head">Comments</p>
+                                <div class="menu_body"> <a href="#">Link-1</a> <a href="#">Link-2</a> <a href="#">Link-3</a> </div>
+                            </div>
 
-                        <!--Display information details-->
-                        <div id="acc"> <b class="nav"><span>Address Detail</span></b>
-                            <div class="sub"><p><?php echo $address;?></p></div>
-                            <b  class="nav"><span>Weather</span></b>
-                            <!--http://www.weatherzone.com.au/about/freeweatherbutton.jsp-->
-                            <div class="sub1"><a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=<?php echo $postcode;?>"></script></a>
-                                <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=<?php echo $postcode;?>"></script></a></div>
-                            <b class="nav"><span>Rate</span></b>
-                            <div class="sub"> </div>
-                            <b  class="nav"><span>Comments</span></b>
-                            <div class="sub"> </div>
-                            <b  class="nav"><span>Get Direction</span></b>
-                            <div class="sub"> </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <!--display public details-->
+                        <!--    <button id="reset">Reset</button>-->
+                        <hr>
+                        <!--display public events details-->
                         <!--weights source code from http://www.eventsvictoria.com/distribution-centre/widget/-->
                         <div>
-                            <script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script><div class="atdw-event-widget"></div><script type="text/javascript">window.atdw.myevents.widget.load({
+                            <p><script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script><div class="atdw-event-widget"></div>
+                            <script type="text/javascript">window.atdw.myevents.widget.load({
                                     mode:'List',
                                     locations:{all:true,regions:'',councils:'',postcodes:''},
                                     types:{business:false,leisure:true},
                                     tags:'FAMILY,LIVEMUSIC',
                                     businessTypes:'',
                                     freeOnly:false,
-                                    size:{width:230,height:300},
+                                    size:{width:230,height:280},
                                     theme:'BLUE'});</script>
+                            </p>
                         </div>
                     </div>
-                    </div>
                 </div>
+
                 <div class="col-md-8">
                 <div id="map"></div>
                 </div>
             </div>
         </div>
 </div>
-    </section>
+</section>
 
 <script>
     //initialize google map which center is Melbourne
