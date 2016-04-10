@@ -10,6 +10,24 @@ $address = $data->results['0']->formatted_address;
 $locality = $data->results['0']->address_components['2']->long_name;
 $postcode = $data->results['0']->address_components['5']->long_name;
 ?>
+
+<!--Current temperature by using operweathermap api-->
+<?php
+    $lat = $_GET['lat'];
+    $lng = $_GET['lng'];
+    $url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=2685e072f39f0387a6ff22225a56f4ba";
+    $data = file_get_contents($url);
+    $data = json_decode($data, true);
+    //City name
+    $name = $data['name'];
+    //description
+    $a = 272.15;
+    $description = $data['weather'][0]['description'];
+    //temperature
+    $temp = $data['main']['temp']- 272.15;
+    //wind
+    $wind = $data['wind']['speed'];
+?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -67,7 +85,7 @@ $postcode = $data->results['0']->address_components['5']->long_name;
     <!--style of menu-->
     <style type="text/css">
         body {  }
-    .menu_list { width: 150px; }
+    .menu_list { width: 250px; }
     .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
     .mean_head2 {padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/down.png) center right no-repeat;}
     .menu_body { display:none; }
@@ -149,8 +167,14 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                                 </div>
                                 <p class="menu_head">Weather</p>
                                 <div class="menu_body">
-                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=<?php echo $postcode;?>"></script></a>
-                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=<?php echo $postcode;?>"></script></a>
+<!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
+<!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
+                                    <a>Current Weather</a>
+                                    <a>
+                                            <?php echo $temp?> ˚C, <?php echo $description?>, <?php echo $wind?>km/h.
+                                    </a>
+                                    <a>Forcast Weather</a>
+                                    <a></a>
                                 </div>
                                 <p class="menu_head">Rate</p>
                                 <div class="menu_body"> <a href="#">Link-1</a> <a href="#">Link-2</a> <a href="#">Link-3</a> </div>
@@ -172,9 +196,12 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                                     tags:'FAMILY,LIVEMUSIC',
                                     businessTypes:'',
                                     freeOnly:false,
-                                    size:{width:230,height:280},
+                                    size:{width:250,height:280},
                                     theme:'BLUE'});</script>
                             </p>
+                        </div>
+                        <div>
+
                         </div>
                     </div>
                 </div>
