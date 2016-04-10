@@ -121,11 +121,12 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                             <!--Drop down Category -->
                             <p>
                                 <label>
+                                <p><b> Please select your travel mode </b> </p>
                                     <select id = "mode" class="btn-lg">
-                                        <option value="DRIVING">Mode of Travel: Driving</option>
-                                        <option value="WALKING">Mode of Travel: Walking</option>
-                                        <option value="BICYCLING">Mode of Travel: Bicycling</option>
-                                        <option value="TRANSIT">Mode of Travel: Transit</option>
+                                        <option value="DRIVING">Driving</option>
+                                        <option value="WALKING">Walking</option>
+                                        <option value="BICYCLING">Bicycling</option>
+                                        <option value="TRANSIT">Transit</option>
                                     </select>
                                 </label>
                             </p>
