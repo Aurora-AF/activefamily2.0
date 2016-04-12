@@ -13,62 +13,62 @@ $postcode = $data->results['0']->address_components['5']->long_name;
 
 <!--Current temperature by using operweathermap api-->
 <?php
-    $lat = $_GET['lat'];
-    $lng = $_GET['lng'];
-    $name;
-    $description;
-    $temp;
-    $wind;
-    $week;
-    if ($lat!=null&&$lng!=null){
-        //current weather api
-        $url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=2685e072f39f0387a6ff22225a56f4ba";
-        $data = file_get_contents($url);
-        $data = json_decode($data, true);
-        //City name
-        $name = $data['name'];
-        //description
-        $a = 272.15;
-        $description = $data['weather'][0]['description'];
-        //temperature
-        $temp = $data['main']['temp']- $a;
-        //wind
-        $wind = $data['wind']['speed'];
-        //dt
-        $dt = $data ['dt'];
-        $time = date('w', $dt);
-        $timeDay;
-        $tim = date('y-m-d H:m:s', $dt);
-        switch ($time) {
-            case 0:
-                $timeDay = "Sun";
-                break;
-            case 1:
-                $timeDay = 'Mon';
-                break;
-            case 2:
-                $timeDay = 'Tue';
-                break;
-            case 3:
-                $timeDay = 'Wed';
-                break;
-            case 4:
-                $timeDay = 'Thu';
-                break;
-            case 5:
-                $timeDay = 'Fri';
-                break;
-            case 6:
-                $timeDay = 'Sat';
-                break;
-        }
-    } else{
-        $name = "null";
-        $description = "null";
-        $temp = "null";
-        $wind = "null";
-        $dt = "null";
+$lat = $_GET['lat'];
+$lng = $_GET['lng'];
+$name;
+$description;
+$temp;
+$wind;
+$week;
+if ($lat!=null&&$lng!=null){
+    //current weather api
+    $url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=2685e072f39f0387a6ff22225a56f4ba";
+    $data = file_get_contents($url);
+    $data = json_decode($data, true);
+    //City name
+    $name = $data['name'];
+    //description
+    $a = 272.15;
+    $description = $data['weather'][0]['description'];
+    //temperature
+    $temp = $data['main']['temp']- $a;
+    //wind
+    $wind = $data['wind']['speed'];
+    //dt
+    $dt = $data ['dt'];
+    $time = date('w', $dt);
+    $timeDay;
+    $tim = date('y-m-d H:m:s', $dt);
+    switch ($time) {
+        case 0:
+            $timeDay = "S";
+            break;
+        case 1:
+            $timeDay = 'Mon';
+            break;
+        case 2:
+            $timeDay = 'Tue';
+            break;
+        case 3:
+            $timeDay = 'Wed';
+            break;
+        case 4:
+            $timeDay = 'Thu';
+            break;
+        case 5:
+            $timeDay = 'Fri';
+            break;
+        case 6:
+            $timeDay = 'Sat';
+            break;
     }
+} else{
+    $name = "null";
+    $description = "null";
+    $temp = "null";
+    $wind = "null";
+    $dt = "null";
+}
 ?>
 <!--Forcast temperature by using operweathermap api-->
 <?php
@@ -84,35 +84,35 @@ if ($lat!=null&&$lng!=null){
     $fdata = json_decode($json, true);
     //description
     $a = 272.15;
-    
+
     $forecastTamp[] = array();
 
     for ($x=1; $x<7; $x++){
-            $max = $fdata['list'][$x]['temp']['max']-$a;
-            $min = $fdata['list'][$x]['temp']['min']-$a;
-            $range = $max." ~ ".$min." ˚C";
-            $fdescription = $fdata['list'][$x]['weather'][0]['description'];
-            $fdt = $fdata ['list'][$x]['dt'];
-            $ftime = date('w', $fdt);
-            $ftimeDay;
-                if ($ftime==0) {
-                    $ftimeDay = 'Sun';
-                }else if($ftime==1){
-                    $ftimeDay = 'Mon';
-                }else if($ftime==2){
-                    $ftimeDay = 'Tue';
-                }else if($ftime==3){
-                    $ftimeDay = 'Wed';
-                }else if($ftime==4){
-                    $ftimeDay = 'Thu';
-                }else if($ftime==5){
-                    $ftimeDay = 'Fri';
-                }else if($ftime==6){
-                    $ftimeDay = 'Sat';
-                }
-            $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
+        $max = $fdata['list'][$x]['temp']['max']-$a;
+        $min = $fdata['list'][$x]['temp']['min']-$a;
+        $range = $max." ~ ".$min." ˚C";
+        $fdescription = $fdata['list'][$x]['weather'][0]['description'];
+        $fdt = $fdata ['list'][$x]['dt'];
+        $ftime = date('w', $fdt);
+        $ftimeDay;
+        if ($ftime==0) {
+            $ftimeDay = 'Sun';
+        }else if($ftime==1){
+            $ftimeDay = 'Mon';
+        }else if($ftime==2){
+            $ftimeDay = 'Tue';
+        }else if($ftime==3){
+            $ftimeDay = 'Wed';
+        }else if($ftime==4){
+            $ftimeDay = 'Thu';
+        }else if($ftime==5){
+            $ftimeDay = 'Fri';
+        }else if($ftime==6){
+            $ftimeDay = 'Sat';
         }
+        $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
     }
+}
 ?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -139,7 +139,7 @@ if ($lat!=null&&$lng!=null){
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
     <!--Menu CSS-->
-<!--    <link href="css/menu.css" type="text/css" rel="stylesheet">-->
+    <!--    <link href="css/menu.css" type="text/css" rel="stylesheet">-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -171,12 +171,12 @@ if ($lat!=null&&$lng!=null){
     <!--style of menu-->
     <style type="text/css">
         body {  }
-    .menu_list { width: 100%; }
-    .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
-    .mean_head2 {padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/down.png) center right no-repeat;}
-    .menu_body { display:none; }
-    .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
-    .menu_body a:hover { }
+        .menu_list { width: 100%; }
+        .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
+        .mean_head2 {padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/down.png) center right no-repeat;}
+        .menu_body { display:none; }
+        .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
+        .menu_body a:hover { }
     </style>
 </head>
 
@@ -225,39 +225,41 @@ if ($lat!=null&&$lng!=null){
                             <!--Drop down Category -->
                             <p>
                                 <label>
-                                <p><b> Please select your travel mode </b> </p>
-                                    <select id = "mode" class="btn-lg" style="width: 100%;" >
-                                        <option value="DRIVING">Driving</option>
-                                        <option value="WALKING">Walking</option>
-                                        <option value="BICYCLING">Bicycling</option>
-                                        <option value="TRANSIT">Transit</option>
-                                    </select>
-                                </label>
+                            <p><b> Please select your travel mode </b> </p>
+                            <select id = "mode" class="btn-lg" style="width: 100%;" >
+                                <option value="DRIVING">Driving</option>
+                                <option value="WALKING">Walking</option>
+                                <option value="BICYCLING">Bicycling</option>
+                                <option value="TRANSIT">Transit</option>
+                            </select>
+                            </label>
                             </p>
                             <br>
-                            <!--Get direction button--><a class='btn btn-primary btn-lg' id='direct' href='#' style="width: 100%">
-                    <i class='glyphicon glyphicon-search'></i>
-                    Get Direction
-                </a>
-                            
+                            <!--Get direction button-->
+                            <a class='btn btn-primary btn-lg' style="width: 100%">
+                                <!--                                <i class='glyphicon glyphicon-search' id="direct"></i>-->
+                                <!--                                <b class="glyphicon glyphicon-search" id="direct"></b>-->
+                                <i class="glyphicon glyphicon-search" id="direct"><b>&nbsp;GET&nbsp;DIRECTION</b></i>
+                                <!--                            <button id="direct" style="color: black;">Get Direction</button>                        </a>-->
+                            </a>
                             <hr>
                             <!--Display information details-->
                             <!--display Menu-->
                             <p><b>Click for Detailed Information</b></p>
                             <div id="firstpane" class="menu_list">
                                 <!--Code for menu starts here-->
-                                <p class="menu_head">Travel Duration</p>
+                                <p class="menu_head">Approximately Duration</p>
                                 <div class="menu_body">
                                     <a><label id="duration"> </label></a>
                                 </div>
-                                <p class="menu_head">Address</p>
+                                <p class="menu_head">Address Detail</p>
                                 <div class="menu_body">
                                     <a><?php echo $address;?></a>
                                 </div>
                                 <p class="menu_head">Weather</p>
                                 <div class="menu_body">
-<!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
-<!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
+                                    <!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
+                                    <!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
                                     <a>Current Weather</a>
                                     <a>
                                         <?php echo $timeDay?>, <?php echo $temp?> ˚C, <?php echo $description?>, <?php echo $wind?> km/h.
@@ -265,9 +267,9 @@ if ($lat!=null&&$lng!=null){
                                     <a>Forecast Weather</a>
                                     <a>
                                         <?php
-                                            for ($x=1; $x<7; $x++){
-                                                echo $forecastTamp[$x]."<br>";
-                                            }?>
+                                        for ($x=1; $x<7; $x++){
+                                            echo $forecastTamp[$x]."<br>";
+                                        }?>
 
 
                                     </a>
@@ -303,11 +305,11 @@ if ($lat!=null&&$lng!=null){
                 </div>
 
                 <div class="col-md-8">
-                <div id="map"></div>
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </section>
 
 <script>
@@ -378,7 +380,7 @@ if ($lat!=null&&$lng!=null){
                 directionsDisplay.setDirections(response);
                 // Display the duration:
                 document.getElementById('duration').innerHTML +=
-                        (response.routes[0].legs[0].duration.value / 60).toPrecision(4) + " minutes";
+                    (response.routes[0].legs[0].duration.value / 60).toPrecision(4) + " minutes";
             } else {
                 window.alert('Directions request failed due to ' + status);
             }
