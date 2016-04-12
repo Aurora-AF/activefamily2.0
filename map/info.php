@@ -235,24 +235,22 @@ if ($lat!=null&&$lng!=null){
                                 </label>
                             </p>
                             <br>
-                            <!--Get direction button-->
-                            <a class='btn btn-primary btn-lg' style="width: 100%">
-<!--                                <i class='glyphicon glyphicon-search' id="direct"></i>-->
-<!--                                <b class="glyphicon glyphicon-search" id="direct"></b>-->
-                                <i class="glyphicon glyphicon-search" id="direct"><b>&nbsp;GET&nbsp;DIRECTION</b></i>
-                                <!--                            <button id="direct" style="color: black;">Get Direction</button>                        </a>-->
-                            </a>
+                            <!--Get direction button--><a class='btn btn-primary btn-lg' id='direct' href='#' style="width: 100%">
+                    <i class='glyphicon glyphicon-search'></i>
+                    Get Direction
+                </a>
+                            
                             <hr>
                             <!--Display information details-->
                             <!--display Menu-->
                             <p><b>Click for Detailed Information</b></p>
                             <div id="firstpane" class="menu_list">
                                 <!--Code for menu starts here-->
-                                <p class="menu_head">Approximately Duration</p>
+                                <p class="menu_head">Travel Duration</p>
                                 <div class="menu_body">
                                     <a><label id="duration"> </label></a>
                                 </div>
-                                <p class="menu_head">Address Detail</p>
+                                <p class="menu_head">Address</p>
                                 <div class="menu_body">
                                     <a><?php echo $address;?></a>
                                 </div>
