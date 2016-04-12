@@ -113,54 +113,6 @@ if ($lat!=null&&$lng!=null){
             $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
         }
     }
-
-//    $fdescription = $data['list'][0]['weather'][0]['description'];
-//    //max temperature
-//    $ftempmax = $data['list'][0]['temp']['max']- $a;
-//    //min temperature
-//    $ftempmin = $data['list'][0]['temp']['min']- $a;
-//    //forecast temperature rage
-//    $ftemprage = $ftempmin." ~ ".$ftempmax;
-//    //dt
-//    $dt = $data ['list'][0]['dt'];
-//    $ftime = date('w', $dt);
-//    $x = date('w', $dt);
-//    $ft = date("Y-m-d H:m:s", $dt);
-//    $count = $ftime + 6;
-//    for ($x; $x<$count; $x++){
-//        echo $x+1;
-//    }
-//    $ftimeDay;
-//    switch ($ftime) {
-//        case 0:
-//            $ftimeDay = "Sun";
-//            break;
-//        case 1:
-//            $ftimeDay = 'Mon';
-//            break;
-//        case 2:
-//            $ftimeDay = 'Tue';
-//            break;
-//        case 3:
-//            $ftimeDay = 'Wed';
-//            break;
-//        case 4:
-//            $ftimeDay = 'Thu';
-//            break;
-//        case 5:
-//            $ftimeDay = 'Fri';
-//            break;
-//        case 6:
-//            $ftimeDay = 'Sat';
-//            break;
-//    }
-//} else{
-//    $name = "null";
-//    $description = "null";
-//    $temp = "null";
-//    $wind = "null";
-//    $dt = "null";
-//}
 ?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -300,6 +252,10 @@ if ($lat!=null&&$lng!=null){
                                 <div class="menu_body">
                                     <a><?php echo $address;?></a>
                                 </div>
+                                <p class="menu_head">Approximately Duration: </p>
+                                <div class="menu_body">
+                                    <a><label id="duration"> </label></a>
+                                </div>
                                 <p class="menu_head">Weather</p>
                                 <div class="menu_body">
 <!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
@@ -416,10 +372,14 @@ if ($lat!=null&&$lng!=null){
             travelMode: google.maps.TravelMode[selectedMode]
         }, function(response, status) {
             if (status === google.maps.DirectionsStatus.OK) {
+                document.getElementById('duration').innerHTML = " ";
                 if (status == 'ZERO_RESULTS') {
                     window.alert('Directions request failed due to ' + status);
                 }
                 directionsDisplay.setDirections(response);
+                // Display the duration:
+                    document.getElementById('duration').innerHTML +=
+                        (response.routes[0].legs[0].duration.value / 60).toPrecision(4) + " minutes";
             } else {
                 window.alert('Directions request failed due to ' + status);
             }

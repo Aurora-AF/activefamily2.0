@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60022092-e3df-4916-8584-b19d5455fafc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map/info.php" afterPath="$PROJECT_DIR$/map/info.php" />
     </list>
     <ignored path="activefamily2.0.iws" />
@@ -40,13 +39,14 @@
       <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="308" column="51" selection-start-line="308" selection-start-column="51" selection-end-line="308" selection-end-column="51" />
+            <state relative-caret-position="387">
+              <caret line="381" column="101" selection-start-line="381" selection-start-column="101" selection-end-line="381" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1460420579000" expanded="true" signature="4983:5361" placeholder="..." />
-                <marker date="1460420579000" expanded="true" signature="5007:5361" placeholder="..." />
+                <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1460427660000" expanded="true" signature="3760:4138" placeholder="..." />
+                <marker date="1460427660000" expanded="true" signature="3784:4138" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -533,12 +533,12 @@
       <workItem from="1460003057323" duration="4481000" />
       <workItem from="1460009295512" duration="276000" />
       <workItem from="1460009705188" duration="29348000" />
-      <workItem from="1460214164270" duration="23834000" />
+      <workItem from="1460214164270" duration="27891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57939000" />
+    <option name="totallyTimeSpent" value="61996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="935" height="773" extended-state="0" />
@@ -615,8 +615,9 @@
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1460420579000" expanded="true" signature="4983:5361" placeholder="..." />
-            <marker date="1460420579000" expanded="true" signature="5007:5361" placeholder="..." />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1460427660000" expanded="true" signature="3760:4138" placeholder="..." />
+            <marker date="1460427660000" expanded="true" signature="3784:4138" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -912,8 +913,9 @@
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1460420579000" expanded="true" signature="4983:5361" placeholder="..." />
-            <marker date="1460420579000" expanded="true" signature="5007:5361" placeholder="..." />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1460427660000" expanded="true" signature="3760:4138" placeholder="..." />
+            <marker date="1460427660000" expanded="true" signature="3784:4138" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1243,13 +1245,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="308" column="51" selection-start-line="308" selection-start-column="51" selection-end-line="308" selection-end-column="51" />
+        <state relative-caret-position="387">
+          <caret line="381" column="101" selection-start-line="381" selection-start-column="101" selection-end-line="381" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1460420579000" expanded="true" signature="4983:5361" placeholder="..." />
-            <marker date="1460420579000" expanded="true" signature="5007:5361" placeholder="..." />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1460427660000" expanded="true" signature="3760:4138" placeholder="..." />
+            <marker date="1460427660000" expanded="true" signature="3784:4138" placeholder="..." />
           </folding>
         </state>
       </provider>
