@@ -248,13 +248,13 @@ if ($lat!=null&&$lng!=null){
                             <p><b>Click for Detailed Information</b></p>
                             <div id="firstpane" class="menu_list">
                                 <!--Code for menu starts here-->
+                                <p class="menu_head">Approximately Duration</p>
+                                <div class="menu_body">
+                                    <a><label id="duration"> </label></a>
+                                </div>
                                 <p class="menu_head">Address Detail</p>
                                 <div class="menu_body">
                                     <a><?php echo $address;?></a>
-                                </div>
-                                <p class="menu_head">Approximately Duration: </p>
-                                <div class="menu_body">
-                                    <a><label id="duration"> </label></a>
                                 </div>
                                 <p class="menu_head">Weather</p>
                                 <div class="menu_body">
@@ -360,7 +360,8 @@ if ($lat!=null&&$lng!=null){
             calculateAndDisplayRoute(directionsService, directionsDisplay, pos, endLat, endLng);
 
         };
-       document.getElementById('direct').addEventListener('click', onChangeHandler);
+        document.getElementById('duration').innerHTML = "Please select a travel model";
+        document.getElementById('direct').addEventListener('click', onChangeHandler);
         //document.getElementById('reset').addEventListener('click', initMap);
     }
     //calculate the direction and route
@@ -378,12 +379,13 @@ if ($lat!=null&&$lng!=null){
                 }
                 directionsDisplay.setDirections(response);
                 // Display the duration:
-                    document.getElementById('duration').innerHTML +=
+                document.getElementById('duration').innerHTML +=
                         (response.routes[0].legs[0].duration.value / 60).toPrecision(4) + " minutes";
             } else {
                 window.alert('Directions request failed due to ' + status);
             }
         });
+
     }
 </script>
 <script async defer
