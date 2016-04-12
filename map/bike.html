@@ -96,15 +96,19 @@
                 </a>
                 <a id='find_me' href='#' class="btn btn-primary btn-lg">Locate</a>
             <p> <br></p>
-                <p>
-                     <label>
-                        <select id='search_radius' multiple class="form-control">
-                            <option value='400'>2 blocks</option>
-                            <option value='500'>1/2 km</option>
-                            <option value='1000'>1 km</option>
-                            <option value='2000'>2 km</option>
-                        </select>
-                    </label>
+                <p class="btn-group">
+                    <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose Search Radius
+                        <span class="caret"></span>
+                    </button>
+
+                    <select id='search_radius' multiple class=" dropdown-menu" >
+                        <option value='400'>2 blocks</option>
+                        <option value='500'>1/2 km</option>
+                        <option value='1000'>1 km</option>
+                        <option value='2000'>2 km</option>
+                    </select>
+
                 </p>
                 </div>
             <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
