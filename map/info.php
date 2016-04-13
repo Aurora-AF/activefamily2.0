@@ -41,25 +41,25 @@ if ($lat!=null&&$lng!=null){
     $tim = date('y-m-d H:m:s', $dt);
     switch ($time) {
         case 0:
-            $timeDay = "S";
+            $timeDay = "SUN";
             break;
         case 1:
-            $timeDay = 'Mon';
+            $timeDay = 'MON';
             break;
         case 2:
-            $timeDay = 'Tue';
+            $timeDay = 'TUE';
             break;
         case 3:
-            $timeDay = 'Wed';
+            $timeDay = 'WED';
             break;
         case 4:
-            $timeDay = 'Thu';
+            $timeDay = 'THU';
             break;
         case 5:
-            $timeDay = 'Fri';
+            $timeDay = 'FRI';
             break;
         case 6:
-            $timeDay = 'Sat';
+            $timeDay = 'SAT';
             break;
     }
 } else{
@@ -90,25 +90,25 @@ if ($lat!=null&&$lng!=null){
     for ($x=1; $x<7; $x++){
         $max = $fdata['list'][$x]['temp']['max']-$a;
         $min = $fdata['list'][$x]['temp']['min']-$a;
-        $range = $max." ~ ".$min." ˚C";
+        $range = $min." ~ ".$max." ˚C";
         $fdescription = $fdata['list'][$x]['weather'][0]['description'];
         $fdt = $fdata ['list'][$x]['dt'];
         $ftime = date('w', $fdt);
         $ftimeDay;
         if ($ftime==0) {
-            $ftimeDay = 'Sun';
+            $ftimeDay = 'SUN';
         }else if($ftime==1){
-            $ftimeDay = 'Mon';
+            $ftimeDay = 'MON';
         }else if($ftime==2){
-            $ftimeDay = 'Tue';
+            $ftimeDay = 'TUE';
         }else if($ftime==3){
-            $ftimeDay = 'Wed';
+            $ftimeDay = 'WED';
         }else if($ftime==4){
-            $ftimeDay = 'Thu';
+            $ftimeDay = 'THU';
         }else if($ftime==5){
-            $ftimeDay = 'Fri';
+            $ftimeDay = 'FRI';
         }else if($ftime==6){
-            $ftimeDay = 'Sat';
+            $ftimeDay = 'SAT';
         }
         $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
     }
@@ -138,8 +138,6 @@ if ($lat!=null&&$lng!=null){
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
-    <!--Menu CSS-->
-    <!--    <link href="css/menu.css" type="text/css" rel="stylesheet">-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -173,7 +171,6 @@ if ($lat!=null&&$lng!=null){
         body {  }
         .menu_list { width: 100%; }
         .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
-        .mean_head2 {padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/down.png) center right no-repeat;}
         .menu_body { display:none; }
         .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
         .menu_body a:hover { }
@@ -237,10 +234,7 @@ if ($lat!=null&&$lng!=null){
                             <br>
                             <!--Get direction button-->
                             <a class='btn btn-primary btn-lg' style="width: 100%">
-                                <!--                                <i class='glyphicon glyphicon-search' id="direct"></i>-->
-                                <!--                                <b class="glyphicon glyphicon-search" id="direct"></b>-->
                                 <i class="glyphicon glyphicon-search" id="direct"><b>&nbsp;GET&nbsp;DIRECTION</b></i>
-                                <!--                            <button id="direct" style="color: black;">Get Direction</button>                        </a>-->
                             </a>
                             <hr>
                             <!--Display information details-->
@@ -258,13 +252,9 @@ if ($lat!=null&&$lng!=null){
                                 </div>
                                 <p class="menu_head">Weather</p>
                                 <div class="menu_body">
-                                    <!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_current.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
-                                    <!--                                    <a><script type="text/javascript" src="http://www.weatherzone.com.au/woys/graphic_forecast.jsp?postcode=--><?php //echo $postcode;?><!--"></script></a>-->
-                                    <a>Current Weather</a>
-                                    <a>
+                                    <a style="color: #0eaad6">
                                         <?php echo $timeDay?>, <?php echo $temp?> ˚C, <?php echo $description?>, <?php echo $wind?> km/h.
                                     </a>
-                                    <a>Forecast Weather</a>
                                     <a>
                                         <?php
                                         for ($x=1; $x<7; $x++){
@@ -325,9 +315,10 @@ if ($lat!=null&&$lng!=null){
         var endLng = <?php echo $lng;?>;
 
         var pos;
+        var pos2
         //set the center of the map
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
+            zoom: 10,
             center: {lat: -37.8141, lng: 144.9633}
         });
         directionsDisplay.setMap(map);
@@ -345,8 +336,20 @@ if ($lat!=null&&$lng!=null){
                 var marker = new google.maps.Marker({
                     position: pos,
                     map: map,
+                    icon:"http://maps.google.com/mapfiles/ms/icons/green-dot.png"
                 });
-                map.setCenter(pos);
+//                map.setCenter(pos);
+
+                pos2 = {
+                    lat:endLat,
+                    lng:endLng
+                };
+                var marker2 = new google.maps.Marker(
+                    {
+                        position: pos2,
+                        map:map,
+                    }
+                );
             }, function() {
                 handleLocationError(true, infoWindow, map.getCenter());
             });
