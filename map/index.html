@@ -39,7 +39,7 @@
             </h1><!--//logo-->
             <nav class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse" style="background-color: lightgray">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -96,17 +96,20 @@
                 </a>
                 <a id='find_me' href='#' class="btn btn-primary btn-lg">Locate</a>
             <p> <br></p>
-                <p>
-                <p><b> Within </b></p>
-                    <label>
-                        <select id='search_radius' multiple class="form-control">
-                            <option value='400'>2 blocks</option>
-                            <option value='500'>1/2 km</option>
-                            <option value='1000'>1 km</option>
-                            <option value='2000'>2 km</option>
-                        </select>
-                    </label>
-                    
+                <p class="btn-group">
+                    <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Choose Search Radius
+                        <span class="caret"></span>
+                    </button>
+
+                    <select id='search_radius' multiple class=" dropdown-menu" >
+                        <option value='400'>2 blocks</option>
+                        <option value='500'>1/2 km</option>
+                        <option value='1000'>1 km</option>
+                        <option value='2000'>2 km</option>
+                        <option value='5000'>5 km</option>
+                    </select>
+
                 </p>
                 
             </div>

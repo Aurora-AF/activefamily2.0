@@ -314,11 +314,19 @@ if ($lat!=null&&$lng!=null){
         var endLat = <?php echo $lat;?>;
         var endLng = <?php echo $lng;?>;
 
+
+//        var mLat = Math.abs(endLat) - 37.884;
+//        var mLng = endLng - 145.0266;
+//        var powLatLng = Math.pow(mLat, 2) + Math.pow(mLng, 2);
+//        var sqrtLatLng = Math.sqrt(powLatLng);
+//
+//        var zoomValue = Math.round(127*sqrtLatLng);
+
         var pos;
         var pos2
         //set the center of the map
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
+            zoom: 11,
             center: {lat: -37.8141, lng: 144.9633}
         });
         directionsDisplay.setMap(map);
