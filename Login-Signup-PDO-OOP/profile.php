@@ -23,6 +23,59 @@
 <script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css"  />
 <title>welcome - <?php print($userRow['user_email']); ?></title>
+
+    <script type="text/javascript" src="js/webfxlayout.js"></script>
+
+    <!-- this link element includes the css definitions that describes the tab pane -->
+    <!--
+    <link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
+    -->
+    <link type="text/css" rel="stylesheet" href="css/tab.webfx.css" />
+    <!-- the id is not needed. It is used here to be able to change css file at runtime -->
+<!--    <style type="text/css">-->
+<!---->
+<!--        .dynamic-tab-pane-control .tab-page {-->
+<!--            height:		300px;-->
+<!--        }-->
+<!---->
+<!--        .dynamic-tab-pane-control .tab-page .dynamic-tab-pane-control .tab-page {-->
+<!--            height:		100px;-->
+<!--        }-->
+<!---->
+<!--        html, body {-->
+<!--            background:	ThreeDFace;-->
+<!--        }-->
+<!---->
+<!--        form {-->
+<!--            margin:		0;-->
+<!--            padding:	0;-->
+<!--        }-->
+<!---->
+<!--        /* over ride styles from webfxlayout */-->
+<!---->
+<!--        body {-->
+<!--            margin:		10px;-->
+<!--            width:		auto;-->
+<!--            height:		auto;-->
+<!--        }-->
+<!---->
+<!--        .dynamic-tab-pane-control h2 {-->
+<!--            text-align:	center;-->
+<!--            width:		auto;-->
+<!--        }-->
+<!---->
+<!--        .dynamic-tab-pane-control h2 a {-->
+<!--            display:	inline;-->
+<!--            width:		auto;-->
+<!--        }-->
+<!---->
+<!--        .dynamic-tab-pane-control a:hover {-->
+<!--            background: transparent;-->
+<!--        }-->
+<!--    </style>-->
+
+
+    <script type="text/javascript" src="js/tabpane.js"></script>
 </head>
 
 <body>
@@ -74,7 +127,123 @@
         <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
         <hr />
         
-        <p class="h4">Another Secure Profile Page</p> 
+        <p class="h4">Another Secure Profile Page</p>
+        <p>&nbsp;</p>
+
+        <div class="tab-pane" id="tabPane1">
+
+            <script type="text/javascript">
+                tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
+                //tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
+                //alert( 0 )
+            </script>
+
+            <div class="tab-page" id="tabPage1">
+                <h2 class="tab">Details</h2>
+
+                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
+                <table>
+                    <th>User Details</th>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="firstname" /></td>
+                        <td><input type="text" name="lastname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>Phone</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="DOB" /></td>
+                        <td><input type="text" name="phone" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td>Post Code</td>
+                        <td>State</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="postcode" /></td>
+                        <td><input type="text" name="state" /></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="street" /></td>
+                    </tr>
+                    <tr>
+                        <td>Family Size</td>
+                        <td>Interest</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="firstname" /></td>
+                        <td><input type="text" name="lastname" /></td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+            <div class="tab-page" id="tabPage2">
+                <h2 class="tab">Security</h2>
+
+                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage2" ) );</script>
+
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+                <br />
+                <br />
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+                This is text of tab 2. This is text of tab 2. This is text of tab 2.
+
+            </div>
+
+            <div class="tab-page" id="tabPage3">
+                <h2 class="tab">Privacy</h2>
+
+                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage3" ) );</script>
+
+                This is text of tab 3. This is text of tab 3. This is text of tab 3.
+                This is text of tab 3. This is text of tab 3. This is text of tab 3.
+                This is text of tab 3. This is text of tab 3. This is text of tab 3.
+
+            </div>
+
+            <div class="tab-page" id="tabPage4">
+                <h2 class="tab">Content</h2>
+
+                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage4" ) );</script>
+
+                <fieldset>
+                    <legend>Content</legend>
+                    This is text of tab 4. This is text of tab 4. This is text of tab 4.
+                    This is text of tab 4. This is text of tab 4. This is text of tab 4.
+                    This is text of tab 4. This is text of tab 4. This is text of tab 4.
+                </fieldset>
+
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+
+            setupAllTabs();
+
+            //]]>
+        </script>
+
         
     <p class="blockquote-reverse" style="margin-top:200px;">
     Programming Blog Featuring Tutorials on PHP, MySQL, Ajax, jQuery, Web Design and More...<br /><br />
