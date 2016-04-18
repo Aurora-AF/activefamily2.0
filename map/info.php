@@ -1,3 +1,4 @@
+
 <!--Template from: http://derekeder.com/searchable_map_template-->
 <!--Php can latitude and longitude of category from previous map-->
 <?php
@@ -117,7 +118,7 @@ if ($lat!=null&&$lng!=null){
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
 <head>
     <title>Active Family</title>
     <!-- Meta -->
