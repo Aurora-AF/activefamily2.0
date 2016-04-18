@@ -220,6 +220,18 @@ if ($lat!=null&&$lng!=null){
                 <div class="col-md-4">
                     <div class="well">
                         <div id="mapfuc">
+                            <p><b>Current Weather</b></p>
+                            <div id="firstpane" class="menu_list">
+                                <!--Code for menu starts here-->
+                                <p class="menu_head">
+                                        <?php echo $timeDay?>, <?php echo $temp?> ˚C, <?php echo $description?>, <?php echo $wind?> km/h.
+                                    </p>
+                                <div class="menu_body">
+                                    <a>
+                                    </a>
+                                </div>
+                            </div>
+
                             <!--Drop down Category -->
                             <p>
                                 <label>
@@ -251,11 +263,8 @@ if ($lat!=null&&$lng!=null){
                                 <div class="menu_body">
                                     <a><?php echo $address;?></a>
                                 </div>
-                                <p class="menu_head">Weather</p>
+                                <p class="menu_head">Forecast Weather</p>
                                 <div class="menu_body">
-                                    <a style="color: #0eaad6">
-                                        <?php echo $timeDay?>, <?php echo $temp?> ˚C, <?php echo $description?>, <?php echo $wind?> km/h.
-                                    </a>
                                     <a>
                                         <?php
                                         for ($x=1; $x<7; $x++){
