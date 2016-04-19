@@ -23,117 +23,8 @@ $stmt->execute(array(":user_id"=>$user_id));
 
 $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
-$lat = $_GET['lat'];
-$lng = $_GET['lng'];
-$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
-$json = file_get_contents($url);
-$data = json_decode($json);
-$address = $data->results['0']->formatted_address;
-$locality = $data->results['0']->address_components['2']->long_name;
-$postcode = $data->results['0']->address_components['5']->long_name;
 ?>
-<!--Current temperature by using operweathermap api-->
-<?php
-//$lat = $_GET['lat'];
-//$lng = $_GET['lng'];
-$name;
-$description;
-$temp;
-$wind;
-$week;
-if ($lat!=null&&$lng!=null){
-    //current weather api
-    $url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=2685e072f39f0387a6ff22225a56f4ba";
-    $data = file_get_contents($url);
-    $data = json_decode($data, true);
-    //City name
-    $name = $data['name'];
-    //description
-    $a = 272.15;
-    $description = $data['weather'][0]['description'];
-    //temperature
-    $temp = $data['main']['temp']- $a;
-    //wind
-    $wind = $data['wind']['speed'];
-    //dt
-    $dt = $data ['dt'];
-    $time = date('w', $dt);
-    $timeDay;
-    $tim = date('y-m-d H:m:s', $dt);
-    switch ($time) {
-        case 0:
-            $timeDay = "SUN";
-            break;
-        case 1:
-            $timeDay = 'MON';
-            break;
-        case 2:
-            $timeDay = 'TUE';
-            break;
-        case 3:
-            $timeDay = 'WED';
-            break;
-        case 4:
-            $timeDay = 'THU';
-            break;
-        case 5:
-            $timeDay = 'FRI';
-            break;
-        case 6:
-            $timeDay = 'SAT';
-            break;
-    }
-} else{
-    $name = "null";
-    $description = "null";
-    $temp = "null";
-    $wind = "null";
-    $dt = "null";
-}
-?>
-<!--Forcast temperature by using operweathermap api-->
-<?php
-$lat = $_GET['lat'];
-$lng = $_GET['lng'];
-$fdescription;
-$temprage;
-if ($lat!=null&&$lng!=null){
-    //forcast weather api
-    $furl = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=$lat&lon=$lng&cnt=10&mode=json&appid=2685e072f39f0387a6ff22225a56f4ba";
-    $json = file_get_contents($furl);
-    $fdata = json_decode($json, true);
-    //description
-    $a = 272.15;
 
-    $forecastTamp[] = array();
-
-    for ($x=1; $x<7; $x++){
-        $max = $fdata['list'][$x]['temp']['max']-$a;
-        $min = $fdata['list'][$x]['temp']['min']-$a;
-        $range = $min." ~ ".$max." ˚C";
-        $fdescription = $fdata['list'][$x]['weather'][0]['description'];
-        $fdt = $fdata ['list'][$x]['dt'];
-        $ftime = date('w', $fdt);
-        $ftimeDay;
-        if ($ftime==0) {
-            $ftimeDay = 'SUN';
-        }else if($ftime==1){
-            $ftimeDay = 'MON';
-        }else if($ftime==2){
-            $ftimeDay = 'TUE';
-        }else if($ftime==3){
-            $ftimeDay = 'WED';
-        }else if($ftime==4){
-            $ftimeDay = 'THU';
-        }else if($ftime==5){
-            $ftimeDay = 'FRI';
-        }else if($ftime==6){
-            $ftimeDay = 'SAT';
-        }
-        $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
-    }
-}
-?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -221,8 +112,8 @@ if ($lat!=null&&$lng!=null){
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
                     <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
@@ -255,10 +146,10 @@ if ($lat!=null&&$lng!=null){
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="drink.html">Drink Fountain</a></li>
+                        <li><a href="drink.php">Drink Fountain</a></li>
                         <li><a href="bbq.html">BBQ</a></li>
-                        <li><a href="dog.html">Dog Friendly Areas</a></li>
-                        <li><a href="bike.html">Bicycle Rails</a></li>
+                        <li><a href="dog.php">Dog Friendly Areas</a></li>
+                        <li><a href="bike.php">Bicycle Rails</a></li>
                     </ul>
                 </div>
                 <hr>
@@ -424,16 +315,16 @@ if ($lat!=null&&$lng!=null){
     </div><!--//modal-->
     
     
- 
- <script type="text/javascript" src="assets/plugins/bootstrap/js/"></script> 
+
+ <!--<script type="text/javascript" src="assets/plugins/bootstrap/js/"></script>-->
    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
     <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
     <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>   
-  <script type="text/javascript" src="assets/js/main.js"></script> 
-    
-            
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+
 </body>
 </html> 
 

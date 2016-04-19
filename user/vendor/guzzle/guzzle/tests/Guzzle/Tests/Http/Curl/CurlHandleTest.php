@@ -231,7 +231,7 @@ class CurlHandleTest extends \Guzzle\Tests\GuzzleTestCase
                 CURLOPT_NOBODY => 1
             )),
             // Send a GET using basic auth
-            array('GET', 'https://michael:123@localhost/index.html?q=2', null, null, array(
+            array('GET', 'https://michael:123@localhost/index.php?q=2', null, null, array(
                 CURLOPT_RETURNTRANSFER => 0,
                 CURLOPT_HEADER => 0,
                 CURLOPT_CONNECTTIMEOUT => 150,

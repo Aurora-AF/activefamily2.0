@@ -146,9 +146,9 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="drink.html">Drink Fountain</a></li>
+                        <li><a href="drink.php">Drink Fountain</a></li>
                         <li><a href="bbq.php">BBQ</a></li>
-                        <li><a href="dog.html">Dog Friendly Areas</a></li>
+                        <li><a href="dog.php">Dog Friendly Areas</a></li>
                         <li><a href="bike.html">Bicycle Rails</a></li>
                     </ul>
                 </div>
