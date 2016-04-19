@@ -1,8 +1,34 @@
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+require_once("../Login-Signup-PDO-OOP/class.user.php");
+$login = new USER();
+if($login->is_loggedin()) { ?>
+<style type="text/css">
+    #register {
+        display: none;
+    }
+</style>
+
+<?php }; ?>
+
 <!--Template from: http://derekeder.com/searchable_map_template-->
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--Php can get latitude and longitude of category from previous map-->
+
+<?php
+$user_id = $_SESSION['user_session'];
+
+$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+$stmt->execute(array(":user_id"=>$user_id));
+
+$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
 <head>
     <title>Active Family</title>
     <!-- Meta -->
@@ -10,55 +36,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head> 
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        <!--//---------------------------------+
+        //  Developed by Roshan Bhattarai
+        //  Visit http://roshanbh.com.np for this script and more.
+        // --------------------------------->
+        $(document).ready(function()
+        {
+            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked
+            $("#firstpane p.menu_head").click(function()
+            {
+                $(this).css({backgroundImage:"url(images/menu/down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings().css({backgroundImage:"url(images/menu/left.png)"});
+            });
 
-<body class="features-page">    
-    <!-- ******HEADER****** --> 
-    <header id="header" class="header navbar-fixed-top">  
-        <div class="container">       
-            <h1 class="logo">
-                <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
-            </h1><!--//logo-->
-            <nav class="main-nav navbar-right" role="navigation">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse" style="background-color: lightgray">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-               </div><!--//navbar-header-->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a href="../index.html">Home</a></li>
-                        <li class="active nav-item"><a href="index.html">Venues</a></li>
-                        <li class="nav-item"><a href="../about.html">About Us</a></li>
-                        <li class="nav-item"><a href="#">Log in</a></li>
-                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->                     
-        </div><!--//container-->
-    </header><!--//header-->
+        });
+    </script>
+    <!--style of map-->
+    <style type="text/css">
+        #map {
+            height: 100%;
+        }
+    </style>
+    <!--style of menu-->
+    <style type="text/css">
+        body {  }
+        .menu_list { width: 100%; }
+        .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
+        .menu_body { display:none; }
+        .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
+        .menu_body a:hover { }
+    </style>
+</head>
+
+<body class="features-page">
+
+<!-- ******HEADER****** -->
+<header id="header" class="header navbar-fixed-top" style="position: relative;">
+    <div class="container">
+        <h1 class="logo">
+            <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
+        </h1><!--logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--nav-toggle-->
+            </div><!--navbar-header-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
+                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
+                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
+                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul><!--nav-->
+            </div><!--navabr-collapse-->
+        </nav><!--main-nav-->
+    </div><!--container-->
+</header><!--header-->
     
+         
     
     <!-- ******Steps Section****** --> 
     <section class="steps section">
@@ -70,18 +138,18 @@
 
             <div class='well'>
                 <h1 class="title">
-                    Drink fountains
-                                    </h1>
+                Search for Venue                                    
+                </h1>
                 <div class="btn-group">
                     <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Pick a Category
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="drink.html">Drink Fountain</a></li>
-                        <li><a href="bbq.html">BBQ</a></li>
-                        <li><a href="dog.html">Dog Friendly Areas</a></li>
-                        <li><a href="bike.html">Bicycle Rails</a></li>
+                        <li><a href="drink.php">Drink Fountain</a></li>
+                        <li><a href="bbq.php">BBQ</a></li>
+                        <li><a href="dog.php">Dog Friendly Areas</a></li>
+                        <li><a href="bike.php">Bicycle Rails</a></li>
                     </ul>
                 </div>
                 <hr>
@@ -106,12 +174,13 @@
                         <option value='500'>1/2 km</option>
                         <option value='1000'>1 km</option>
                         <option value='2000'>2 km</option>
+                        <option value='5000'>5 km</option>
                     </select>
 
                 </p>
-                </div>
-            <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
-            
+                
+            </div>
+
 
 
         </div>
@@ -144,8 +213,7 @@
 
     $(function() {
         var myMap = new MapsLib({
-            fusionTableId:      "1BhdWLllVcSGCJBrOC0a2kZMv0pevA6Apc0H96z5w",
-            googleApiKey:       "AIzaSyAKWfGBpeBLZ2vVsvEeFdJrOEkVH7sE9Uk",
+            googleApiKey:       "AIzaSyDGqazZZTGC6-VtXBOUG9lOErR2mq-Ug58",
             locationColumn:     "Location",
             map_center:         [-37.8141,144.9633]
 

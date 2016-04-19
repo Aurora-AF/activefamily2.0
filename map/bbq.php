@@ -1,8 +1,143 @@
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+require_once("../Login-Signup-PDO-OOP/class.user.php");
+$login = new USER();
+if($login->is_loggedin()) { ?>
+<style type="text/css">
+    #register {
+        display: none;
+    }
+</style>
+
+<?php }; ?>
+
 <!--Template from: http://derekeder.com/searchable_map_template-->
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--Php can get latitude and longitude of category from previous map-->
+
+<?php
+$user_id = $_SESSION['user_session'];
+
+$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+$stmt->execute(array(":user_id"=>$user_id));
+
+$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+
+$lat = $_GET['lat'];
+$lng = $_GET['lng'];
+$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
+$json = file_get_contents($url);
+$data = json_decode($json);
+$address = $data->results['0']->formatted_address;
+$locality = $data->results['0']->address_components['2']->long_name;
+$postcode = $data->results['0']->address_components['5']->long_name;
+?>
+<!--Current temperature by using operweathermap api-->
+<?php
+//$lat = $_GET['lat'];
+//$lng = $_GET['lng'];
+$name;
+$description;
+$temp;
+$wind;
+$week;
+if ($lat!=null&&$lng!=null){
+    //current weather api
+    $url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lng&appid=2685e072f39f0387a6ff22225a56f4ba";
+    $data = file_get_contents($url);
+    $data = json_decode($data, true);
+    //City name
+    $name = $data['name'];
+    //description
+    $a = 272.15;
+    $description = $data['weather'][0]['description'];
+    //temperature
+    $temp = $data['main']['temp']- $a;
+    //wind
+    $wind = $data['wind']['speed'];
+    //dt
+    $dt = $data ['dt'];
+    $time = date('w', $dt);
+    $timeDay;
+    $tim = date('y-m-d H:m:s', $dt);
+    switch ($time) {
+        case 0:
+            $timeDay = "SUN";
+            break;
+        case 1:
+            $timeDay = 'MON';
+            break;
+        case 2:
+            $timeDay = 'TUE';
+            break;
+        case 3:
+            $timeDay = 'WED';
+            break;
+        case 4:
+            $timeDay = 'THU';
+            break;
+        case 5:
+            $timeDay = 'FRI';
+            break;
+        case 6:
+            $timeDay = 'SAT';
+            break;
+    }
+} else{
+    $name = "null";
+    $description = "null";
+    $temp = "null";
+    $wind = "null";
+    $dt = "null";
+}
+?>
+<!--Forcast temperature by using operweathermap api-->
+<?php
+$lat = $_GET['lat'];
+$lng = $_GET['lng'];
+$fdescription;
+$temprage;
+if ($lat!=null&&$lng!=null){
+    //forcast weather api
+    $furl = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=$lat&lon=$lng&cnt=10&mode=json&appid=2685e072f39f0387a6ff22225a56f4ba";
+    $json = file_get_contents($furl);
+    $fdata = json_decode($json, true);
+    //description
+    $a = 272.15;
+
+    $forecastTamp[] = array();
+
+    for ($x=1; $x<7; $x++){
+        $max = $fdata['list'][$x]['temp']['max']-$a;
+        $min = $fdata['list'][$x]['temp']['min']-$a;
+        $range = $min." ~ ".$max." ˚C";
+        $fdescription = $fdata['list'][$x]['weather'][0]['description'];
+        $fdt = $fdata ['list'][$x]['dt'];
+        $ftime = date('w', $fdt);
+        $ftimeDay;
+        if ($ftime==0) {
+            $ftimeDay = 'SUN';
+        }else if($ftime==1){
+            $ftimeDay = 'MON';
+        }else if($ftime==2){
+            $ftimeDay = 'TUE';
+        }else if($ftime==3){
+            $ftimeDay = 'WED';
+        }else if($ftime==4){
+            $ftimeDay = 'THU';
+        }else if($ftime==5){
+            $ftimeDay = 'FRI';
+        }else if($ftime==6){
+            $ftimeDay = 'SAT';
+        }
+        $forecastTamp[$x]= $ftimeDay.", ".$range.", ".$fdescription;
+    }
+}
+?>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
 <head>
     <title>Active Family</title>
     <!-- Meta -->
@@ -10,54 +145,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head> 
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        <!--//---------------------------------+
+        //  Developed by Roshan Bhattarai
+        //  Visit http://roshanbh.com.np for this script and more.
+        // --------------------------------->
+        $(document).ready(function()
+        {
+            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked
+            $("#firstpane p.menu_head").click(function()
+            {
+                $(this).css({backgroundImage:"url(images/menu/down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                $(this).siblings().css({backgroundImage:"url(images/menu/left.png)"});
+            });
 
-<body class="features-page">    
-    <!-- ******HEADER****** --> 
-    <header id="header" class="header navbar-fixed-top">  
-        <div class="container">       
-            <h1 class="logo">
-                <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
-            </h1><!--//logo-->
-            <nav class="main-nav navbar-right" role="navigation">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse" style="background-color: lightgray">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-                </div><!--//navbar-header-->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a href="../index.html">Home</a></li>
-                        <li class="active nav-item"><a href="index.html">Venues</a></li>
-                        <li class="nav-item"><a href="../about.html">About Us</a></li>
-                        <li class="nav-item"><a href="#">Log in</a></li>
-                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->                     
-        </div><!--//container-->
-    </header><!--//header-->
+        });
+    </script>
+    <!--style of map-->
+    <style type="text/css">
+        #map {
+            height: 100%;
+        }
+    </style>
+    <!--style of menu-->
+    <style type="text/css">
+        body {  }
+        .menu_list { width: 100%; }
+        .menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(images/menu/left.png) center right no-repeat; }
+        .menu_body { display:none; }
+        .menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
+        .menu_body a:hover { }
+    </style>
+</head>
+
+<body class="features-page">
+
+<!-- ******HEADER****** -->
+<header id="header" class="header navbar-fixed-top" style="position: relative;">
+    <div class="container">
+        <h1 class="logo">
+            <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
+        </h1><!--logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--nav-toggle-->
+            </div><!--navbar-header-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
+                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
+                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
+                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul><!--nav-->
+            </div><!--navabr-collapse-->
+        </nav><!--main-nav-->
+    </div><!--container-->
+</header><!--header-->
     
 
     
