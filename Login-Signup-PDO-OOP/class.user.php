@@ -33,8 +33,13 @@ class USER
 			$stmt->bindparam(":umail", $umail);
 			$stmt->bindparam(":upass", $new_password);										  
 				
-			$stmt->execute();	
-			
+			$stmt->execute();
+
+			$query = $this->conn->prepare("INSERT INTO user_profile (user_fname, user_lname, dob, phone, email, postcode, state, street, family_size, interest)
+										   VALUES (' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ')");
+
+			$query->execute();
+
 			return $stmt;	
 		}
 		catch(PDOException $e)
