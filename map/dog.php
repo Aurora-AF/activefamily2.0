@@ -3,22 +3,22 @@ session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 require_once("../Login-Signup-PDO-OOP/class.user.php");
 $login = new USER();
-if($login->is_loggedin()) { ?>
+if($login->is_loggedin()) : ?>
     <style type="text/css">
         #register {
             display: none;
         }
+
     </style>
 
-<?php } else ?>
+<?php else: ?>
 
     <style type="text/css">
         #notlogedin {
             display: none;
         }
     </style>
-<?php ; ?>
-
+<?php endif; ?>
 <!--Template from: http://derekeder.com/searchable_map_template-->
 <!--Php can get latitude and longitude of category from previous map-->
 
@@ -154,7 +154,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     <ul class="dropdown-menu">
                         <li><a href="drink.php">Drink Fountain</a></li>
                         <li><a href="bbq.php">BBQ</a></li>
-                        <li><a href="dog.html">Dog Friendly Areas</a></li>
+                        <li><a href="dog.php">Dog Friendly Areas</a></li>
                         <li><a href="bike.php">Bicycle Rails</a></li>
                     </ul>
                 </div>
