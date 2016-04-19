@@ -1,14 +1,27 @@
 <?php
 session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 require_once("../Login-Signup-PDO-OOP/class.user.php");
 $login = new USER();
-if($login->is_loggedin()) {
+if($login->is_loggedin()) { ?>
+    <style type="text/css">
+        #register {
+        display: none;
+        }
+</style>
 
-}
-?>
+<?php }; ?>
+
 <!--Template from: http://derekeder.com/searchable_map_template-->
 <!--Php can get latitude and longitude of category from previous map-->
 <?php
+$user_id = $_SESSION['user_session'];
+
+$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+$stmt->execute(array(":user_id"=>$user_id));
+
+$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+
 $lat = $_GET['lat'];
 $lng = $_GET['lng'];
 $url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
@@ -201,19 +214,26 @@ if ($lat!=null&&$lng!=null){
                     <span class="icon-bar"></span>
                 </button><!--nav-toggle-->
             </div><!--navbar-header-->
-            <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
                     <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="nav-item"><a href="#">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
+                    <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
+                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->
     </div><!--container-->
 </header><!--header-->
-
 
 
 

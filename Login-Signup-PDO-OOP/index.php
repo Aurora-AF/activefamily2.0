@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 require_once("class.user.php");
@@ -16,7 +17,22 @@ if(isset($_POST['btn-login']))
 
 	if($login->doLogin($uname,$umail,$upass))
 	{
-		$login->redirect('home.php');
+        if(isset($_SESSION['url'])) {
+            $url = $_SESSION['url']; // holds url for last page visited.
+            $login->redirect($url);
+        }
+
+        else {
+            $url = "home.php";
+            $login->redirect($url);
+        }
+
+
+        echo $url;
+        header("Location: http://localhost:8888/$url");
+
+
+        //header("Location:$url");
 	}
 	else
 	{

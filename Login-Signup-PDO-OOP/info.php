@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 require_once("../Login-Signup-PDO-OOP/class.user.php");
 $login = new USER();
 if($login->is_loggedin()) {
@@ -206,7 +207,7 @@ if ($lat!=null&&$lng!=null){
                     <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
                     <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="nav-item"><a href="#">Log in</a></li>
+                    <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->

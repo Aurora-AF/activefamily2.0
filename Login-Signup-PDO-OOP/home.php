@@ -7,7 +7,6 @@
 	
 	
 	$user_id = $_SESSION['user_session'];
-    echo $user_id;
 	
 	$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
 	$stmt->execute(array(":user_id"=>$user_id));
