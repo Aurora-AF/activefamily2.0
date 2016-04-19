@@ -2,89 +2,181 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60022092-e3df-4916-8584-b19d5455fafc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/images/border.png" afterPath="$PROJECT_DIR$/user/documentation/assets/css/images/border.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/images/controls.png" afterPath="$PROJECT_DIR$/user/documentation/assets/css/images/controls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/images/loading.gif" afterPath="$PROJECT_DIR$/user/documentation/assets/css/images/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/images/loading_background.png" afterPath="$PROJECT_DIR$/user/documentation/assets/css/images/loading_background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/images/overlay.png" afterPath="$PROJECT_DIR$/user/documentation/assets/css/images/overlay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/user/documentation/assets/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/activity-system.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/activity-system.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/activity-user.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/activity-user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/dashboard-admin.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/dashboard-admin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/dashboard-profile-link.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/dashboard-profile-link.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/link-active-sessions.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/link-active-sessions.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/link-user-profile.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/link-user-profile.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/profile-avatar-modal.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/profile-avatar-modal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/users-details.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/users-details.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/img/users-list.png" afterPath="$PROJECT_DIR$/user/documentation/assets/img/users-list.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/favicon.ico" afterPath="$PROJECT_DIR$/user/documentation/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/user/public/assets/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/user/public/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/user/public/assets/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/img/icons/apple-touch-icon-144x144.png" afterPath="$PROJECT_DIR$/user/public/assets/img/icons/apple-touch-icon-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/img/icons/apple-touch-icon-152x152.png" afterPath="$PROJECT_DIR$/user/public/assets/img/icons/apple-touch-icon-152x152.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/img/icons/favicon-16x16.png" afterPath="$PROJECT_DIR$/user/public/assets/img/icons/favicon-16x16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/img/icons/favicon-32x32.png" afterPath="$PROJECT_DIR$/user/public/assets/img/icons/favicon-32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/img/icons/mstile-144x144.png" afterPath="$PROJECT_DIR$/user/public/assets/img/icons/mstile-144x144.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/favicon.ico" afterPath="$PROJECT_DIR$/user/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/guzzle/guzzle/docs/_static/logo.png" afterPath="$PROJECT_DIR$/user/vendor/guzzle/guzzle/docs/_static/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/user/vendor/maximebf/debugbar/src/DebugBar/Resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/user/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Encoders.graffle" afterPath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Encoders.graffle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Mime.graffle" afterPath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Mime.graffle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Transports.graffle" afterPath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/doc/uml/Transports.graffle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/tests/_samples/files/textfile.zip" afterPath="$PROJECT_DIR$/user/vendor/swiftmailer/swiftmailer/tests/_samples/files/textfile.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/console/Resources/bin/hiddeninput.exe" afterPath="$PROJECT_DIR$/user/vendor/symfony/console/Resources/bin/hiddeninput.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/http-foundation/Tests/File/Fixtures/test" afterPath="$PROJECT_DIR$/user/vendor/symfony/http-foundation/Tests/File/Fixtures/test" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.ser" afterPath="$PROJECT_DIR$/user/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/empty-translation.mo" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/empty-translation.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/encoding.xlf" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/encoding.xlf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/plurals.mo" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/plurals.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/en.res" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/en.res" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/fr.res" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/fr.res" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/resources.dat" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/dat/resources.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/res/en.res" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resourcebundle/res/en.res" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resources.mo" afterPath="$PROJECT_DIR$/user/vendor/symfony/translation/Tests/fixtures/resources.mo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-mobile-headline.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-screen-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/background/bg-screen-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/flexslider/carousel-arrow-next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/images/flexslider/carousel-arrow-prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/images/bg_play_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/blue-shell.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/bowser-jr.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/thunder-cloud.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/facebook-share.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/rrssb-preview.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/rrssb-preview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/blog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/contact.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/min/main-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/js/vimeo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/FitVids/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/FitVids/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/FitVids/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/FitVids/jquery.fitvids.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/FitVids/tests.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/back-to-top.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap-hover-dropdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.hound.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/README.mdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/flexslider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/jquery.flexslider-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/flexslider/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/gmaps/gmaps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.pkgd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/append.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/basics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/data-uri.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/jquery-fail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/jquery-success.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/local-files.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/no-images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/non-element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/selector-string.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/single-element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/tests.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-1.11.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-migrate-1.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/LICENSE-MIT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/jquery.placeholder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/tests/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/tests/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/masonry.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/config.codekit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/normalize.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/rrssb.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/facebook.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/github.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/google_plus.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/instagram.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/linkedin.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/mail.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/pinterest.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/pocket.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/reddit.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/tumblr.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/twitter.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/youtube.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/rrssb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/rrssb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/vendor/jquery.1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/scss/demo.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/assets/plugins/rrssb/scss/rrssb.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/createEvent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/css/tab.webfx.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/js/tabpane.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/js/webfxlayout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/listevent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php" afterPath="$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/css/colorbox.css" afterPath="$PROJECT_DIR$/user/documentation/assets/css/colorbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/documentation/assets/js/jquery.colorbox.js" afterPath="$PROJECT_DIR$/user/documentation/assets/js/jquery.colorbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/css/metisMenu.css" afterPath="$PROJECT_DIR$/user/public/assets/css/metisMenu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/css/sweetalert.css" afterPath="$PROJECT_DIR$/user/public/assets/css/sweetalert.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/js/metisMenu.min.js" afterPath="$PROJECT_DIR$/user/public/assets/js/metisMenu.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/assets/js/sweetalert.min.js" afterPath="$PROJECT_DIR$/user/public/assets/js/sweetalert.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/public/upload/users/.gitignore" afterPath="$PROJECT_DIR$/user/public/upload/users/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/app/.gitignore" afterPath="$PROJECT_DIR$/user/storage/app/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/debugbar/.gitignore" afterPath="$PROJECT_DIR$/user/storage/debugbar/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/framework/.gitignore" afterPath="$PROJECT_DIR$/user/storage/framework/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/framework/cache/.gitignore" afterPath="$PROJECT_DIR$/user/storage/framework/cache/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/framework/sessions/.gitignore" afterPath="$PROJECT_DIR$/user/storage/framework/sessions/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/framework/views/.gitignore" afterPath="$PROJECT_DIR$/user/storage/framework/views/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/storage/logs/.gitignore" afterPath="$PROJECT_DIR$/user/storage/logs/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/bin/php-parse" afterPath="$PROJECT_DIR$/user/vendor/bin/php-parse" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/bin/phpspec" afterPath="$PROJECT_DIR$/user/vendor/bin/phpspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/bin/phpunit" afterPath="$PROJECT_DIR$/user/vendor/bin/phpunit" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/bin/psysh" afterPath="$PROJECT_DIR$/user/vendor/bin/psysh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/nikic/php-parser/bin/php-parse" afterPath="$PROJECT_DIR$/user/vendor/nikic/php-parser/bin/php-parse" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpspec/phpspec/bin/phpspec" afterPath="$PROJECT_DIR$/user/vendor/phpspec/phpspec/bin/phpspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/phpunit/phpunit/phpunit" afterPath="$PROJECT_DIR$/user/vendor/phpunit/phpunit/phpunit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/vendor/psy/psysh/bin/psysh" afterPath="$PROJECT_DIR$/user/vendor/psy/psysh/bin/psysh" />
     </list>
     <ignored path="activefamily2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,47 +198,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="250" column="32" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
+            <state relative-caret-position="204">
+              <caret line="249" column="117" selection-start-line="249" selection-start-column="117" selection-end-line="249" selection-end-column="117" />
               <folding>
-                <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#script#0;n#body#0;n#!!top" expanded="false" />
                 <marker date="1460956636000" expanded="true" signature="3383:16923" placeholder="..." />
-                <marker date="1460956636000" expanded="true" signature="6273:16915" placeholder="..." />
-                <marker date="1460956636000" expanded="true" signature="7943:13025" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php">
+      <file leaf-file-name="createEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/createEvent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <marker date="1460957968000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab.webfx.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/css/tab.webfx.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="52" column="8" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="444">
+              <caret line="128" column="43" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tabpane.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/js/tabpane.js">
+      <file leaf-file-name="forms.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/css/forms.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -155,14 +240,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign-up.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/sign-up.php">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="99" column="87" selection-start-line="99" selection-start-column="87" selection-end-line="99" selection-end-column="87" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
-                <marker date="1460956636000" expanded="true" signature="735:818" placeholder="SELECT user_... users" />
+                <marker date="1460960750000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="77" column="64" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <marker date="1460960761000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/listEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,8 +300,12 @@
         <option value="$PROJECT_DIR$/map/bike.html" />
         <option value="$PROJECT_DIR$/map/dog.html" />
         <option value="$PROJECT_DIR$/map/index.html" />
-        <option value="$PROJECT_DIR$/map/info.php" />
         <option value="$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php" />
+        <option value="$PROJECT_DIR$/map/info.php" />
+        <option value="$PROJECT_DIR$/map/event.php" />
+        <option value="$PROJECT_DIR$/Event/info.php" />
+        <option value="$PROJECT_DIR$/Event/css/forms.css" />
+        <option value="$PROJECT_DIR$/Event/createEvent.php" />
       </list>
     </option>
   </component>
@@ -209,7 +320,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
-    <option name="y" value="36" />
+    <option name="y" value="23" />
     <option name="width" value="1216" />
     <option name="height" value="773" />
   </component>
@@ -238,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,7 +391,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Login-Signup-PDO-OOP" />
+              <option name="myItemId" value="Event" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,25 +405,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Login-Signup-PDO-OOP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activefamily2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activefamily2.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login-Signup-PDO-OOP" />
+              <option name="myItemId" value="Event" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,6 +416,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,16 +427,17 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Login-Signup-PDO-OOP/js" />
-      <recent name="$PROJECT_DIR$/Login-Signup-PDO-OOP/css" />
-      <recent name="$PROJECT_DIR$/map/js" />
-      <recent name="$PROJECT_DIR$/map/css" />
-      <recent name="$PROJECT_DIR$/map/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/map" />
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/map/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Event/css" />
+      <recent name="$PROJECT_DIR$/Event" />
+      <recent name="$PROJECT_DIR$/Event/js" />
+      <recent name="$PROJECT_DIR$/map/js" />
+      <recent name="$PROJECT_DIR$/map/css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index1.html">
@@ -423,15 +517,18 @@
       <workItem from="1460466604757" duration="3085000" />
       <workItem from="1460471125851" duration="13749000" />
       <workItem from="1460592071880" duration="5889000" />
-      <workItem from="1460876581009" duration="5887000" />
+      <workItem from="1460876581009" duration="7016000" />
+      <workItem from="1460992192099" duration="1000" />
+      <workItem from="1461036139265" duration="8940000" />
+      <workItem from="1461050639722" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94294000" />
+    <option name="totallyTimeSpent" value="105131000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="36" width="1216" height="773" extended-state="0" />
+    <frame x="2" y="23" width="1216" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20970395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -488,72 +585,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/map/drink.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/bike.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/bbq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/info.php" />
-    <entry file="file://$PROJECT_DIR$/map/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/menu/down.png" />
-    <entry file="file://$PROJECT_DIR$/assets/css/styles-7.css" />
-    <entry file="file://$PROJECT_DIR$/assets/css/menu.css" />
-    <entry file="file://$PROJECT_DIR$/map/images/menu/left.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map/css/menu.css" />
     <entry file="file://$PROJECT_DIR$/map.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -573,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="58674" selection-start-line="4" selection-start-column="58674" selection-end-line="4" selection-end-column="58674" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="2248" column="25" selection-start-line="2248" selection-start-column="19" selection-end-line="2248" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/bike.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -630,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18782">
           <caret line="139" column="18" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,12 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="197" column="27" selection-start-line="197" selection-start-column="27" selection-end-line="197" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23970">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,52 +777,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserFrosting-master/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1284">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserFrosting-master/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="250" column="32" selection-start-line="250" selection-start-column="32" selection-end-line="250" selection-end-column="32" />
-          <folding>
-            <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#script#0;n#body#0;n#!!top" expanded="false" />
-            <marker date="1460956636000" expanded="true" signature="3383:16923" placeholder="..." />
-            <marker date="1460956636000" expanded="true" signature="6273:16915" placeholder="..." />
-            <marker date="1460956636000" expanded="true" signature="7943:13025" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/UserFrosting-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/UserFrosting-master/public/index.php" />
     <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/dblogin.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="35" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/sign-up.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="1485">
           <caret line="99" column="87" selection-start-line="99" selection-start-column="87" selection-end-line="99" selection-end-column="87" />
           <folding>
             <marker date="1460956636000" expanded="true" signature="735:818" placeholder="SELECT user_... users" />
@@ -846,24 +816,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/css/tab.webfx.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="780">
           <caret line="52" column="8" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/bike.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="111" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1460960750000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/css/tab.webfx.css" />
+    <entry file="file://$PROJECT_DIR$/map/js/tabpane.js" />
+    <entry file="file://$PROJECT_DIR$/map/event.php" />
+    <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="64" selection-start-line="77" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <marker date="1460960761000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/js/tabpane.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/css/tab.webfx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/assets/js/min/main-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/css/info.php" />
+    <entry file="file://$PROJECT_DIR$/Event/listEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php">
+    <entry file="file://$PROJECT_DIR$/Event/css/forms.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="375">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/createEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="128" column="43" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="249" column="117" selection-start-line="249" selection-start-column="117" selection-end-line="249" selection-end-column="117" />
           <folding>
-            <marker date="1460957968000" expanded="true" signature="174:216" placeholder="SELECT * FRO... users" />
+            <marker date="1460956636000" expanded="true" signature="3383:16923" placeholder="..." />
           </folding>
         </state>
       </provider>
