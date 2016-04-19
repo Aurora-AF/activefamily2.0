@@ -16,7 +16,7 @@ if($login->is_loggedin()) { ?>
 <!--Php can get latitude and longitude of category from previous map-->
 
 <?php
-$user_id = $_SESSION['user_session'];
+$user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
 
 $stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
