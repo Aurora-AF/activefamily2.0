@@ -1,17 +1,3 @@
-
-<!--Template from: http://derekeder.com/searchable_map_template-->
-<!--Php can latitude and longitude of category from previous map-->
-<?php
-$lat = $_GET['lat'];
-$lng = $_GET['lng'];
-$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
-$json = file_get_contents($url);
-$data = json_decode($json);
-$address = $data->results['0']->formatted_address;
-$locality = $data->results['0']->address_components['2']->long_name;
-$postcode = $data->results['0']->address_components['5']->long_name;
-?>
-
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -42,24 +28,7 @@ $postcode = $data->results['0']->address_components['5']->long_name;
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/jquery.js"></script>
-
-    <link rel="stylesheet" href="css/forms.css"/>
-    <script type="text/javascript">
-        <!--//---------------------------------+
-        //  Developed by Roshan Bhattarai
-        //  Visit http://roshanbh.com.np for this script and more.
-        // --------------------------------->
-        $(document).ready(function()
-        {
-            //slides the element with class "menu_body" when paragraph with class "menu_head" is clicked
-            $("#firstpane p.menu_head").click(function()
-            {
-                $(this).css({backgroundImage:"url(images/menu/down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
-                $(this).siblings().css({backgroundImage:"url(images/menu/left.png)"});
-            });
-
-        });
-    </script>
+    <link rel="stylesheet" href="style.css" type="text/css"  />
 
 </head>
 
@@ -85,8 +54,6 @@ $postcode = $data->results['0']->address_components['5']->long_name;
                     <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
                     <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="nav-item"><a href="#">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->
@@ -98,43 +65,58 @@ $postcode = $data->results['0']->address_components['5']->long_name;
 
 <!-- ******Steps Section****** -->
 <section class="steps section">
-    <div class="container">
 
-        <div class='container-fluid'>
-            <div class='row'>
-                <div class="col-md-2">
-                </div>
+                        <div class="container">
+                            <form class="form-signin" method="post" id="login-form">
+                                <h2 class="form-signin-heading">Create Your Event</h2><hr />
 
-                <div class="col-md-8">
-                    <form attributes="" name="DonationForm" id="DonationForm">
-                        <fieldset id="part1">
-                            <legend>Event Information</legend>
+                                <div class="form-group">
+                                    Title<span>*</span>
+                                    <input type="text" class="form-control" name="eTitle" placeholder="Event Title" required />
+                                    <span id="check-e"></span>
+                                </div>
 
-                            <label for="indentLabel1">
-                                Title<span>*</span><input type="text" name="eName" id=""><br>
-                                Description<span>*</span><input type="text" name="eDes" id="eDes"><br>
-                                <label>Categories<span>*</span>
-                                    <select size="0" id="eType">
-                                        <option selected="selected" value="">All Activities</option>
-                                        <option>BBQ</option>
-                                        <option>Walking Dog</option>
-                                        <option>Yoga</option>
-                                        <option>Sports Club</option>
-                                        <option>Basketball</option>
-                                    </select>
-                                </label><br>
-                                <label>Hold Date<span>*</span><input type="date" name="eDate" id="eDate">
+                                <div class="form-group">
+                                    Description<span>*</span><br>
+                                    <textarea rows="5" cols="60" id="description" name="description" style="border-color: lightgray;" autofocus>
 
-                        <div id="button">
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="reset">
+                                    </textarea>
+                                    <span id="check-e"></span>
+                                </div>
+                                <div class="form-group">
+                                    Hold Date<span>*</span>
+                                        <input type="date" class="form-control" name="eDate" id="eDate">
+                                    <span id="check-e"></span>
+                                </div>
+                                <div class="form-group">
+                                    Categories<span>*</span>
+                                    <label>
+                                        <select size="0" id="eType" style="width: 20em">
+                                            <option selected="selected" value="">All Activities</option>
+                                            <option>BBQ</option>
+                                            <option>Walking Dog</option>
+                                            <option>Yoga</option>
+                                            <option>Sports Club</option>
+                                            <option>Basketball</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+
+                                <hr />
+
+                                <div class="form-group">
+                                    <button type="submit" name="btn-login" class="btn btn-default">
+                                        <i class="glyphicon glyphicon-log-in"></i> &nbsp; Submit
+                                    </button>
+                                </div>
+                                <br />
+                                <label>Don't have account yet ! <a href="sign-up.php">Submit</a></label>
+                            </form>
+
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
+
 </body>
 </html>
 
