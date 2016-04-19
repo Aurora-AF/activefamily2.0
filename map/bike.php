@@ -4,13 +4,20 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 require_once("../Login-Signup-PDO-OOP/class.user.php");
 $login = new USER();
 if($login->is_loggedin()) { ?>
-<style type="text/css">
-    #register {
-        display: none;
-    }
-</style>
+    <style type="text/css">
+        #register {
+            display: none;
+        }
+    </style>
 
-<?php }; ?>
+<?php } else ?>
+
+    <style type="text/css">
+        #notlogedin {
+            display: none;
+        }
+    </style>
+<?php ; ?>
 
 <!--Template from: http://derekeder.com/searchable_map_template-->
 <!--Php can get latitude and longitude of category from previous map-->
@@ -112,7 +119,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
                     <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">

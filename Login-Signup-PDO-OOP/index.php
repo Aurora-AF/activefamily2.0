@@ -81,7 +81,7 @@ if(isset($_POST['btn-login']))
         <input type="password" class="form-control" name="txt_password" placeholder="Your Password" />
         </div>
 
-        <div class="for-">
+        <div class="form-group">
 
         </div>
 
