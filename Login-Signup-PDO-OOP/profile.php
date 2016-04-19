@@ -25,53 +25,7 @@
 
     <script type="text/javascript" src="js/webfxlayout.js"></script>
 
-    <!-- this link element includes the css definitions that describes the tab pane -->
-    <!--
-    <link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
-    -->
     <link type="text/css" rel="stylesheet" href="css/tab.webfx.css" />
-    <!-- the id is not needed. It is used here to be able to change css file at runtime -->
-<!--    <style type="text/css">-->
-<!---->
-<!--        .dynamic-tab-pane-control .tab-page {-->
-<!--            height:		300px;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control .tab-page .dynamic-tab-pane-control .tab-page {-->
-<!--            height:		100px;-->
-<!--        }-->
-<!---->
-<!--        html, body {-->
-<!--            background:	ThreeDFace;-->
-<!--        }-->
-<!---->
-<!--        form {-->
-<!--            margin:		0;-->
-<!--            padding:	0;-->
-<!--        }-->
-<!---->
-<!--        /* over ride styles from webfxlayout */-->
-<!---->
-<!--        body {-->
-<!--            margin:		10px;-->
-<!--            width:		auto;-->
-<!--            height:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control h2 {-->
-<!--            text-align:	center;-->
-<!--            width:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control h2 a {-->
-<!--            display:	inline;-->
-<!--            width:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control a:hover {-->
-<!--            background: transparent;-->
-<!--        }-->
-<!--    </style>-->
     <style>
         input {
             line-height: 2.5em;
