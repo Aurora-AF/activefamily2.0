@@ -1,7 +1,11 @@
 <?php
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
+<<<<<<< HEAD
 require_once("../UserManagement/class.user.php");
+=======
+require_once("../user/class.user.php");
+>>>>>>> 27248af170a18f1cb2ee6f73396db87df4693cfd
 $login = new USER();
 if($login->is_loggedin()) : ?>
     <style type="text/css">
@@ -216,7 +220,7 @@ if ($lat!=null&&$lng!=null){
         </h1><!--logo-->
         <nav class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" id="map-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
