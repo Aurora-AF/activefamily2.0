@@ -97,18 +97,14 @@ catch(PDOException $e) {
 <section class="steps section">
     <div class="container" >
 
-            <div class='row well'>
-                    <table id='event' class="table table-striped table-bordered" style="width: 100%">
+            <div class='row'>
+                    <table id='event' class="table table-striped table-bordered" style="width: 10%">
                         <thead>
                         <tr>
-                            <th>Number</th>
                             <th>Name</th>
-                            <th>Description</th>
                             <th>Type</th>
-                            <th>Address</th>
                             <th>Suburb</th>
                             <th>Participate</th>
-                            <th>Capacity</th>
                             <th>Date</th>
                         </tr>
                         </thead>
@@ -119,16 +115,19 @@ catch(PDOException $e) {
                             ?>
                             <tr>
                                 <td>
-                                    <?php echo $val['eventId'];?>
-                                </td>
-                                <td>
                                     <?php echo $val['eventName'];?>
                                 </td>
                                 <td>
-                                    <?php echo $val['eventDescription'];?>
+                                    <?php echo $val['type'];?>
                                 </td>
                                 <td>
-                                    <?php echo $val['type'];?>
+                                    <?php echo $val['suburb'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['capacity'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['date'];?>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -138,13 +137,9 @@ catch(PDOException $e) {
 
                         <tfoot>
                         <tr>
-                            <th>Number</th>
                             <th>Name</th>
-                            <th>Description</th>
                             <th>Type</th>
-                            <th>Address</th>
                             <th>Suburb</th>
-                            <th>Participate</th>
                             <th>Capacity</th>
                             <th>Date</th>
                         </tr>
