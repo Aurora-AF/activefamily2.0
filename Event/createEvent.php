@@ -1,3 +1,35 @@
+<?php
+    session_start();
+    require_once("../UserManagement/class.user.php");
+    $address = $_GET['address'];
+    $suburb = $_GET['suburb'];
+
+    $user = new User();
+    $user_id = $_SESSION['user_session'];
+
+    $title = $_POST['eTitle'];
+    $desc = $_POST['description'];
+
+    $date = date('Y-m-d', strtotime($_POST['eDate']));
+    $type = $_POST['taskOption'];
+    if(isset($_POST['btn-login'])) {
+        $sql = "INSERT INTO events (eventName, eventDescription, type, address, suburb, capacity, date) VALUES ('$title', '$desc', '$type', '$address', '$suburb', $capacity, '$date')";
+        $stmt = $user->runQuery($sql);
+        $stmt->execute();
+
+        $sql = "SELECT eventId FROM events WHERE eventName = '$title'";
+        $stmt = $user->runQuery($sql);
+        $stmt->execute();
+
+        $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+        $event_id = $userRow['eventId'];
+
+        $sql = "INSERT INTO eventParticipant VALUES ('$event_id', '$user_id')";
+        $stmt = $user->runQuery($sql);
+        $stmt->execute();
+    }
+?>
+
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -61,9 +93,6 @@
     </div><!--container-->
 </header><!--header-->
 
-
-
-
 <!-- ******Steps Section****** -->
 <section class="steps section">
 
@@ -90,9 +119,21 @@
                                     <span id="check-e"></span>
                                 </div>
                                 <div class="form-group">
+                                    Capacity<span>*</span>
+                                    <label>
+                                        <select name="capOption" size="0" id="eType" style="width: 10em">
+                                            <option selected="selected" value="">Number</option>
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                        </select>
+                                    </label>
+
+                                    <span id="check-e"></span>
                                     Categories<span>*</span>
                                     <label>
-                                        <select size="0" id="eType" style="width: 20em">
+                                        <select name="taskOption" size="0" id="eType" style="width: 10em">
                                             <option selected="selected" value="">All Activities</option>
                                             <option>BBQ</option>
                                             <option>Walking Dog</option>

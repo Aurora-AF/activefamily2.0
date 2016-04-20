@@ -1,7 +1,11 @@
 <?php
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
+<<<<<<< HEAD
+require_once("../UserManagement/class.user.php");
+=======
 require_once("../user/class.user.php");
+>>>>>>> 27248af170a18f1cb2ee6f73396db87df4693cfd
 $login = new USER();
 if($login->is_loggedin()) : ?>
     <style type="text/css">
@@ -24,6 +28,7 @@ if($login->is_loggedin()) : ?>
 <!--Php can get latitude and longitude of category from previous map-->
 <?php
 $user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
+echo $user_id;
 
 $stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
@@ -227,7 +232,7 @@ if ($lat!=null&&$lng!=null){
                     <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
                     <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="nav-item"><a href="http://localhost:8888/active%20family/Login-Signup-PDO-OOP/index.php" id="register">Log in</a></li>
+                    <li class="nav-item"><a href="http://localhost:8888/activefamily2.0/UserManagement/index.php" id="register">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
@@ -243,7 +248,7 @@ if ($lat!=null&&$lng!=null){
     </div><!--container-->
 </header><!--header-->
 
-
+<a href="">
 
 <!-- ******Steps Section****** -->
 <section class="steps section">
