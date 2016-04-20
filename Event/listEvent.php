@@ -5,7 +5,7 @@
 $username = "root";
 $password = "root";
 $hostname = "localhost";
-$dbname = "Events";
+$dbname = "event";
 
 //connection to the database
 try {
