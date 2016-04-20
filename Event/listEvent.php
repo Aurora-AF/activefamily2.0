@@ -97,19 +97,19 @@ catch(PDOException $e) {
 <section class="steps section">
     <div class="container" >
 
-            <div class='row well'>
-                    <table id='event' class="table table-striped table-bordered" style="width: 100%">
+            <div class='row'>
+                    <table id='event' class="table table-striped table-bordered" style="width: 10%">
                         <thead>
                         <tr>
-                            <th>Number</th>
                             <th>Name</th>
-                            <th>Description</th>
                             <th>Type</th>
-                            <th>Address</th>
                             <th>Suburb</th>
-                            <th>Participate</th>
                             <th>Capacity</th>
+                            <th>Participant</th>
                             <th>Date</th>
+                            <th>Edit</th>
+                            <th>Cancel</th>
+                            <th>Join</th>
                         </tr>
                         </thead>
 
@@ -119,16 +119,37 @@ catch(PDOException $e) {
                             ?>
                             <tr>
                                 <td>
-                                    <?php echo $val['eventId'];?>
-                                </td>
-                                <td>
                                     <?php echo $val['eventName'];?>
                                 </td>
                                 <td>
-                                    <?php echo $val['eventDescription'];?>
+                                    <?php echo $val['type'];?>
                                 </td>
                                 <td>
-                                    <?php echo $val['type'];?>
+                                    <?php echo $val['suburb'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['capacity'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['paticipan'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['date'];?>
+                                </td>
+                                <td class="form-group">
+                                        <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+                                            <i class="glyphicon glyphicon-log-in"></i> Edit
+                                        </button>
+                                    </td>
+                                <td class="form-group">
+                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+                                        <i class="glyphicon glyphicon-log-in"></i> Cancel
+                                    </button>
+                                </td>
+                                <td class="form-group">
+                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+                                        <i class="glyphicon glyphicon-log-in"></i> Join
+                                    </button>
                                 </td>
                                 <td>
                                     <button>view</button>
@@ -141,15 +162,16 @@ catch(PDOException $e) {
 
                         <tfoot>
                         <tr>
-                            <th>Number</th>
                             <th>Name</th>
-                            <th>Description</th>
                             <th>Type</th>
-                            <th>Address</th>
                             <th>Suburb</th>
-                            <th>Participate</th>
                             <th>Capacity</th>
+                            <th>participant</th>
                             <th>Date</th>
+                            <th>Edit</th>
+                            <th>Cancel</th>
+                            <th>Join</th>
+
                         </tr>
                         </tfoot>
                     </table>

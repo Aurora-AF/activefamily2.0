@@ -3,6 +3,9 @@
  */
 $(document).ready(function () {
     // $('#event').DataTable();
+    // $('#event').DataTable( {
+    //     "stripeClasses": [ 'odd-row', 'even-row' ]
+    // } );
     var table = $('#event').DataTable();
 
     $('#event tfoot th').each(function(){
