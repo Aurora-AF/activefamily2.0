@@ -45,19 +45,32 @@ if(isset($_POST['btn-signup']))
 			}
 			else
 			{
-				if($user->register($uname,$umail,$upass)){	
+				$url = 'https://www.google.com/recaptcha/api/siteverify';
+				$privatekey = "6LfxyB0TAAAAAAT-My5Ly8db3LU1i4-ahGI1Ex-m";
+
+				$response = file_get_contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+
+				$data = json_decode($response);
+
+				if(isset($data->success) && $data->success == 1) {
+					$user->register($uname,$umail,$upass);
 					$user->redirect('sign-up.php?joined');
+				}else {
+					$error[] = "Captcha fails";
 				}
+
 			}
 		}
 		catch(PDOException $e)
 		{
 			echo $e->getMessage();
 		}
-	}	
+	}
 }
 
 ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -66,6 +79,7 @@ if(isset($_POST['btn-signup']))
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="style.css" type="text/css"  />
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -106,14 +120,19 @@ if(isset($_POST['btn-signup']))
             	<input type="password" class="form-control" name="txt_upass" placeholder="Enter Password" />
             </div>
             <div class="clearfix"></div><hr />
+			<div class="form-group">
+				<div class="g-recaptcha" data-sitekey="6LfxyB0TAAAAAIdTgHD_v6UbuvWvFVLl55cgmXkD"></div>
+			</div>
             <div class="form-group">
-            	<button type="submit" class="btn btn-primary" name="btn-signup">
+            	<button id="submitBtn" type="submit" class="btn btn-primary" name="btn-signup">
                 	<i class="glyphicon glyphicon-open-file"></i>&nbsp;SIGN UP
                 </button>
             </div>
             <br />
             <label>have an account ! <a href="index.php">Sign In</a></label>
+
         </form>
+
        </div>
 </div>
 

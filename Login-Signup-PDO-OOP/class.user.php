@@ -94,5 +94,6 @@ class USER
 		unset($_SESSION['user_session']);
 		return true;
 	}
+
 }
 ?>
