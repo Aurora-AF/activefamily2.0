@@ -54,19 +54,6 @@ catch(PDOException $e) {
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-   <!-- <script src="js/jquery.js"></script> -->
-
-    <!--Css os tabpane-->
-
-
-    <!--data table-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!--     JQuery Reference, If you have added jQuery reference in your master page then ignore, else include this too with the below reference-->
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
-
 
 </head>
 
@@ -108,107 +95,67 @@ catch(PDOException $e) {
     <div class="container">
 
             <div class='row well'>
-                <div class="col-md-3">
-                        <input class="form-control keyword" maxlength="45" id="searchEvent" type="text" placeholder="e.g. Event Name" onkeydown="if(event.keyCode==13){search();return false;}">
-                </div>
-                <div class="col-md-3">
-                        <input class="form-control keyword" maxlength="45" id="searchSuburb" type="text" placeholder="e.g. Suburb" onkeydown="if(event.keyCode==13){search();return false;}">
-                </div>
-                <div class="col-md-3">
-                        <select class="form-control selecter" name="activities" id="search-activity">
-                            <option selected="selected" value="">All Activities</option>
-                            <option value="aBasketball">Basketball </option>
-                            <option value="aBBQ">BBQ </option>
-                        </select>
-                </div>
-                <div class="col-md-3">
-                        <a class='btn btn-primary btn-lg' style="width: 100%">
-                            <i class="glyphicon glyphicon-search" id="direct"></i>
-                        </a>
-                </div>
-            </div>
+                    <table id='event' style="width: 100%">
+                        <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Address</th>
+                            <th>Suburb</th>
+                            <th>Participate</th>
+                            <th>Capacity</th>
+                            <th>Date</th>
+                        </tr>
+                        </thead>
 
-                                <table id='event' style="width: 100%">
-                                    <thead>
-                                    <tr>
-                                        <th>Number</th>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Type</th>
-                                        <th>Address</th>
-                                        <th>Suburb</th>
-                                        <th>Participate</th>
-                                        <th>Capacity</th>
-                                        <th>Date</th>
-                                    </tr>
-                                    </thead>
-                                    <?php
-                                        foreach ($list as $val) {
-                                    ?>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <?php echo $val['eventId']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['eventName']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['eventDescription']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['type']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['address']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['suburb']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['participate']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['capacity']; ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $val['date']; ?>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                    <?php } ?>
+                        <tbody>
+                        <?php
+                        foreach ($list as $val){
+                            ?>
+                            <tr>
+                                <td>
+                                    <?php echo $val['eventId'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['eventName'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['eventDescription'];?>
+                                </td>
+                                <td>
+                                    <?php echo $val['type'];?>
+                                </td>
+                            </tr>
+                        <?php } ?>
 
-                                    <tfoot>
-                                    <tr>
-                                        <th>Number</th>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Type</th>
-                                        <th>Address</th>
-                                        <th>Suburb</th>
-                                        <th>Participate</th>
-                                        <th>Capacity</th>
-                                        <th>Date</th>
-                                    </tr>
-                                    </tfoot>
-                                    </table>
+                        </tbody>
 
 
+                        <tfoot>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Address</th>
+                            <th>Suburb</th>
+                            <th>Participate</th>
+                            <th>Capacity</th>
+                            <th>Date</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+                    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-
-
-
+                    <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+                
         </div>
     </div>
 </section>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#event').dataTable();
-    });
-</script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf8" src="js/table.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,8 @@
  * Created by LeiZhang on 20/04/2016.
  */
 $(document).ready(function () {
-    var table = $('#event').dataTable();
+    // $('#event').DataTable();
+    var table = $('#event').DataTable();
 
     $('#event tfoot th').each(function(){
         var title = $('#event thead th').eq($(this).index()).text();
@@ -18,6 +19,6 @@ $(document).ready(function () {
         });
     });
 
-    });
+     });
 
 
