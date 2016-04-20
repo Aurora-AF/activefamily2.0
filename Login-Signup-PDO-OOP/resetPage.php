@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once('class.user.php');
+require_once('PHPMailer-master/class.phpmailer.php');
+require_once('PHPMailer-master/class.smtp.php');
+
 $user = new User();
 
 if(isset($_POST['btn-reset']))
@@ -54,26 +57,41 @@ function getRandomString($length)
 }
 
 function mailresetlink($to,$token){
+    $mail = new PHPMailer();
+    $mail->IsSMTP();
+    $mail->SMTPDebug = 1;
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 465;
+    $mail->IsHTML(true);
+    $mail->Username = "auroraemailtest@gmail.com";
+    $mail->Password = "ma91814@.";
     $subject = "Forgot Password on active-family.net";
     $uri = 'http://'. $_SERVER['HTTP_HOST'] ;
     $message = '
-<html>
-<head>
-<title>Forgot Password For active-family.net</title>
-</head>
-<body>
-<p>Click on the given link to reset your password <a href="'.$uri.'/resetPassword.php?token='.$token.'">Reset Password</a></p>
+        <html>
+        <head>
+        <title>Forgot Password For active-family.net</title>
+        </head>
+        <body>
+        <p>Click on the given link to reset your password <a href="'.$uri.'/active%20family/Login-Signup-PDO-OOP/resetPassword.php?token='.$token.'">Reset Password</a></p>
 
-</body>
-</html>
-';
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-    $headers .= 'From: Admin<kricjma83@gmail.com>' . "\r\n";
-    $headers .= 'Cc: Admin@example.com' . "\r\n";
+        </body>
+        </html>
+        ';
+    $mail->Body = $message;
+    $mail->AddAddress($to);
+    $mail->Subject = $subject;
+    $mail->setFrom("auroraemailtest@gmail.com");
+    $mail->SMTPDebug = false;
 
-    if(mail($to,$subject,$message,$headers)){
+
+    if($mail->send()){
         echo "We have sent the password reset link to your  email id <b>".$to."</b>";
+    }
+    else {
+        //echo "Mail Error: " . $mail->ErrorInfo;
     }
 }
 
