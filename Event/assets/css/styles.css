@@ -3473,5 +3473,8 @@ select {
   .bg-slider-wrapper {
     position: fixed;
   }
+
+  dt{border-top:1px solid #000;}
+  dd{border-bottom:1px solid #000;}
 }
 /* Large devices (large desktops, 1200px and up) */

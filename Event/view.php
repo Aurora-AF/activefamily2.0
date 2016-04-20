@@ -1,7 +1,11 @@
-
-<!--Template from: http://derekeder.com/searchable_map_template-->
-<!--Php can latitude and longitude of category from previous map-->
 <?php
+///**
+// * Created by PhpStorm.
+// * User: Tefo
+// * Date: 21/04/2016
+// * Time: 2:42 AM
+// */
+$eventId = $_GET['eventId'];
 $username = "root";
 $password = "root";
 $hostname = "localhost";
@@ -9,20 +13,24 @@ $dbname = "event";
 
 //connection to the database
 try {
+
     $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-    $sql = "SELECT * FROM events";
+    $sql = "SELECT * FROM events where eventId =".$eventId;
     $stmt = $pdo->query($sql);
     $eventIDArray = array();
     $i = 0;
-    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $list = $stmt->fetch(PDO::FETCH_ASSOC);
 
 }
 catch(PDOException $e) {
     echo $e->getMessage();
 }
 
-?>
+//print_r(array_values($list));
+//
+//echo "<b>".$eventId."</b>"
 
+?>
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -97,91 +105,54 @@ catch(PDOException $e) {
 <section class="steps section">
     <div class="container" >
 
-            <div class='row'>
-                    <table id='event' class="table table-striped table-bordered" style="width: 10%">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Suburb</th>
-                            <th>Capacity</th>
-                            <th>Participant</th>
-                            <th>Date</th>
-                            <th>Edit</th>
-                            <th>Cancel</th>
-                            <th>Join</th>
-                        </tr>
-                        </thead>
-
-                        <tbody>
-                        <?php
-                        foreach ($list as $val){
-                            ?>
-                            <tr>
-                                <td>
-                                    <?php echo $val['eventName'];?>
-                                </td>
-                                <td>
-                                    <?php echo $val['type'];?>
-                                </td>
-                                <td>
-                                    <?php echo $val['suburb'];?>
-                                </td>
-                                <td>
-                                    <?php echo $val['capacity'];?>
-                                </td>
-                                <td>
-                                    <?php echo $val['paticipan'];?>
-                                </td>
-                                <td>
-                                    <?php echo $val['date'];?>
-                                </td>
-                                <td class="form-group">
-                                        <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                            <i class="glyphicon glyphicon-log-in"></i> Edit
-                                        </button>
-                                    </td>
-                                <td class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                        <i class="glyphicon glyphicon-log-in"></i> Cancel
-                                    </button>
-                                </td>
-                                <td class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                        <i class="glyphicon glyphicon-log-in"></i> Join
-                                    </button>
-                                </td>
-                            </tr>
-                        <?php } ?>
-
-                        </tbody>
+<div class="events view">
+    <h2>Event Details</h2>
+<dl class="table table-striped table-bordered">
+    <dt><?php echo "Event title"; ?></dt>
+    <dd>
+        <?php echo $list['eventName']; ?>
+        &nbsp;
+    </dd>
+    <dt><?php echo "Event Description"; ?></dt>
+    <dd>
+        <?php echo $list['eventDescription']; ?>
+        &nbsp;
+    </dd>
+    <dt><?php echo "Category"; ?></dt>
+    <dd>
+        <?php echo $list['type']; ?>
+        &nbsp;
+    </dd>
+    <dt><?php echo "Location"; ?></dt>
+    <dd>
+        <?php echo $list['address']; ?>
+        &nbsp;
+    </dd>
+    <dt><?php echo "Suburb"; ?></dt>
+    <dd>
+        <?php echo $list['suburb']; ?>
+        &nbsp;
+    </dd>
+    <dt><?php echo "Capacity"; ?></dt>
+    <dd>
+        <?php echo $list['capacity']; ?>
+        &nbsp;
+    </dd>
 
 
-                        <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Suburb</th>
-                            <th>Capacity</th>
-                            <th>participant</th>
-                            <th>Date</th>
-                            <th>Edit</th>
-                            <th>Cancel</th>
-                            <th>Join</th>
 
-                        </tr>
-                        </tfoot>
-                    </table>
-                    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <dt><?php echo "Date and time"; ?></dt>
+    <dd>
+        <?php echo date('d-m-Y G:i', strtotime($list['date'])); ?>
+        &nbsp;
+    </dd>
+</dl>
+<br/>
 
-                    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-                    <script type="text/javascript" charset="utf8" src="js/table.js"></script>
-                
-        </div>
     </div>
-</section>
+        </div>
 
+    </section>
 </body>
 </html>
-
