@@ -91,7 +91,7 @@ if(isset($_POST['btn-login']))
         </div>
       	<br />
             <label>Don't have account yet ! <a href="sign-up.php">Sign Up</a></label>
-            <label>Forget Your Password by Your Email! <a href="resetPassword.php">Reset</a></label>
+            <label>Forget Your Password by Your Email! <a href="resetPage.php">Reset</a></label>
       </form>
 
     </div>
