@@ -25,7 +25,9 @@ catch(PDOException $e) {
     <title>Active Family</title>
     <!-- Meta -->
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"/>
+<!--    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"/>-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css"/>
 
 
 </head>
@@ -40,7 +42,7 @@ catch(PDOException $e) {
 
 
 
-        <table id='event' style="width: 100%">
+        <table id='event' class="" style="width: 100%">
             <thead>
             <tr>
                 <th>Number</th>
@@ -102,17 +104,23 @@ catch(PDOException $e) {
 
 
 
-<!--<script type="text/javascript">-->
-<!--    $(document).ready(function () {-->
-<!--        $('#event').dataTable();-->
-<!--    });-->
-<!--</script>-->
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#event').dataTable();
+    });
+</script>
+<!--        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<!---->
+<!--        <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>-->
+<!---->
+<!--        <script type="text/javascript" charset="utf8" src="js/table.js"></script>-->
 
-        <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-        <script type="text/javascript" charset="utf8" src="js/table.js"></script>
-
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+<!--        <script type="text/javascript" charset="utf8" src="js/table.js"></script>-->
 </body>
 </html>
 

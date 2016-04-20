@@ -28,7 +28,7 @@ catch(PDOException $e) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Active Family</title>
     <!-- Meta -->
@@ -49,6 +49,9 @@ catch(PDOException $e) {
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -92,10 +95,10 @@ catch(PDOException $e) {
 
 <!-- ******Steps Section****** -->
 <section class="steps section">
-    <div class="container">
+    <div class="container" >
 
             <div class='row well'>
-                    <table id='event' style="width: 100%">
+                    <table id='event' class="table table-striped table-bordered" style="width: 100%">
                         <thead>
                         <tr>
                             <th>Number</th>
