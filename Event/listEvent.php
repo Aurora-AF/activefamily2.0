@@ -15,10 +15,7 @@ try {
     $eventIDArray = array();
     $i = 0;
     $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    foreach($list as $val) {
-        $eventIDArray[$i] = $val['eventId'];
-        $i++;
-    }
+
 }
 catch(PDOException $e) {
     echo $e->getMessage();
@@ -31,6 +28,7 @@ catch(PDOException $e) {
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Active Family</title>
     <!-- Meta -->
@@ -58,7 +56,7 @@ catch(PDOException $e) {
     <![endif]-->
     <script src="js/jquery.js"></script>
 
-
+    <!--Css os tabpane-->
     <link type="text/css" rel="stylesheet" href="css/tab.webfx.css" />
     <script type="text/javascript" src="js/webfxlayout.js"></script>
     <script type="text/javascript" src="js/tabpane.js"></script>
@@ -105,86 +103,83 @@ catch(PDOException $e) {
         <div class='container-fluid'>
             <div class='row'>
                 <div class="col-md-3">
-                    <div class="well">
                         <input class="form-control keyword" maxlength="45" id="searchEvent" type="text" placeholder="e.g. Event Name" onkeydown="if(event.keyCode==13){search();return false;}">
-                    </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="well">
                         <input class="form-control keyword" maxlength="45" id="searchSuburb" type="text" placeholder="e.g. Suburb" onkeydown="if(event.keyCode==13){search();return false;}">
-                    </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="well">
                         <select class="form-control selecter" name="activities" id="search-activity">
                             <option selected="selected" value="">All Activities</option>
                             <option value="aBasketball">Basketball </option>
                             <option value="aBBQ">BBQ </option>
                         </select>
-                    </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="well">
                         <a class='btn btn-primary btn-lg' style="width: 100%">
                             <i class="glyphicon glyphicon-search" id="direct"></i>
                         </a>
-                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <div class="well">
-                    </div>
-                </div>
 
-                <div class="col-md-8">
-                    <div class="well">
-                        <div class="tab-pane" id="tabPane1">
-
-                            <script type="text/javascript">
-                                tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
-                                //tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
-                                //alert( 0 )
-                            </script>
-
-                            <div class="tab-page" id="tabPage1">
-                                <h2 class="tab">Event List</h2>
-
-                                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
-                                <?php
-                                print "<table id='record'>\n
-	                                <tr>
-		                                <th>Topic</th>
-			                            <th>Outline</th>
-			                            <th>Update Time</th>
-		                            </tr>\n";
-                                ?>
-
+                                <table id='event'>
+                                    <thead>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Type</th>
+                                        <th>Address</th>
+                                        <th>Suburb</th>
+                                        <th>Participate</th>
+                                        <th>Capacity</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </thead>
+                                    <?php
+                                        foreach ($list as $val) {
+                                    ?>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <?php echo $val['eventId']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['eventName']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['eventDescription']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['type']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['address']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['suburb']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['participate']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['capacity']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $val['date']; ?>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <?php } ?>
                             </div>
-
-                            <div class="tab-page" id="tabPage2">
-                                <h2 class="tab">Map</h2>
-
-                                <script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage2" ) );</script>
-
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-                                <br />
-                                <br />
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-                                This is text of tab 2. This is text of tab 2. This is text of tab 2.
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 </body>
 </html>

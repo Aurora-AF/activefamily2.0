@@ -2,6 +2,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <!DOCTYPE html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Active Family</title>
     <!-- Meta -->
