@@ -54,12 +54,19 @@ catch(PDOException $e) {
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="js/jquery.js"></script>
+   <!-- <script src="js/jquery.js"></script> -->
 
     <!--Css os tabpane-->
-    <link type="text/css" rel="stylesheet" href="css/tab.webfx.css" />
-    <script type="text/javascript" src="js/webfxlayout.js"></script>
-    <script type="text/javascript" src="js/tabpane.js"></script>
+
+
+    <!--data table-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--     JQuery Reference, If you have added jQuery reference in your master page then ignore, else include this too with the below reference-->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+
 
 </head>
 
@@ -100,8 +107,7 @@ catch(PDOException $e) {
 <section class="steps section">
     <div class="container">
 
-        <div class='container-fluid'>
-            <div class='row'>
+            <div class='row well'>
                 <div class="col-md-3">
                         <input class="form-control keyword" maxlength="45" id="searchEvent" type="text" placeholder="e.g. Event Name" onkeydown="if(event.keyCode==13){search();return false;}">
                 </div>
@@ -121,11 +127,8 @@ catch(PDOException $e) {
                         </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well">
 
-                                <table id='event'>
+                                <table id='event' style="width: 100%">
                                     <thead>
                                     <tr>
                                         <th>Number</th>
@@ -174,12 +177,38 @@ catch(PDOException $e) {
                                     </tr>
                                     </tbody>
                                     <?php } ?>
-                            </div>
-                </div>
-            </div>
+
+                                    <tfoot>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Type</th>
+                                        <th>Address</th>
+                                        <th>Suburb</th>
+                                        <th>Participate</th>
+                                        <th>Capacity</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </tfoot>
+                                    </table>
+
+
+
+
+
+
+
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#event').dataTable();
+    });
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="js/table.js"></script>
 
 </body>
 </html>

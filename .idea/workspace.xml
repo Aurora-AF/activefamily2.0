@@ -2,519 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60022092-e3df-4916-8584-b19d5455fafc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-footer-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-header-small-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-mobile-headline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-screen-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/background/bg-screen-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/flexslider/carousel-arrow-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/images/flexslider/carousel-arrow-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/blog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/contact.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/min/main-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/js/vimeo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/FitVids/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/FitVids/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/FitVids/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/FitVids/jquery.fitvids.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/FitVids/tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/back-to-top.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap-hover-dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.hound.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/README.mdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/flexslider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/fonts/flexslider-icon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/images/bg_play_pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/jquery.flexslider-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/flexslider/jquery.flexslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/gmaps/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/append.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/basics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/data-uri.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/blue-shell.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/bowser-jr.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/img/thunder-cloud.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/jquery-fail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/jquery-success.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/local-files.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/no-images.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/non-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/selector-string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/single-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/imagesloaded/test/tests.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/LICENSE-MIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/jquery.placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery-placeholder/tests/tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/config.codekit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/normalize.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/css/rrssb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/facebook.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/github.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/google_plus.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/instagram.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/linkedin.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/pinterest.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/pocket.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/reddit.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/tumblr.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/icons/youtube.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/rrssb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/rrssb.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/vendor/jquery.1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/facebook-share.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/rrssb-preview.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/media/rrssb-preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/scss/demo.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/assets/plugins/rrssb/scss/rrssb.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/createEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/css/forms.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/css/tab.webfx.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/dblogin.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/jquery-1.11.3-jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/bootstrap.min.map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/jquery.address.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/tabpane.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/js/webfxlayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/listEvent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Event/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/.scrutinizer.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/PHPMailerAutoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/VERSION" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/changelog.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/class.phpmailer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/class.phpmaileroauth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/class.phpmaileroauthgoogle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/class.pop3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/class.smtp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/Callback_function_notes.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/DomainKeys_notes.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/Note_for_SMTP_debugging.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/extending.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/faq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/generatedocs.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/docs/pop3_article.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/code_generator.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/contents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/contentsutf8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/exceptions.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/gmail.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/gmail_xoauth.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/images/phpmailer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/images/phpmailer_mini.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/mail.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/mailing_list.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/pop_before_smtp.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/scripts/XRegExp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/scripts/shAutoloader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/scripts/shBrushPhp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/scripts/shCore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/scripts/shLegacy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/send_file_upload.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/send_multiple_file_upload.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/sendmail.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/signed-mail.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/smtp.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/smtp_check.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/smtp_no_auth.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/ssl_options.phps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCore.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreDefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreDjango.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreEclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreEmacs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreFadeToGrey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreMDUltra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreMidnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shCoreRDark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeAppleScript.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeDefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeDjango.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeEclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeEmacs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeFadeToGrey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeMDUltra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeMidnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeRDark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/shThemeVisualStudio.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/examples/styles/wrapping.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/extras/EasyPeasyICS.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/extras/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/extras/htmlfilter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/extras/ntlm_sasl_client.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/get_oauth_token.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-am.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-az.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-be.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-bg.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-br.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ca.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ch.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-cz.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-de.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-dk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-el.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-eo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-es.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-et.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-fa.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-fi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-fo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-fr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-gl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-he.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-hr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-hu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-id.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-it.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ja.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ka.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ko.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-lt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-lv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ms.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-nl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-no.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-pl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-pt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ro.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-ru.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-se.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-si.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-sk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-sl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-sr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-tr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-uk.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-vi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-zh.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/language/phpmailer.lang-zh_cn.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/fakepopserver.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/fakesendmail.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/phpmailerLangTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/phpmailerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/runfakepopserver.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/test_callback.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/test/testbootstrap-dist.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/PHPMailer-master/travis.phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-footer-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-footer-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-footer-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-small-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-small-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-small-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-small-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-header-small-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-mobile-headline.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-screen-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/background/bg-screen-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/flexslider/carousel-arrow-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/images/flexslider/carousel-arrow-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/blog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/contact.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/min/main-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/js/vimeo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/FitVids/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/FitVids/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/FitVids/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/FitVids/jquery.fitvids.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/FitVids/tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/back-to-top.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap-hover-dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/.hound.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/README.mdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/flexslider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/fonts/flexslider-icon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/fonts/flexslider-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/fonts/flexslider-icon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/fonts/flexslider-icon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/images/bg_play_pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/jquery.flexslider-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/flexslider/jquery.flexslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/gmaps/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/imagesloaded.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/imagesloaded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/imagesloaded.pkgd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/append.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/basics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/data-uri.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/img/blue-shell.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/img/bowser-jr.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/img/thunder-cloud.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/jquery-fail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/jquery-success.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/local-files.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/no-images.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/non-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/selector-string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/single-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/imagesloaded/test/tests.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-migrate-1.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/LICENSE-MIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/jquery.placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery-placeholder/tests/tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/config.codekit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/css/normalize.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/css/rrssb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/facebook.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/github.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/google_plus.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/instagram.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/linkedin.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/pinterest.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/pocket.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/reddit.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/tumblr.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/icons/youtube.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/js/rrssb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/js/rrssb.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/js/vendor/jquery.1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/media/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/media/facebook-share.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/media/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/media/rrssb-preview.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/media/rrssb-preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/scss/demo.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/assets/plugins/rrssb/scss/rrssb.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/class.user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/css/tab.webfx.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/dbconfig.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/dblogin.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/home.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/jquery-1.11.3-jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/bootstrap.min.map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/jquery.address.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/tabpane.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/js/webfxlayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/logout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/resetPage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/resetPassword.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/sign-up.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Login-Signup-PDO-OOP/style.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/js/func.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/js/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Event/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Event/listEvent.php" afterPath="$PROJECT_DIR$/Event/listEvent.php" />
     </list>
     <ignored path="activefamily2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -535,12 +28,84 @@
     <favorites_list name="activefamily2.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="createEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/createEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-516">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/listEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1461154837000" expanded="true" signature="355:375" placeholder="SELECT * FRO... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="e.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Event/e.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/js/table.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="func.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/js/func.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -569,8 +134,12 @@
         <option value="$PROJECT_DIR$/Login-Signup-PDO-OOP/profile.php" />
         <option value="$PROJECT_DIR$/Login-Signup-PDO-OOP/info.php" />
         <option value="$PROJECT_DIR$/Login-Signup-PDO-OOP/login.php" />
-        <option value="$PROJECT_DIR$/Event/listEvent.php" />
         <option value="$PROJECT_DIR$/Login-Signup-PDO-OOP/index.php" />
+        <option value="$PROJECT_DIR$/Event/listEvent.php" />
+        <option value="$PROJECT_DIR$/Event/js/table.js" />
+        <option value="$PROJECT_DIR$/Event/js/func.js" />
+        <option value="$PROJECT_DIR$/Event/test.html" />
+        <option value="$PROJECT_DIR$/Event/e.html" />
       </list>
     </option>
   </component>
@@ -584,9 +153,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
+    <option name="x" value="647" />
     <option name="y" value="23" />
-    <option name="width" value="1229" />
+    <option name="width" value="631" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -632,6 +201,52 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Event" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activefamily" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Event" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -644,19 +259,20 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/map" />
+      <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$/map/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Event/css" />
       <recent name="$PROJECT_DIR$/Event" />
       <recent name="$PROJECT_DIR$/Event/js" />
       <recent name="$PROJECT_DIR$/map/js" />
       <recent name="$PROJECT_DIR$/map/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/map" />
-      <recent name="$PROJECT_DIR$/assets/js" />
-      <recent name="$PROJECT_DIR$/map/js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index1.html">
@@ -742,22 +358,22 @@
       <workItem from="1461050639722" duration="767000" />
       <workItem from="1461071082819" duration="4579000" />
       <workItem from="1461145939449" duration="3000" />
-      <workItem from="1461145945964" duration="678000" />
+      <workItem from="1461145945964" duration="10958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110391000" />
+    <option name="totallyTimeSpent" value="120671000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="23" width="1229" height="773" extended-state="0" />
-    <editor active="false" />
+    <frame x="647" y="23" width="631" height="773" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1716843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.025356578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3068182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -807,28 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/map/assets/plugins/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="58674" selection-start-line="4" selection-start-column="58674" selection-end-line="4" selection-end-column="58674" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="2248" column="25" selection-start-line="2248" selection-start-column="19" selection-end-line="2248" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map/dog.html" />
     <entry file="file://$PROJECT_DIR$/map/drink.html" />
     <entry file="file://$PROJECT_DIR$/map/index.html" />
     <entry file="file://$PROJECT_DIR$/index1.html">
@@ -1026,23 +620,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Event/css/info.php" />
-    <entry file="file://$PROJECT_DIR$/map/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3780">
-          <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/login.php" />
-    <entry file="file://$PROJECT_DIR$/map/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1071,27 +649,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1447">
+          <caret line="108" column="36" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3585">
+          <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
+          <folding>
+            <marker date="1461145893000" expanded="true" signature="662:704" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <marker date="1461145893000" expanded="true" signature="663:705" placeholder="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Event/createEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+        <state relative-caret-position="-516">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/js/func.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/js/table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Event/listEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1461154837000" expanded="true" signature="355:375" placeholder="SELECT * FRO... events" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login-Signup-PDO-OOP/index.php">
+    <entry file="file://$PROJECT_DIR$/Event/e.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1447">
-          <caret line="108" column="36" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
