@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
-require_once("../Login-Signup-PDO-OOP/class.user.php");
+require_once("../user/class.user.php");
 $login = new USER();
 if($login->is_loggedin()) : ?>
     <style type="text/css">
@@ -106,7 +106,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
         </h1><!--logo-->
         <nav class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" id="map-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
