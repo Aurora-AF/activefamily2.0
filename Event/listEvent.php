@@ -130,6 +130,9 @@ catch(PDOException $e) {
                                 <td>
                                     <?php echo $val['type'];?>
                                 </td>
+                                <td>
+                                    <button>view</button>
+                                </td>
                             </tr>
                         <?php } ?>
 
