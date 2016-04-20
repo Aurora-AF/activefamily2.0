@@ -262,11 +262,11 @@ select {
   outline: none;
 }
 .header .main-nav .navbar-toggle .icon-bar {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: grey;
   height: 3px;
 }
 .header .main-nav .navbar-toggle:hover .icon-bar {
-  background-color: #fff;
+  background-color: #ec6952;
 }
 .header .main-nav .nav .nav-item {
   font-weight: normal;
@@ -3472,6 +3472,9 @@ select {
   }
   .bg-slider-wrapper {
     position: fixed;
+  }
+  #navbar-toggle {
+    background-color: #000;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
