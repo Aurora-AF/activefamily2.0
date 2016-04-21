@@ -224,6 +224,8 @@
                     </tr>
                 </table>
 
+
+
             </div>
 
         </div>
@@ -335,7 +337,6 @@ if(isset($_POST['update'])) {
 }
 ?>
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
 
 <!-- ******FOOTER****** -->
 <footer class="footer">

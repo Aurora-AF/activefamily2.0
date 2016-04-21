@@ -12,7 +12,7 @@ if($login->is_loggedin()) : ?>
     </style>
 
 <?php else: ?>
-<meta http-equiv="refresh" content="0; url=../user/index.php" />
+<meta http-equiv="refresh" content="3; url=../user/index.php" />
     <style type="text/css">
         #notlogedin {
             display: none;
@@ -117,8 +117,8 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
-                    <li class="nav-item"><a href="index.php">Venues</a></li>
-                    <li class="active nav-item"><a href="event/index.php">Events</a></li>
+                    <li class="nav-item"><a href="../map/index.php">Venues</a></li>
+                    <li class="active nav-item"><a href="index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item"><a href="../user/index.php" id="register">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
@@ -147,19 +147,20 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
         <div class='col-md-4'>
 
             <div class='well'>
-                <h1 class="title">Please select a category                                 
-                </h1>
+                <p id="register"><b>You need to be loged in create or view event</b>
+                </p>
                 <div id="#notlogedin" >
                 <div class="btn-group">
                     <button class="btn btn-defult dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Category
+                        Event type
                         <span class="caret"></span>
                     </button>
+                    <a class="btn btn-defult dropdown-toggle" href="listEvent.php" >View event</a>
                     <ul class="dropdown-menu">
-                        <li><a href="../map/drink.php">Drink Fountain</a></li>
-                        <li><a href="../map/bbq.php">BBQ</a></li>
-                        <li><a href="../map/dog.php">Dog Friendly Areas</a></li>
-                        <li><a href="../map/bike.php">Bicycle Rails</a></li>
+                        <li><a href="drink.php">Drink Fountain</a></li>
+                        <li><a href="bbq.php">BBQ</a></li>
+                        <li><a href="dog.php">Dog Friendly Areas</a></li>
+                        <li><a href="bike.php">Bicycle Rails</a></li>
                     </ul>
                 </div>
                
