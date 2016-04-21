@@ -16,6 +16,11 @@ try {
     $i = 0;
     $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    $countBbq = "SELECT count(*) as 'bbq' FROM events where type='bbq'";
+    $stmtBbq = $pdo->query($countBbq);
+    $listBbq = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
 }
 catch(PDOException $e) {
     echo $e->getMessage();
@@ -98,6 +103,22 @@ catch(PDOException $e) {
     <div class="container" >
 
             <div class='row'>
+                <div class='col-md-3'>
+                    <div class="well">
+                        <h4>Type</h4>
+                        <hr>
+                        <p>
+                            BBQ<?php echo $listBbq['bbq'];?>
+                        </p>
+                            <p>
+                                Walke the dog
+                            </p>
+
+
+
+                    </div>
+                </div>
+                <div class='col-md-9'>
                     <table id='event' class="table table-striped table-bordered" style="width: 10%">
                         <thead>
                         <tr>
@@ -107,8 +128,7 @@ catch(PDOException $e) {
                             <th>Capacity</th>
                             <th>Participant</th>
                             <th>Date</th>
-                            <th>Edit</th>
-                            <th>Cancel</th>
+                            <th>View</th>
                             <th>Join</th>
                         </tr>
                         </thead>
@@ -118,7 +138,7 @@ catch(PDOException $e) {
                         foreach ($list as $val){
                             ?>
                             <tr>
-                                <td>
+                                <td >
                                     <?php echo $val['eventName'];?>
                                 </td>
                                 <td>
@@ -137,13 +157,8 @@ catch(PDOException $e) {
                                     <?php echo $val['date'];?>
                                 </td>
                                 <td class="form-group">
-                                        <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                            <i class="glyphicon glyphicon-log-in"></i> Edit
-                                        </button>
-                                    </td>
-                                <td class="form-group">
                                     <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                        <i class="glyphicon glyphicon-log-in"></i> Cancel
+                                        <i class="glyphicon glyphicon-log-in"></i> View
                                     </button>
                                 </td>
                                 <td class="form-group">
@@ -165,8 +180,7 @@ catch(PDOException $e) {
                             <th>Capacity</th>
                             <th>participant</th>
                             <th>Date</th>
-                            <th>Edit</th>
-                            <th>Cancel</th>
+                            <th>View</th>
                             <th>Join</th>
 
                         </tr>
@@ -177,6 +191,8 @@ catch(PDOException $e) {
                     <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
                     <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+                </div>
+
                 
         </div>
     </div>

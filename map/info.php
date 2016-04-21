@@ -1,49 +1,46 @@
 <?php
-session_start();
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-<<<<<<< HEAD
-require_once("../UserManagement/class.user.php");
-=======
-require_once("../user/class.user.php");
->>>>>>> 27248af170a18f1cb2ee6f73396db87df4693cfd
-$login = new USER();
-if($login->is_loggedin()) : ?>
-    <style type="text/css">
-        #register {
-            display: none;
-        }
-
-    </style>
-
-<?php else: ?>
-
-    <style type="text/css">
-        #notlogedin {
-            display: none;
-        }
-    </style>
-<?php endif; ?>
-
-<!--Template from: http://derekeder.com/searchable_map_template-->
-<!--Php can get latitude and longitude of category from previous map-->
+//session_start();
+//$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+//require_once("../UserManagement/class.user.php");
+//require_once("../user/class.user.php");
+//$login = new USER();
+//if($login->is_loggedin()) : ?>
+<!--    <style type="text/css">-->
+<!--        #register {-->
+<!--            display: none;-->
+<!--        }-->
+<!---->
+<!--    </style>-->
+<!---->
+<?php //else: ?>
+<!---->
+<!--    <style type="text/css">-->
+<!--        #notlogedin {-->
+<!--            display: none;-->
+<!--        }-->
+<!--    </style>-->
+<?php //endif; ?>
+<!---->
+<!--<!--Template from: http://derekeder.com/searchable_map_template-->-->
+<!--<!--Php can get latitude and longitude of category from previous map-->-->
 <?php
-$user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
-echo $user_id;
-
-$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
-$stmt->execute(array(":user_id"=>$user_id));
-
-$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-
-$lat = $_GET['lat'];
-$lng = $_GET['lng'];
-$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
-$json = file_get_contents($url);
-$data = json_decode($json);
-$address = $data->results['0']->formatted_address;
-$locality = $data->results['0']->address_components['2']->long_name;
-$postcode = $data->results['0']->address_components['5']->long_name;
-?>
+//$user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
+//echo $user_id;
+//
+//$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+//$stmt->execute(array(":user_id"=>$user_id));
+//
+//$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+//
+//$lat = $_GET['lat'];
+//$lng = $_GET['lng'];
+//$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
+//$json = file_get_contents($url);
+//$data = json_decode($json);
+//$address = $data->results['0']->formatted_address;
+//$locality = $data->results['0']->address_components['2']->long_name;
+//$postcode = $data->results['0']->address_components['5']->long_name;
+//?>
 
 <!--Current temperature by using operweathermap api-->
 <?php

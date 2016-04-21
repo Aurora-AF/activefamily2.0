@@ -26,11 +26,12 @@ catch(PDOException $e) {
     echo $e->getMessage();
 }
 
-//print_r(array_values($list));
-//
-//echo "<b>".$eventId."</b>"
+print_r(array_values($list));
+
+echo "<b>".$eventId."</b>"
 
 ?>
+
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -148,8 +149,11 @@ catch(PDOException $e) {
     </dd>
 </dl>
 <br/>
-
-
+    <td class="form-group">
+        <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+            <i class="glyphicon glyphicon-log-in"></i> Join
+        </button>
+    </td>
     </div>
         </div>
 

@@ -8,6 +8,8 @@ $(document).ready(function () {
     // } );
     var table = $('#event').DataTable();
 
+
+
     $('#event tfoot th').each(function(){
         var title = $('#event thead th').eq($(this).index()).text();
         $(this).html('<input type="text" placeholder="Search '+title+'"/>');

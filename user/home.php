@@ -1,19 +1,33 @@
 <?php
-
-	require_once("session.php");
-	
-	require_once("class.user.php");
-	$auth_user = new USER();
-	
-	
-	$user_id = $_SESSION['user_session'];
-	
-	$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
-	$stmt->execute(array(":user_id"=>$user_id));
-	
-	$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-
-?>
+//
+//	require_once("session.php");
+//
+//	require_once("class.user.php");
+//	$auth_user = new USER();
+//    $username = "root";
+//    $password = "root";
+//    $hostname = "localhost";
+//    $dbname = "dblogin";
+//
+//	$user_id = $_SESSION['user_session'];
+//	$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+//	$stmt->execute(array(":user_id"=>$user_id));
+//
+//	$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+//
+//    //connection to the database
+//    try {
+//        $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+//        $sql = "SELECT * FROM events where create_user_id = '$user_id'";
+//        $stmt = $pdo->query($sql);
+//        $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//
+//    }
+//    catch(PDOException $e) {
+//        echo $e->getMessage();
+//    }
+//
+//?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -68,6 +82,68 @@
         <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp; 
         <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
        	<hr />
+        <div class='row'>
+            <table id='event' class="table table-striped table-bordered" style="width: 10%">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Suburb</th>
+                    <th>Capacity</th>
+                    <th>Date</th>
+                    <th>View</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <?php
+                foreach ($list as $val){
+                    ?>
+                    <tr>
+                        <td>
+                            <?php echo $val['eventName'];?>
+                        </td>
+                        <td>
+                            <?php echo $val['type'];?>
+                        </td>
+                        <td>
+                            <?php echo $val['suburb'];?>
+                        </td>
+                        <td>
+                            <?php echo $val['capacity'];?>
+                        </td>
+                        <td>
+                            <?php echo $val['date'];?>
+                        </td>
+                        <td class="form-group">
+                            <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+                                <i class="glyphicon glyphicon-log-in"></i> View
+                            </button>
+                        </td>
+                    </tr>
+                    <?php }?>
+                </tbody>
+
+
+                <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Suburb</th>
+                    <th>Capacity</th>
+                    <th>Date</th>
+                    <th>View</th>
+                </tr>
+                </tfoot>
+            </table>
+            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+            <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+
+            <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+
+        </div>
+
     </div>
 
 </div>
