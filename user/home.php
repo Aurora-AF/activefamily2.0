@@ -61,10 +61,10 @@
 
 
         if($mail->send()){
-            echo "We have sent the CANCEL reminder to your  email id <b>".$to."</b>";
+            //echo "We have sent the CANCEL reminder to your  email id <b>".$to."</b>";
         }
         else {
-            echo "Mail Error: " . $mail->ErrorInfo;
+            //echo "Mail Error: " . $mail->ErrorInfo;
         }
     }
 ?>

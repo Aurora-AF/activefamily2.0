@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once('../user/class.user.php');
 $user_id = $_SESSION['user_session'];
 ///**
 // * Created by PhpStorm.
@@ -7,6 +8,7 @@ $user_id = $_SESSION['user_session'];
 // * Date: 21/04/2016
 // * Time: 2:42 AM
 // */
+$user = new User();
 $eventId = $_GET['eventId'];
 $username = "root";
 $password = "root";
@@ -161,8 +163,8 @@ catch(PDOException $e) {
             $sql = "UPDATE events SET eventName='$title', eventDescription='$desc', capacity='$capacity', date='$date' where eventId='$eventId'";
             $response = $pdo->exec($sql);
             if($response) {
-              //echo '<script type="text/javascript">alert("Successfully Edited!");</script>';
-              header('Location: listEvent.php');
+              echo '<script type="text/javascript">alert("Successfully Edited!");</script>';
+              $user->redirect('listEvent.php');
             }
 
          }
