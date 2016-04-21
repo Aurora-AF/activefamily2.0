@@ -53,7 +53,7 @@ catch(PDOException $e) {
 
 <body style="background-color: #f5f5f5">
 <!-- ******HEADER****** -->
-<header id="header" class="header navbar-fixed-top" style="position: relative;">
+<header id="header" class="header navbar-fixed-top" style="position: relative; background-color: white">
     <div class="container">
         <h1 class="logo">
             <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
@@ -72,12 +72,12 @@ catch(PDOException $e) {
                     <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
                     <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
                     <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                    <li class="active nav-item dropdown" id="notlogedin">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
-                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                            <li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
                         </ul>
                     </li>
                 </ul><!--nav-->
@@ -96,10 +96,10 @@ catch(PDOException $e) {
 
         <label class="h5">welcome : <?php print($userRow['user_name']); ?></label>
         <hr />
-        <h1>
-            <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
-            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a> &nbsp;
-            <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
+        <h2>
+            <a href="home.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> home</a> &nbsp;
+            <a href="profile.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-user"></span> Profile</a>
+        </h2>
         <hr />
         <div class='row'>
             <table id='event' class="table table-striped table-bordered" style="width: 10%">
@@ -165,18 +165,61 @@ catch(PDOException $e) {
                 </tr>
                 </tfoot>
             </table>
-            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-
-            <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-
-            <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+            <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+            <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+            <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+            <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+            <script>$('#event').DataTable({
+                    responsive: true
+                });</script>
 
         </div>
     </div>
 
 </div>
+<!-- ******FOOTER****** -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
+            <div class="row has-divider">
+                <div class="footer-col download col-md-6 col-sm-12 col-xs-12">
+                    <div class="footer-col-inner">
+
+                    </div><!--//footer-col-inner-->
+                </div><!--//download-->
+                <div class="footer-col contact col-md-6 col-sm-12 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Contact us</h3>
+                        <p class="adr clearfix">
+                            <i class="fa fa-map-marker pull-left"></i>
+                                <span class="adr-group pull-left">
+                                    <span class="street-address">Monash University</span><br>
+                                    <span class="region">900 Dandenong Rd</span><br>
+                                    <span class="postal-code">Caulfield East VIC 3145</span><br>
+                                    <span class="country-name">Au</span>
+                                </span>
+                        </p>
+                        <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@active-family.net</a></p>
+                        <a href="https://twitter.com/activeFamily4" class="twitter-follow-button" data-show-count="false">Follow @activeFamily4</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div><!--//footer-col-inner-->
+                </div><!--//contact-->
+            </div>
+        </div><!--//container-->
+    </div><!--//footer-content-->
+    <div class="bottom-bar">
+        <div class="container">
+            <small class="copyright">Copyright @ 2016 <a href="copyright.txt" target="_blank">Active family</a></small>
+        </div><!--//container-->
+    </div><!--//bottom-bar-->
+</footer><!--//footer-->
+
 
 </body>
 </html>
