@@ -222,7 +222,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
             $(function() {
                 var myMap = new MapsLib({
-                    fusionTableId:      "1BRvBgm-mnG7n89P0aB812O61jeHnXot9TvEqSExk",
+                    fusionTableId:      "10Y4xcGTRLBdEhHnaKZyPMlPeKbqH7hpgjJG1OabK",
                     googleApiKey:       "AIzaSyAKWfGBpeBLZ2vVsvEeFdJrOEkVH7sE9Uk",
                     locationColumn:     "Location",
                     map_center:         [-37.8141,144.9633]
@@ -328,7 +328,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
-<script type="text/javascript" src="assets/plugins/bootstrap/js/"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>

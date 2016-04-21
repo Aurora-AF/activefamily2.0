@@ -195,6 +195,7 @@
                         </td>
                         <td>
                             <button type="submit" name="<?php echo $btnEdit[$i]?>" class="btn btn-primary btn-lg">
+                                <a href="../Event/edit.php?eventId=<?php echo $eventId; ?>">
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
