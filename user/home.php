@@ -86,9 +86,9 @@
     <link rel="stylesheet" href="css/custom.css"/>
     <link rel="stylesheet" href="style.css" type="text/css"  />
 
-    <script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.css"/>
 <link rel="stylesheet" href="style.css" type="text/css"  />
-<title>welcome - <?php print($userRow['user_email']); ?></title>
+<title>Welcome - <?php print($userRow['user_email']); ?></title>
 </head>
 
 <body style="background-color: #f5f5f5">
@@ -107,17 +107,17 @@
                     <span class="icon-bar"></span>
                 </button><!--nav-toggle-->
             </div><!--navbar-header-->
-            <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
-                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
-                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.php">Venues</a></li>
+                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="active nav-item dropdown" id="notlogedin">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
-                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                            <li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
                         </ul>
                     </li>
                 </ul><!--nav-->
@@ -136,10 +136,11 @@
     
     	<label class="h5">welcome : <?php print($userRow['user_name']); ?></label>
         <hr />
-        <h1>
-        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
-            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a> &nbsp;
-        <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
+        <h2>
+         &nbsp;
+
+            <a href="joinedEvent.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> Joined Events </a> &nbsp;
+        <a href="profile.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-user"></span> Profile</a></h2>
        	<hr />
         <div class='row'>
             <table id='event' class="table table-striped table-bordered" style="width: 10%">
@@ -192,13 +193,12 @@
                             </button>
                         </td>
                         <td class="form-group">
-                            <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
+                            <button type="submit" name="<?php echo $btnEdit[$i]?>" class="btn btn-primary btn-lg">
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
                             <td class="form-group">
                                 <button type="submit" name="<?php echo $btnCancel[$i]?>" class="btn btn-primary btn-lg">
-                                    <a href="../Event/edit.php?eventId=<?php echo $eventId; ?>">
                                     <i class="glyphicon glyphicon-log-in"></i> Cancel
                                 </button>
                                 <?php
@@ -242,11 +242,18 @@
                 </tr>
                 </tfoot>
             </table>
-            <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-
-            <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-
-            <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+            <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+            <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+            <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+            <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+            <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+            <script>$('#event').DataTable({
+                    responsive: true
+                });</script>
 
 
         </div>
@@ -254,7 +261,6 @@
 
 </div>
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
