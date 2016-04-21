@@ -169,7 +169,7 @@ if($login->is_loggedin()) : ?>
                                 <form action="" method="post">
                                     <td class="form-group">
                                         <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
-                                            <a href="/view.php?eventId=<?php echo $eventId; ?>" style="color: white">
+                                            <a href="view.php?eventId=<?php echo $eventId; ?>" style="color: white">
                                                 <i class="glyphicon glyphicon-log-in"></i>&nbsp; View
                                             </a>
                                         </button>
