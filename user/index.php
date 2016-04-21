@@ -57,7 +57,7 @@ if(isset($_POST['btn-login']))
 </head>
 <body style="background-color: #f5f5f5">
 <!-- ******HEADER****** -->
-<header id="header" class="header navbar-fixed-top" style="position: relative;">
+<header id="header" class="header navbar-fixed-top" style="position: relative; background-color: white">
     <div class="container">
         <h1 class="logo">
             <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
@@ -132,7 +132,7 @@ if(isset($_POST['btn-login']))
                 </button>
             </div>
             <br />
-            <label style="color: #ffa400">Don't have account yet ! <a href="sign-up.php">Sign Up</a></label>
+            <label style="color: #ffa400">Don't have account yet ! <a href="sign-up.php" >Sign Up</a></label>
             <label style="color: #ffa400" >Forget Your Password by Your Email ! <a href="resetPage.php">Reset</a></label>
       </form>
 
