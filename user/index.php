@@ -28,7 +28,7 @@ if(isset($_POST['btn-login']))
 
 
         echo $url;
-        header("Location: /$url");
+        header("Location: user/$url");
 
 
         //header("Location:$url");
