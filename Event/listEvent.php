@@ -1,6 +1,9 @@
 <?php
     session_start();
+    require_once('../user/class.user.php');
+    $user = new USER();
     $user_id = $_SESSION['user_session'];
+
     $hostname = "localhost";
     $db_name = "acac1537_dblogin";
     $username = "acac1537_active";
@@ -8,19 +11,40 @@
 
     //connection to the database
     try {
-        $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+        $pdo = new PDO("mysql:host=$hostname;dbname=$db_name", $username, $password);
         $sql = "SELECT * FROM events ORDER BY date";
         $stmt = $pdo->query($sql);
         $eventIDArray = array();
         $i = 0;
         $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        $sql2 = $user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+        $sql2->execute(array(":user_id"=>$user_id));
+        $userRow=$sql2->fetch(PDO::FETCH_ASSOC);
     }
     catch(PDOException $e) {
         echo $e->getMessage();
     }
 ?>
 
+<?php
+require_once("../user/class.user.php");
+$login = new USER();
+if($login->is_loggedin()) : ?>
+    <style type="text/css">
+        #register {
+            display: none;
+        }
+
+    </style>
+
+<?php else: ?>
+    <style type="text/css">
+        #notlogedin {
+            display: none;
+        }
+    </style>
+<?php endif; ?>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -83,7 +107,16 @@
                     <li class="nav-item"><a href="../map/index.php">Venues</a></li>
                     <li class="active nav-item"><a href="index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.php">About Us</a></li>
-                    <li class="nav-item"><a href="#">Log in</a></li>
+                    <li class="nav-item" id="register"><a href="../user/index.php">Log in</a></li>
+
+                    <li class="nav-item dropdown" id="notlogedin">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->
