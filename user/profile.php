@@ -97,7 +97,8 @@
         <hr />
         
         <h1>
-        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp; 
+        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
+            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a>&nbsp;
         <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
         <hr />
         <p>&nbsp;</p>

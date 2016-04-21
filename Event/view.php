@@ -1,4 +1,6 @@
 <?php
+session_start();
+$user_id = $_SESSION['user_session'];
 ///**
 // * Created by PhpStorm.
 // * User: Tefo
@@ -10,6 +12,7 @@ $username = "root";
 $password = "root";
 $hostname = "localhost";
 $dbname = "dblogin";
+
 
 //connection to the database
 try {
@@ -142,11 +145,35 @@ catch(PDOException $e) {
     </dd>
 </dl>
 <br/>
+    <form actio="" method="post">
     <td class="form-group">
-        <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+        <button type="submit" name="btn-join" class="btn btn-primary btn-lg">
             <i class="glyphicon glyphicon-log-in"></i> Join
         </button>
+        <?php
+        $eventId = $list['eventId'];
+        $curr_capa = $list['curr_capa'];
+        $capacity = $list['capacity'];
+        if(isset($_POST['btn-join']) && $curr_capa < $capacity) {
+            $sql1 = "INSERT INTO eventParticipant VALUES ($eventId, $user_id)";
+            $resp1 = $pdo->exec($sql1);
+            if($resp1) {
+                $sql2 = "UPDATE events SET curr_capa = curr_capa + 1 WHERE eventId = $eventId";
+                $resp2 = $pdo->exec($sql2);
+                if($resp2) {
+                    echo '<script type="text/javascript">alert("Successfully Join!");</script>';
+                }
+            }
+            else {
+                echo '<script type="text/javascript">alert("Already Joined!");</script>';
+            }
+        }
+        if(isset($_POST['btn-join']) && $curr_capa >= $capacity) {
+            echo '<script type="text/javascript">alert("This event is full!");</script>';
+        }
+        ?>
     </td>
+    </form>
     </div>
         </div>
 

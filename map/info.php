@@ -328,19 +328,9 @@ if ($lat!=null&&$lng!=null){
                         <div>
                             <p><script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script>
                             <form class="form-signin" method="post" id="login-form">
-                                <form class="form-signin" method="post" id="login-form">
-
-                                    <div class="form-group">
-                                        <button type="submit" name="btn-login" class="btn">
-                                            <a href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
-                                                <i class="glyphicon glyphicon-log-in"></i> &nbsp; List Event
-                                            </a>
-                                        </button>
-                                    </div>
-                                </form>
                                 <div class="form-group">
                                     <button type="submit" name="btn-login" class="btn">
-                                        <a href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
+                                        <a style="color: white" href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
                                             <i class="glyphicon glyphicon-log-in"></i> &nbsp; Create Event
                                         </a>
                                     </button>

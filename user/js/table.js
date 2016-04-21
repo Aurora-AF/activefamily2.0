@@ -6,7 +6,10 @@ $(document).ready(function () {
     // $('#event').DataTable( {
     //     "stripeClasses": [ 'odd-row', 'even-row' ]
     // } );
-    var table = $('#event').DataTable();
+    var table = $('#event').DataTable({
+        "autowidth":true
+    });
+
 
     $('#event tfoot th').each(function(){
         var title = $('#event thead th').eq($(this).index()).text();

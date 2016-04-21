@@ -97,7 +97,8 @@
     	<label class="h5">welcome : <?php print($userRow['user_name']); ?></label>
         <hr />
         <h1>
-        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp; 
+        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
+            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a> &nbsp;
         <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
        	<hr />
         <div class='row'>
@@ -111,6 +112,7 @@
                     <th>Date</th>
                     <th>View</th>
                     <th>Edit</th>
+                    <th>Cancel</th>
                 </tr>
                 </thead>
 
@@ -152,6 +154,11 @@
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
+                            <td class="form-group">
+                                <button type="submit" name="<?php echo $btnJoin[$i]?>" class="btn btn-primary btn-lg">
+                                    <i class="glyphicon glyphicon-log-in"></i> Cancel
+                                </button>
+                            </td>
                         </form>
                     </tr>
                     <?php $i++; }?>
@@ -166,8 +173,9 @@
                     <th>Suburb</th>
                     <th>Capacity</th>
                     <th>Date</th>
-                    <th>View</th>
-                    <th>Edit</th>
+                    <th style="display: none">View</th>
+                    <th style="display: none">Edit</th>
+                    <th style="display: none">Cancel</th>
                 </tr>
                 </tfoot>
             </table>

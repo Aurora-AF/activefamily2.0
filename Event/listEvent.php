@@ -9,7 +9,7 @@
     //connection to the database
     try {
         $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-        $sql = "SELECT * FROM events";
+        $sql = "SELECT * FROM events ORDER BY date";
         $stmt = $pdo->query($sql);
         $eventIDArray = array();
         $i = 0;
@@ -133,8 +133,8 @@
                                 <form action="" method="post">
                                     <td class="form-group">
                                         <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
-                                            <a href="../Event/view.php?eventId=<?php echo $eventId; ?>">
-                                                <i class="glyphicon glyphicon-log-in"></i> View
+                                            <a href="../Event/view.php?eventId=<?php echo $eventId; ?>" style="color: white">
+                                                <i class="glyphicon glyphicon-log-in"></i>&nbsp; View
                                             </a>
                                         </button>
                                     </td>
