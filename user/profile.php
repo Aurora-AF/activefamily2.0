@@ -70,7 +70,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="active nav-item"><a href="../map/inde.php">Venues</a></li>
-                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="active nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>

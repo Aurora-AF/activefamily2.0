@@ -1156,10 +1156,10 @@ EOT;
             'https://github.com/PHPMailer/PHPMailer'
         );
         $events = $ICS->getEvents();
-        $this->assertEquals(2, count($events), 'Event count mismatch');
+        $this->assertEquals(2, count($events), 'event count mismatch');
         $ICS->clearEvents();
         $events = $ICS->getEvents();
-        $this->assertEquals(0, count($events), 'Event clearing failed');
+        $this->assertEquals(0, count($events), 'event clearing failed');
         $ICS->setName('test');
         $this->assertEquals('test', $ICS->getName(), 'Setting ICS name failed');
         $this->assertNotEmpty($ICS->render(false), 'Empty calendar');

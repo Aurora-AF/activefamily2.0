@@ -232,8 +232,8 @@ if ($lat!=null&&$lng!=null){
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="active nav-item"><a href="index.php">Venues</a></li>
-                    <li class="nav-item"><a href="../Event/index.php">Events</a></li>
-                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../event/index.php">Events</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item"><a href="../user/index.php" id="register">Log in</a></li>
                     <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
@@ -331,7 +331,7 @@ if ($lat!=null&&$lng!=null){
                             <form class="form-signin" method="post" id="login-form">
                                 <div class="form-group">
                                     <button type="submit" name="btn-login" class="btn">
-                                        <a style="color: white" href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
+                                        <a style="color: white" href="../event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
                                             <i class="glyphicon glyphicon-log-in"></i> &nbsp; Create Event
                                         </a>
                                     </button>

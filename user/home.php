@@ -48,7 +48,7 @@
             <title>Cancel Reminder From active-family.net</title>
             </head>
             <body>
-            <p>Your Event Has Been Cancelled!;</p>
+            <p>Your event Has Been Cancelled!;</p>
 
             </body>
             </html>
@@ -111,7 +111,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="nav-item"><a href="index.php">Venues</a></li>
-                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="active nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
@@ -188,14 +188,14 @@
                         <form action="" method="post">
                         <td class="form-group">
                             <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
-                                <a href="../Event/view.php?eventId=<?php echo $eventId; ?>">
+                                <a href="../event/view.php?eventId=<?php echo $eventId; ?>">
                                 <i class="glyphicon glyphicon-log-in"></i> View
                                 </a>
                             </button>
                         </td>
                         <td>
                             <button type="submit" name="<?php echo $btnEdit[$i]?>" class="btn btn-primary btn-lg">
-                                <a href="../Event/edit.php?eventId=<?php echo $eventId; ?>">
+                                <a href="../event/edit.php?eventId=<?php echo $eventId; ?>">
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
