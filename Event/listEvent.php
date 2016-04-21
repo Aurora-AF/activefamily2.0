@@ -1,33 +1,25 @@
-
-<!--Template from: http://derekeder.com/searchable_map_template-->
-<!--Php can latitude and longitude of category from previous map-->
 <?php
-$username = "root";
-$password = "root";
-$hostname = "localhost";
-$dbname = "event";
+    session_start();
+    $user_id = $_SESSION['user_session'];
+    $username = "root";
+    $password = "root";
+    $hostname = "localhost";
+    $dbname = "dblogin";
 
-//connection to the database
-try {
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-    $sql = "SELECT * FROM events";
-    $stmt = $pdo->query($sql);
-    $eventIDArray = array();
-    $i = 0;
-    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //connection to the database
+    try {
+        $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+        $sql = "SELECT * FROM events";
+        $stmt = $pdo->query($sql);
+        $eventIDArray = array();
+        $i = 0;
+        $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $countBbq = "SELECT count(*) as 'bbq' FROM events where type='bbq'";
-    $stmtBbq = $pdo->query($countBbq);
-    $listBbq = $stmt->fetch(PDO::FETCH_ASSOC);
-
-
-}
-catch(PDOException $e) {
-    echo $e->getMessage();
-}
-
+    }
+    catch(PDOException $e) {
+        echo $e->getMessage();
+    }
 ?>
-
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -95,30 +87,10 @@ catch(PDOException $e) {
     </div><!--container-->
 </header><!--header-->
 
-
-
-
 <!-- ******Steps Section****** -->
 <section class="steps section">
     <div class="container" >
-
             <div class='row'>
-                <div class='col-md-3'>
-                    <div class="well">
-                        <h4>Type</h4>
-                        <hr>
-                        <p>
-                            BBQ<?php echo $listBbq['bbq'];?>
-                        </p>
-                            <p>
-                                Walke the dog
-                            </p>
-
-
-
-                    </div>
-                </div>
-                <div class='col-md-9'>
                     <table id='event' class="table table-striped table-bordered" style="width: 10%">
                         <thead>
                         <tr>
@@ -126,7 +98,6 @@ catch(PDOException $e) {
                             <th>Type</th>
                             <th>Suburb</th>
                             <th>Capacity</th>
-                            <th>Participant</th>
                             <th>Date</th>
                             <th>View</th>
                             <th>Join</th>
@@ -134,11 +105,17 @@ catch(PDOException $e) {
                         </thead>
 
                         <tbody>
-                        <?php
-                        foreach ($list as $val){
-                            ?>
+                            <?php
+                            $btnEdit[] = array();
+                            $btnCancel[] = array();
+                            $btnJoin[] = array();
+                            $i = 0;
+                            foreach ($list as $val){
+                                $btnEdit[$i] = "btn-edit".$i;
+                                $btnCancel[$i] = "btn-cancel".$i;
+                                $btnJoin[$i] = "btn-join".$i;?>
                             <tr>
-                                <td >
+                                <td>
                                     <?php echo $val['eventName'];?>
                                 </td>
                                 <td>
@@ -151,38 +128,61 @@ catch(PDOException $e) {
                                     <?php echo $val['capacity'];?>
                                 </td>
                                 <td>
-                                    <?php echo $val['paticipan'];?>
-                                </td>
-                                <td>
                                     <?php echo $val['date'];?>
                                 </td>
+                                <form action="" method="post">
+                                    <td class="form-group">
+                                        <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
+                                            <a href="../Event/view.php?eventId=<?php echo $eventId; ?>">
+                                                <i class="glyphicon glyphicon-log-in"></i> View
+                                            </a>
+                                        </button>
+                                    </td>
+                                </form>
+
+                                <form action="" method="post">
                                 <td class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
-                                        <i class="glyphicon glyphicon-log-in"></i> View
-                                    </button>
-                                </td>
-                                <td class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
+                                    <button type="submit" name="<?php echo $btnJoin[$i]?>" class="btn btn-primary btn-lg">
                                         <i class="glyphicon glyphicon-log-in"></i> Join
                                     </button>
+                                    <?php
+                                    $eventId = $val['eventId'];
+                                    $curr_capa = $val['curr_capa'];
+                                    $capacity = $val['capacity'];
+                                    if(isset($_POST[$btnJoin[$i]]) && $curr_capa < $capacity) {
+                                        $sql1 = "INSERT INTO eventParticipant VALUES ($eventId, $user_id)";
+                                        $resp1 = $pdo->exec($sql1);
+                                        if($resp1) {
+                                            $sql2 = "UPDATE events SET curr_capa = curr_capa + 1 WHERE eventId = $eventId";
+                                            $resp2 = $pdo->exec($sql2);
+                                            if($resp2) {
+                                                echo '<script type="text/javascript">alert("Successfully Join!");</script>';
+                                            }
+                                        }
+                                        else {
+                                            echo '<script type="text/javascript">alert("Already Joined!");</script>';
+                                        }
+                                    }
+                                    if(isset($_POST[$btnJoin[$i]]) && $curr_capa >= $capacity) {
+                                        echo '<script type="text/javascript">alert("This event is full!");</script>';
+                                    }
+                                    ?>
                                 </td>
+                                </form>
                             </tr>
-                        <?php } ?>
+                        <?php
+                            $i++;
+                        } ?>
 
                         </tbody>
-
-
                         <tfoot>
                         <tr>
                             <th>Name</th>
                             <th>Type</th>
                             <th>Suburb</th>
                             <th>Capacity</th>
-                            <th>participant</th>
                             <th>Date</th>
-                            <th>View</th>
                             <th>Join</th>
-
                         </tr>
                         </tfoot>
                     </table>
@@ -191,8 +191,6 @@ catch(PDOException $e) {
                     <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
                     <script type="text/javascript" charset="utf8" src="js/table.js"></script>
-                </div>
-
                 
         </div>
     </div>

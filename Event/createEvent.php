@@ -1,19 +1,20 @@
 <?php
     session_start();
-    require_once("../UserManagement/class.user.php");
-    $address = $_GET['address'];
-    $suburb = $_GET['suburb'];
 
-    $user = new User();
-    $user_id = $_SESSION['user_session'];
-
-    $title = $_POST['eTitle'];
-    $desc = $_POST['description'];
-
-    $date = date('Y-m-d', strtotime($_POST['eDate']));
-    $type = $_POST['taskOption'];
+    require_once("../user/class.user.php");
     if(isset($_POST['btn-login'])) {
-        $sql = "INSERT INTO events (eventName, eventDescription, type, address, suburb, capacity, date) VALUES ('$title', '$desc', '$type', '$address', '$suburb', $capacity, '$date')";
+        $address = $_GET['address'];
+        $suburb = $_GET['suburb'];
+        $user = new User();
+        $user_id = $_SESSION['user_session'];
+        $title = $_POST['eTitle'];
+        $desc = $_POST['description'];
+        $curr_capa = 0;
+        $capacity = $_POST['capOption'];
+
+        $date = date('Y-m-d', strtotime($_POST['eDate']));
+        $type = $_POST['taskOption'];
+        $sql = "INSERT INTO events (create_user_id, eventName, eventDescription, type, address, suburb, capacity, curr_capa, date) VALUES ('$user_id', '$title', '$desc', '$type', '$address', '$suburb', $capacity, $curr_capa, '$date')";
         $stmt = $user->runQuery($sql);
         $stmt->execute();
 
@@ -27,6 +28,7 @@
         $sql = "INSERT INTO eventParticipant VALUES ('$event_id', '$user_id')";
         $stmt = $user->runQuery($sql);
         $stmt->execute();
+        header('Location:listEvent.php');
     }
 ?>
 
@@ -143,10 +145,7 @@
                                         </select>
                                     </label>
                                 </div>
-
-
                                 <hr />
-
                                 <div class="form-group">
                                     <button type="submit" name="btn-login" class="btn btn-default">
                                         <i class="glyphicon glyphicon-log-in"></i> &nbsp; Submit

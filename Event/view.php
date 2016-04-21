@@ -9,7 +9,7 @@ $eventId = $_GET['eventId'];
 $username = "root";
 $password = "root";
 $hostname = "localhost";
-$dbname = "event";
+$dbname = "dblogin";
 
 //connection to the database
 try {
@@ -17,18 +17,11 @@ try {
     $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
     $sql = "SELECT * FROM events where eventId =".$eventId;
     $stmt = $pdo->query($sql);
-    $eventIDArray = array();
-    $i = 0;
     $list = $stmt->fetch(PDO::FETCH_ASSOC);
-
 }
 catch(PDOException $e) {
     echo $e->getMessage();
 }
-
-print_r(array_values($list));
-
-echo "<b>".$eventId."</b>"
 
 ?>
 

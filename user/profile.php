@@ -17,9 +17,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
-<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
-<script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
+<!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+<!--<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"  />
+
+    <script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css"  />
 <title>welcome - <?php print($userRow['user_email']); ?></title>
 
@@ -30,48 +41,7 @@
     <link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
     -->
     <link type="text/css" rel="stylesheet" href="css/tab.webfx.css" />
-    <!-- the id is not needed. It is used here to be able to change css file at runtime -->
-<!--    <style type="text/css">-->
-<!---->
-<!--        .dynamic-tab-pane-control .tab-page {-->
-<!--            height:		300px;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control .tab-page .dynamic-tab-pane-control .tab-page {-->
-<!--            height:		100px;-->
-<!--        }-->
-<!---->
-<!--        html, body {-->
-<!--            background:	ThreeDFace;-->
-<!--        }-->
-<!---->
-<!--        form {-->
-<!--            margin:		0;-->
-<!--            padding:	0;-->
-<!--        }-->
-<!---->
-<!--        /* over ride styles from webfxlayout */-->
-<!---->
-<!--        body {-->
-<!--            margin:		10px;-->
-<!--            width:		auto;-->
-<!--            height:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control h2 {-->
-<!--            text-align:	center;-->
-<!--            width:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control h2 a {-->
-<!--            display:	inline;-->
-<!--            width:		auto;-->
-<!--        }-->
-<!---->
-<!--        .dynamic-tab-pane-control a:hover {-->
-<!--            background: transparent;-->
-<!--        }-->
-<!--    </style>-->
+
     <style>
         input {
             line-height: 2.5em;
@@ -82,37 +52,40 @@
     <script type="text/javascript" src="js/tabpane.js"></script>
 </head>
 
-<body>
+<body style="background-color: #f5f5f5">
 
-
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <h1 class="logo">
-                <a href="index.html"><span class="text">Active Family</span></a>
-            </h1>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			  <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
-                <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+<header id="header" class="header navbar-fixed-top" style="position: relative;">
+    <div class="container">
+        <h1 class="logo">
+            <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
+        </h1><!--logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--nav-toggle-->
+            </div><!--navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
+                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
+                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul><!--nav-->
+            </div><!--navabr-collapse-->
+        </nav><!--main-nav-->
+    </div><!--container-->
+</header><!--header-->
 
 	<div class="clearfix"></div>
 	

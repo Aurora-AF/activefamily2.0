@@ -1,46 +1,50 @@
 <?php
-//session_start();
-//$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-//require_once("../UserManagement/class.user.php");
-//require_once("../user/class.user.php");
-//$login = new USER();
-//if($login->is_loggedin()) : ?>
-<!--    <style type="text/css">-->
-<!--        #register {-->
-<!--            display: none;-->
-<!--        }-->
-<!---->
-<!--    </style>-->
-<!---->
-<?php //else: ?>
-<!---->
-<!--    <style type="text/css">-->
-<!--        #notlogedin {-->
-<!--            display: none;-->
-<!--        }-->
-<!--    </style>-->
-<?php //endif; ?>
-<!---->
-<!--<!--Template from: http://derekeder.com/searchable_map_template-->-->
-<!--<!--Php can get latitude and longitude of category from previous map-->-->
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+require_once("../user/class.user.php");
+$login = new USER();
+if($login->is_loggedin()) : ?>
+    <style type="text/css">
+        #register {
+            display: none;
+        }
+
+    </style>
+
+<?php else: ?>
+
+    <style type="text/css">
+        #notlogedin {
+            display: none;
+        }
+        .form-group {
+            pointer-events: none;
+            cursor: default;
+        }
+
+    </style>
+<?php endif; ?>
+
+<!--Template from: http://derekeder.com/searchable_map_template-->
+<!--Php can get latitude and longitude of category from previous map-->
 <?php
-//$user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
-//echo $user_id;
-//
-//$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
-//$stmt->execute(array(":user_id"=>$user_id));
-//
-//$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-//
-//$lat = $_GET['lat'];
-//$lng = $_GET['lng'];
-//$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
-//$json = file_get_contents($url);
-//$data = json_decode($json);
-//$address = $data->results['0']->formatted_address;
-//$locality = $data->results['0']->address_components['2']->long_name;
-//$postcode = $data->results['0']->address_components['5']->long_name;
-//?>
+$user_id = (isset($_SESSION['user_session']) ? $_SESSION['user_session'] : null);
+
+
+$stmt = $login->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+$stmt->execute(array(":user_id"=>$user_id));
+
+$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+
+$lat = $_GET['lat'];
+$lng = $_GET['lng'];
+$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&sensor=true";
+$json = file_get_contents($url);
+$data = json_decode($json);
+$address = $data->results['0']->formatted_address;
+$suburb = $data->results['0']->address_components['2']->long_name;
+$postcode = $data->results['0']->address_components['5']->long_name;
+?>
 
 <!--Current temperature by using operweathermap api-->
 <?php
@@ -322,16 +326,26 @@ if ($lat!=null&&$lng!=null){
                         <!--display public events details-->
                         <!--weights source code from http://www.eventsvictoria.com/distribution-centre/widget/-->
                         <div>
-                            <p><script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script><div class="atdw-event-widget"></div>
-                            <script type="text/javascript">window.atdw.myevents.widget.load({
-                                    mode:'List',
-                                    locations:{all:true,regions:'',councils:'',postcodes:''},
-                                    types:{business:false,leisure:true},
-                                    tags:'FAMILY,LIVEMUSIC',
-                                    businessTypes:'',
-                                    freeOnly:false,
-                                    size:{width:250,height:280},
-                                    theme:'BLUE'});</script>
+                            <p><script src="http://www.eventsvictoria.com/Scripts/atdw-dist-min/v2-1/Default/widget/widget.min.js" type="text/javascript"></script>
+                            <form class="form-signin" method="post" id="login-form">
+                                <form class="form-signin" method="post" id="login-form">
+
+                                    <div class="form-group">
+                                        <button type="submit" name="btn-login" class="btn">
+                                            <a href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
+                                                <i class="glyphicon glyphicon-log-in"></i> &nbsp; List Event
+                                            </a>
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="form-group">
+                                    <button type="submit" name="btn-login" class="btn">
+                                        <a href="../Event/createEvent.php?address=<?php echo $address?>&suburb=<?php echo $suburb?>" class="event">
+                                            <i class="glyphicon glyphicon-log-in"></i> &nbsp; Create Event
+                                        </a>
+                                    </button>
+                                </div>
+                            </form>
                             </p>
                         </div>
                         <div>
@@ -448,7 +462,14 @@ if ($lat!=null&&$lng!=null){
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFO12yfon9WbQBqtdK_lnmY6uAiDXmB0s&callback=initMap">
 </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 
 </body>
 </html>
