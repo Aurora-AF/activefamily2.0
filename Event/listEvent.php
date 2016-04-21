@@ -20,7 +20,7 @@
 
         $sql2 = $user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
         $sql2->execute(array(":user_id"=>$user_id));
-        $userRow=$sql2->fetch(PDO::FETCH_ASSOC);
+        $userRow = $sql2->fetch(PDO::FETCH_ASSOC);
     }
     catch(PDOException $e) {
         echo $e->getMessage();

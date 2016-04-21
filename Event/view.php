@@ -1,6 +1,8 @@
 <?php
 session_start();
 $user_id = $_SESSION['user_session'];
+require_once('../user/class.user.php');
+$user = new USER();
 ///**
 // * Created by PhpStorm.
 // * User: Tefo
@@ -21,12 +23,17 @@ try {
     $sql = "SELECT * FROM events where eventId =".$eventId;
     $stmt = $pdo->query($sql);
     $list = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    $sql2 = $user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+    $sql2->execute(array(":user_id"=>$user_id));
+    $userRow = $sql2->fetch(PDO::FETCH_ASSOC);
 }
 catch(PDOException $e) {
     echo $e->getMessage();
 }
 
 ?>
+
 
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -219,5 +226,13 @@ catch(PDOException $e) {
         </div><!--//container-->
     </div><!--//bottom-bar-->
 </footer><!--//footer-->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+<script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
