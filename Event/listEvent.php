@@ -47,12 +47,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.css"/>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
     <![endif]-->
 
 </head>
@@ -91,7 +94,7 @@
 <section class="steps section">
     <div class="container" >
             <div class='row'>
-                    <table id='event' class="table table-striped table-bordered" style="width: 10%">
+                    <table id='event' class="display responsive nowrap" cellspacing="0" width="100%">
                         <thead>
                         <tr>
                             <th>Name</th>
@@ -175,22 +178,21 @@
                         } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Suburb</th>
-                            <th>Capacity</th>
-                            <th>Date</th>
-                            <th>Join</th>
-                        </tr>
-                        </tfoot>
                     </table>
-                    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+                <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+                <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+                <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+                <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+                <script type="text/javascript" src="assets/js/main.js"></script>
 
-                    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-                    <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+                <script>$('#event').DataTable({
+                        responsive: true
+                });</script>
                 
         </div>
     </div>
