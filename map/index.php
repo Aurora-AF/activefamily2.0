@@ -1,11 +1,7 @@
 <?php
 session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
-<<<<<<< HEAD
-require_once("../UserManagement/class.user.php");
-=======
 require_once("../user/class.user.php");
->>>>>>> 27248af170a18f1cb2ee6f73396db87df4693cfd
 $login = new USER();
 if($login->is_loggedin()) : ?>
     <style type="text/css">
@@ -23,6 +19,7 @@ if($login->is_loggedin()) : ?>
         }
     </style>
 <?php endif; ?>
+
 
 <!--Template from: http://derekeder.com/searchable_map_template-->
 <!--Php can get latitude and longitude of category from previous map-->
