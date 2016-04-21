@@ -90,7 +90,7 @@ if(isset($_POST['btn-signup']))
 </head>
 <body style="background-color: #f5f5f5">
 <!-- ******HEADER****** -->
-<header id="header" class="header navbar-fixed-top" style="position: relative;">
+<header id="header" class="header navbar-fixed-top" style="position: relative; background-color: white">
 	<div class="container">
 		<h1 class="logo">
 			<a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
