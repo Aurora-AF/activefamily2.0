@@ -27,8 +27,7 @@ if(isset($_POST['btn-login']))
         }
 
 
-        echo $url;
-        header("Location: user/$url");
+        header("Location: http://active-family.net/user/home.php");
 
 
         //header("Location:$url");
