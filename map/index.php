@@ -116,7 +116,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             </div><!--navbar-header-->
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="active nav-item"><a href="../map/index.php">Venues</a></li>
                     <li class="nav-item"><a href="../Event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.html">About Us</a></li>
