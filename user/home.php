@@ -3,6 +3,8 @@
 	require_once("session.php");
 	
 	require_once("class.user.php");
+    require_once('PHPMailer-master/class.phpmailer.php');
+    require_once('PHPMailer-master/class.smtp.php');
 	$auth_user = new USER();
     $username = "root";
     $password = "root";
@@ -18,7 +20,7 @@
     //connection to the database
     try {
         $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-        $sql = "SELECT * FROM events where create_user_id = '$user_id'";
+        $sql = "SELECT * FROM events where create_user_id = '$user_id' AND status = 'active'";
         $stmt = $pdo->query($sql);
         $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -27,6 +29,44 @@
         echo $e->getMessage();
     }
 
+    function sendCancelMail($to){
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+        $mail->SMTPDebug = 1;
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 465;
+        $mail->IsHTML(true);
+        $mail->Username = "auroraemailtest@gmail.com";
+        $mail->Password = "ma91814@.";
+        $subject = "Cancel Reminder From active-family.net";
+        $uri = 'http://'. $_SERVER['HTTP_HOST'] ;
+        $message = '
+            <html>
+            <head>
+            <title>Cancel Reminder From active-family.net</title>
+            </head>
+            <body>
+            <p>Your Event Has Been Cancelled!;</p>
+
+            </body>
+            </html>
+            ';
+        $mail->Body = $message;
+        $mail->AddAddress($to);
+        $mail->Subject = $subject;
+        $mail->setFrom("auroraemailtest@gmail.com");
+        $mail->SMTPDebug = false;
+
+
+        if($mail->send()){
+            echo "We have sent the CANCEL reminder to your  email id <b>".$to."</b>";
+        }
+        else {
+            echo "Mail Error: " . $mail->ErrorInfo;
+        }
+    }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -122,6 +162,8 @@
                 $i = 0;
                 foreach ($list as $val){
                     $btnView[$i] = "btnView".$i;
+                    $btnEdit[$i] = "btnEdit".$i;
+                    $btnCancel[$i] = "btnCancel".$i;
                     $eventId = $val['eventId'];
                     $url = "../view.php?eventId=".$eventId;
                     ?>
@@ -150,14 +192,35 @@
                             </button>
                         </td>
                         <td class="form-group">
-                            <button type="submit" name="<?php echo $btnJoin[$i]?>" class="btn btn-primary btn-lg">
+                            <button type="submit" name="<?php echo $btnEdit[$i]?>" class="btn btn-primary btn-lg">
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
                             <td class="form-group">
-                                <button type="submit" name="<?php echo $btnJoin[$i]?>" class="btn btn-primary btn-lg">
+                                <button type="submit" name="<?php echo $btnCancel[$i]?>" class="btn btn-primary btn-lg">
                                     <i class="glyphicon glyphicon-log-in"></i> Cancel
                                 </button>
+                                <?php
+                                    if (isset($_POST[$btnCancel[$i]])) {
+                                        $sql = "UPDATE events SET status = 'cancel' where eventId='$eventId'";
+                                        $responce = $pdo->exec($sql);
+                                        if ($responce) {
+                                            $sql = "SELECT u.user_email FROM users u, eventParticipant e WHERE u.user_id = e.user_id AND e.eventId = '$eventId'";
+                                            $stmt = $pdo->query($sql);
+                                            $list =$stmt->fetchAll(PDO::FETCH_ASSOC);
+                                            foreach($list as $email) {
+                                                $to = $email['user_email'];
+                                                sendCancelMail($to);
+                                            }
+                                            echo $to;
+                                            echo '<script type="text/javascript">alert("Successfully Cancelled!");</script>';
+
+                                        }
+                                        else {
+                                            echo '<script type="text/javascript">alert("Already Cancelled");</script>';
+                                        }
+                                    }
+                                ?>
                             </td>
                         </form>
                     </tr>
@@ -184,6 +247,7 @@
             <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
             <script type="text/javascript" charset="utf8" src="js/table.js"></script>
+
 
         </div>
     </div>
