@@ -14,7 +14,7 @@
 
         $date = date('Y-m-d G:i', strtotime($_POST['eDate']));
         $type = $_POST['taskOption'];
-        $sql = "INSERT INTO events (create_user_id, eventName, eventDescription, type, address, suburb, capacity, curr_capa, date) VALUES ('$user_id', '$title', '$desc', '$type', '$address', '$suburb', $capacity, $curr_capa, '$date')";
+        $sql = "INSERT INTO events (create_user_id, eventName, eventDescription, type, address, suburb, capacity, curr_capa, date, status) VALUES ('$user_id', '$title', '$desc', '$type', '$address', '$suburb', $capacity, $curr_capa, '$date', 'active')";
         $stmt = $user->runQuery($sql);
         $stmt->execute();
 
