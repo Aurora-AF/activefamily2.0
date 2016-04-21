@@ -151,7 +151,7 @@ catch(PDOException $e) {
    </div>
    <hr />
    <div class="form-group">
-    <button type="submit" name="btn-update" class="btn btn-default">
+    <button type="submit" name="btn-update" class="btn btn-primary btn-lg">
      <i class="glyphicon glyphicon-log-in"></i> &nbsp; Update
     </button>
     <?php

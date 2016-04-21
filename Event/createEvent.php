@@ -64,7 +64,6 @@
     <![endif]-->
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css"  />
-
 </head>
 
 <body class="features-page">
@@ -147,7 +146,7 @@
                                 </div>
                                 <hr />
                                 <div class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-default">
+                                    <button type="submit" name="btn-login" class="btn btn-primary btn-lg">
                                         <i class="glyphicon glyphicon-log-in"></i> &nbsp; Submit
                                     </button>
                                 </div>
