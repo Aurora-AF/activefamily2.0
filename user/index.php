@@ -28,7 +28,7 @@ if(isset($_POST['btn-login']))
 
 
         echo $url;
-        header("Location: http://localhost:8888/$url");
+        header("Location: /$url");
 
 
         //header("Location:$url");
