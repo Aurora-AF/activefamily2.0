@@ -6,10 +6,10 @@
     require_once('PHPMailer-master/class.phpmailer.php');
     require_once('PHPMailer-master/class.smtp.php');
 	$auth_user = new USER();
-    $username = "root";
-    $password = "root";
+    $username = "acac1537_active";
+    $password = "activefamily123";
     $hostname = "localhost";
-    $dbname = "dblogin";
+    $dbname = "acac1537_dblogin";
 
 	$user_id = $_SESSION['user_session'];
 	$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
@@ -111,6 +111,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="nav-item"><a href="index.php">Venues</a></li>
+                    <li class="nav-item"><a href="../event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="active nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">

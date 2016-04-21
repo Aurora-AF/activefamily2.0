@@ -4,10 +4,11 @@ require_once("session.php");
 
 require_once("class.user.php");
 $auth_user = new USER();
-$username = "root";
-$password = "root";
 $hostname = "localhost";
-$dbname = "dblogin";
+$db_name = "acac1537_dblogin";
+$username = "acac1537_active";
+$password = "activefamily123";
+
 
 $user_id = $_SESSION['user_session'];
 $stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
@@ -17,7 +18,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
 //connection to the database
 try {
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$hostname;dbname=$db_name", $username, $password);
     $sql = "SELECT * FROM events e, eventParticipant p where p.user_id = '$user_id' and e.eventId = p.eventId";
     $stmt = $pdo->query($sql);
     $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -46,7 +47,7 @@ catch(PDOException $e) {
     <link rel="stylesheet" href="css/custom.css"/>
     <link rel="stylesheet" href="style.css" type="text/css"  />
 
-    <script type="text/javascript" src="jquery-1.11.3-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.css"/>
     <link rel="stylesheet" href="style.css" type="text/css"  />
     <title>welcome - <?php print($userRow['user_email']); ?></title>
 </head>
@@ -102,7 +103,7 @@ catch(PDOException $e) {
         </h2>
         <hr />
         <div class='row'>
-            <table id='event' class="table table-striped table-bordered" style="width: 10%">
+            <table id='event' class="table table-striped table-bordered" style="width: 100%">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -153,17 +154,6 @@ catch(PDOException $e) {
 
                 </tbody>
 
-
-                <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Suburb</th>
-                    <th>Capacity</th>
-                    <th>Date</th>
-                    <th style="display: none">View</th>
-                </tr>
-                </tfoot>
             </table>
             <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
             <script type="text/javascript" src="https://cdn.datatables.net/t/bs/jq-2.2.0,dt-1.10.11,r-2.0.2/datatables.min.js"></script>

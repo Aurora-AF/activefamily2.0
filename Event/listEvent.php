@@ -1,10 +1,10 @@
 <?php
     session_start();
     $user_id = $_SESSION['user_session'];
-    $username = "root";
-    $password = "root";
     $hostname = "localhost";
-    $dbname = "dblogin";
+    $db_name = "acac1537_dblogin";
+    $username = "acac1537_active";
+    $password = "activefamily123";
 
     //connection to the database
     try {
@@ -79,11 +79,11 @@
             </div><!--navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
-                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
-                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
+                    <li class="nav-item"><a href="../map/index.php">Venues</a></li>
+                    <li class="active nav-item"><a href="index.php">Events</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item"><a href="#">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->

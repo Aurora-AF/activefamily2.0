@@ -10,16 +10,15 @@ $user_id = $_SESSION['user_session'];
 // */
 $user = new User();
 $eventId = $_GET['eventId'];
-$username = "root";
-$password = "root";
 $hostname = "localhost";
-$dbname = "dblogin";
-
+$db_name = "acac1537_dblogin";
+$username = "acac1537_active";
+$password = "activefamily123";
 
 //connection to the database
 try {
 
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$hostname;dbname=$db_name", $username, $password);
     $sql = "SELECT * FROM events where eventId =".$eventId;
     $stmt = $pdo->query($sql);
     $list = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -84,11 +83,12 @@ catch(PDOException $e) {
             </div><!--navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
-                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
-                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
-                    <li class="nav-item"><a href="#">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
+                    <li class="nav-item"><a href="../map/index.php">Venues</a></li>
+                    <li class="active nav-item"><a href="listEvent.php">Events</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
+
+
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->

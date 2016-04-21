@@ -8,16 +8,16 @@ $user_id = $_SESSION['user_session'];
 // * Time: 2:42 AM
 // */
 $eventId = $_GET['eventId'];
-$username = "root";
-$password = "root";
 $hostname = "localhost";
-$dbname = "dblogin";
+$db_name = "acac1537_dblogin";
+$username = "acac1537_active";
+$password = "activefamily123";
 
 
 //connection to the database
 try {
 
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$hostname;dbname=$db_name", $username, $password);
     $sql = "SELECT * FROM events where eventId =".$eventId;
     $stmt = $pdo->query($sql);
     $list = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -86,7 +86,7 @@ catch(PDOException $e) {
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="nav-item"><a href="../map/index.php">Venues</a></li>
-                    <li class="active nav-item"><a href="../about.php">Events</a></li>
+                    <li class="active nav-item"><a href="../event/listEvent.php">Events</a></li>
                     <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">

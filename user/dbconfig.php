@@ -2,9 +2,9 @@
 class Database
 {   
     private $host = "localhost";
-    private $db_name = "dblogin";
-    private $username = "root";
-    private $password = "root";
+    private $db_name = "acac1537_dblogin";
+    private $username = "acac1537_active";
+    private $password = "activefamily123";
     public $conn;
      
     public function dbConnection()
