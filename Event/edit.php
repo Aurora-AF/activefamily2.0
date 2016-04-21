@@ -121,7 +121,7 @@ catch(PDOException $e) {
    </div>
    <div class="form-group">
     Hold Date<span>*</span>
-    <input id="datetimepicker" type="text" class="form-control" name="eDate" placeholder="<?php echo date('d-m-Y G:i', strtotime($list['date'])); ?>" id="eDate">
+    <input id="datetimepicker" type="text" class="form-control" name="eDate" value="<?php echo date('d-m-Y G:i', strtotime($list['date'])); ?>" id="eDate">
     <span id="check-e"></span>
    </div>
    <div class="form-group">
@@ -162,11 +162,6 @@ catch(PDOException $e) {
             $date = date('Y-m-d G:i', strtotime($_POST['eDate']));
             $sql = "UPDATE events SET eventName='$title', eventDescription='$desc', capacity='$capacity', date='$date' where eventId='$eventId'";
             $response = $pdo->exec($sql);
-            if($response) {
-              echo '<script type="text/javascript">alert("Successfully Edited!");</script>';
-              $user->redirect('listEvent.php');
-            }
-
          }
     ?>
    </div>
