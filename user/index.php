@@ -132,8 +132,8 @@ if(isset($_POST['btn-login']))
                 </button>
             </div>
             <br />
-            <label style="color: #ffa400">Don't have account yet ! <a href="sign-up.php" >Sign Up</a></label>
-            <label style="color: #ffa400" >Forget Your Password by Your Email ! <a href="resetPage.php">Reset</a></label>
+            <label style="color: #ffa400">Don't have account yet ! <a href="sign-up.php" id="link" >Sign Up</a></label>
+            <label style="color: #ffa400" >Forget Your Password by Your Email ! <a href="resetPage.php" id="link">Reset</a></label>
       </form>
 
     </div>

@@ -5,6 +5,9 @@ a:hover { color: #fff; }
   max-width: none;
 }
 
+#link{
+    color: #357ebd;
+}
 .title {
     font-size: 62px;
     line-height: 72px;
