@@ -192,12 +192,13 @@
                             </button>
                         </td>
                         <td class="form-group">
-                            <button type="submit" name="<?php echo $btnEdit[$i]?>" class="btn btn-primary btn-lg">
+                            <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
                                 <i class="glyphicon glyphicon-log-in"></i> Edit
                             </button>
                         </td>
                             <td class="form-group">
                                 <button type="submit" name="<?php echo $btnCancel[$i]?>" class="btn btn-primary btn-lg">
+                                    <a href="../Event/edit.php?eventId=<?php echo $eventId; ?>">
                                     <i class="glyphicon glyphicon-log-in"></i> Cancel
                                 </button>
                                 <?php
@@ -212,7 +213,6 @@
                                                 $to = $email['user_email'];
                                                 sendCancelMail($to);
                                             }
-                                            echo $to;
                                             echo '<script type="text/javascript">alert("Successfully Cancelled!");</script>';
 
                                         }
