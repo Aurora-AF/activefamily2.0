@@ -10,7 +10,7 @@ if($login->is_loggedin()!="")
 
 if(isset($_POST['btn-login']))
 {
-    $uname = strip_tags($_POST['txt_uname_email']);
+    $uname = strip_tags($_POST['txt_uname']);
     $umail = strip_tags($_POST['txt_uname_email']);
     $upass = strip_tags($_POST['txt_password']);
 
@@ -78,7 +78,7 @@ if(isset($_POST['btn-login']))
                     <li class="nav-item"><a href="../about.html">About Us</a></li>
                     <li class="active nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
-                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $uname; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
                             <li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
