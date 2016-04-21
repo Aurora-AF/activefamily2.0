@@ -101,42 +101,88 @@ function mailresetlink($to,$token){
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Active Family: Reset Your Password</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <title>Active Family : Login</title>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
     <link rel="stylesheet" href="style.css" type="text/css"  />
 </head>
-<body>
-<form action="" method="post">
-    <h2 class="form-signin-heading">Reset Your Password.</h2><hr />
-    <?php
-    if(isset($error))
-    {
-        foreach($error as $error)
-        {
-            ?>
-            <div class="alert alert-danger">
-                <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?>
-            </div>
+<body style="background-color: #f5f5f5">
+<header id="header" class="header navbar-fixed-top" style="position: relative; background-color: white">
+    <div class="container">
+        <h1 class="logo">
+            <a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
+        </h1><!--logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--nav-toggle-->
+            </div><!--navbar-header-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../map/index.php">Venues</a></li>
+                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="active nav-item dropdown" id="notlogedin">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                            <li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul><!--nav-->
+            </div><!--navabr-collapse-->
+    </div><!--container-->
+</header><!--header-->
+
+<div class="signin-form">
+
+    <div class="container" >
+        <form action="" method="post" class="form-signin">
+            <h2 class="title" style="font-size: 30px">Reset Your Password.</h2><hr />
             <?php
-        }
-    }
-    else if(isset($_GET['joined']))
-    {
-        ?>
-        <div class="alert alert-info">
-            <i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully Reset Your Password <a href='index.php'>login</a> here
+            if(isset($error))
+            {
+                foreach($error as $error)
+                {
+                    ?>
+                    <div class="alert alert-danger">
+                        <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?>
+                    </div>
+                    <?php
+                }
+            }
+            else if(isset($_GET['joined']))
+            {
+                ?>
+                <div class="alert alert-info">
+                    <i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully Reset Your Password <a href='index.php'>login</a> here
+                </div>
+                <?php
+            }
+            ?>
+            <div class="form-group">
+                <input type="text" class="form-control" name="txt_umail" placeholder="Enter E-Mail ID" value="" />
+            </div>
+            <div class="clearfix"></div><hr />
+            <div class="form-group">
+                <button id="submitBtn" type="submit" class="btn btn-primary" name="btn-reset" >
+                    <i class="glyphicon glyphicon-open-file"></i>&nbsp;Reset
+                </button>
+            </div>
+        </form>
         </div>
-        <?php
-    }
-    ?>
-    <div class="form-group">
-        <input type="text" class="form-control" name="txt_umail" placeholder="Enter E-Mail ID" value="" />
     </div>
-    <div class="clearfix"></div><hr />
-    <div class="form-group">
-        <button id="submitBtn" type="submit" class="btn btn-primary" name="btn-reset" >
-            <i class="glyphicon glyphicon-open-file"></i>&nbsp;Reset
-        </button>
-    </div>
-</form>
+</body>
+</html>
