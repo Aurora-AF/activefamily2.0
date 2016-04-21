@@ -1,3 +1,24 @@
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+require_once("user/class.user.php");
+$login = new USER();
+if($login->is_loggedin()) : ?>
+    <style type="text/css">
+        #register {
+            display: none;
+        }
+
+    </style>
+
+<?php else: ?>
+
+    <style type="text/css">
+        #notlogedin {
+            display: none;
+        }
+    </style>
+<?php endif; ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
@@ -32,7 +53,7 @@
     <header id="header" class="header navbar-fixed-top">  
         <div class="container">       
             <h1 class="logo">
-                <a href="index.html"><span class="text">Active Family</span></a>
+                <a href="index.php"><span class="text">Active Family</span></a>
             </h1><!--//logo-->
             <nav class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header">
@@ -45,13 +66,20 @@
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                                         <ul class="nav navbar-nav">
-                        <li class="active nav-item"><a href="index.html">Home</a></li>
+                        <li class="active nav-item"><a href="index.php">Home</a></li>
                         <li class="nav-item"><a href="map/index.php">Venues</a></li>
                         <li class="nav-item"><a href="about.html">About Us</a></li>
-                        <li class="nav-item"><a href="event/index.php">Event</a></li>
-                        <li class="nav-item"><a href="UserManagement/index.php">Log in</a></li>
-                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#">Sign Up Free</a></li>
-
+                        <li class="nav-item"><a href="Event/index.php">Events</a></li>
+                        <li class="nav-item"><a href="user/index.php" id="register">Log in</a></li>
+                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="user/sign-up.php" id="register">Sign Up Free</a></li>
+                                            <li class="nav-item dropdown" id="notlogedin">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+                                                    <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+                                                    <li><a href="user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                                                </ul>
+                                            </li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->                     

@@ -74,21 +74,59 @@ if(isset($_POST['btn-signup']))
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coding Cage : Sign up</title>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="style.css" type="text/css"  />
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Active Family : Login</title>
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<link rel="stylesheet" href="style.css" type="text/css"  />
 </head>
-<body>
+<body style="background-color: #f5f5f5">
+<!-- ******HEADER****** -->
+<header id="header" class="header navbar-fixed-top" style="position: relative;">
+	<div class="container">
+		<h1 class="logo">
+			<a href="http://active-family.net"><span class="logo-icon"></span><span class="text">Active Family</span></a>
+		</h1><!--logo-->
+		<nav class="main-nav navbar-right" role="navigation">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button><!--nav-toggle-->
+			</div><!--navbar-header-->
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a href="../index.html">Home</a></li>
+					<li class="nav-item"><a href="../map/index.php">Venues</a></li>
+					<li class="nav-item"><a href="../about.html">About Us</a></li>
+					<li class="active nav-item dropdown" id="notlogedin">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
+							<span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="../user/profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
+							<li><a href="../user/logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+						</ul>
+					</li>
+				</ul><!--nav-->
+			</div><!--navabr-collapse-->
+	</div><!--container-->
+</header><!--header-->
 
 <div class="signin-form">
 
 <div class="container">
     	
-        <form method="post" class="form-signin">
-            <h2 class="form-signin-heading">Sign up.</h2><hr />
+        <form method="post" class="form-signin" style="background-color: #f5f5f5">
+            <h2 class="title" style="font-size: 30px">Sign up.</h2><hr />
             <?php
 			if(isset($error))
 			{
@@ -129,7 +167,7 @@ if(isset($_POST['btn-signup']))
                 </button>
             </div>
             <br />
-            <label>have an account ! <a href="index.php">Sign In</a></label>
+            <label style="color: #ffa400">Have an account ! <a href="index.php">Sign In</a></label>
 
         </form>
 

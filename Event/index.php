@@ -116,7 +116,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             </div><!--navbar-header-->
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="nav-item"><a href="index.php">Venues</a></li>
                     <li class="active nav-item"><a href="event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.html">About Us</a></li>
@@ -156,10 +156,10 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="drink.php">Drink Fountain</a></li>
-                        <li><a href="bbq.php">BBQ</a></li>
-                        <li><a href="dog.php">Dog Friendly Areas</a></li>
-                        <li><a href="bike.php">Bicycle Rails</a></li>
+                        <li><a href="../map/drink.php">Drink Fountain</a></li>
+                        <li><a href="../map/bbq.php">BBQ</a></li>
+                        <li><a href="../map/dog.php">Dog Friendly Areas</a></li>
+                        <li><a href="../map/bike.php">Bicycle Rails</a></li>
                     </ul>
                 </div>
                

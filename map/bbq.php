@@ -115,12 +115,12 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             </div><!--navbar-header-->
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="active nav-item"><a href="index.php">Venues</a></li>
                     <li class="nav-item"><a href="../Event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.html">About Us</a></li>
                     <li class="nav-item"><a href="../user/index.php" id="register">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="#" id="register">Sign Up Free</a></li>
+                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="../user/sign-up.php" id="register">Sign Up Free</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>

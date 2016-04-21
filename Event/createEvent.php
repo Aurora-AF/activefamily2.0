@@ -85,9 +85,10 @@
             </div><!--navbar-header-->
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="http://active-family.net/">Home</a></li>
-                    <li class="active nav-item"><a href="http://active-family.net/map/">Venues</a></li>
-                    <li class="nav-item"><a href="http://active-family.net/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../index.php">Home</a></li>
+                    <li class="active nav-item"><a href="Event/index.php">Events</a></li>
+                    <li class="nav-item"><a href="../map/index.php">Venues</a></li>
+                    <li class="nav-item"><a href="../about.html">About Us</a></li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->
