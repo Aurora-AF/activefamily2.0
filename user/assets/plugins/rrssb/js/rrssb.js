@@ -241,7 +241,7 @@
 	// init load
 	jQuery(document).ready(function(){
 		/*
-		 * Event listners
+		 * event listners
 		 */
 
 		jQuery('.rrssb-buttons a.popup').on('click', function(e){

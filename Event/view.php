@@ -86,8 +86,8 @@ catch(PDOException $e) {
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="nav-item"><a href="../map/index.php">Venues</a></li>
-                    <li class="active nav-item"><a href="../about.html">Events</a></li>
-                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="active nav-item"><a href="../about.php">Events</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
@@ -112,12 +112,12 @@ catch(PDOException $e) {
 <div class="events view">
     <h2>Event Details</h2>
 <dl class="table table-striped table-bordered">
-    <dt><?php echo "Event title"; ?></dt>
+    <dt><?php echo "event title"; ?></dt>
     <dd>
         <?php echo $list['eventName']; ?>
         &nbsp;
     </dd>
-    <dt><?php echo "Event Description"; ?></dt>
+    <dt><?php echo "event Description"; ?></dt>
     <dd>
         <?php echo $list['eventDescription']; ?>
         &nbsp;

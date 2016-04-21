@@ -88,7 +88,7 @@
                     <li class="nav-item"><a href="../index.php">Home</a></li>
                     <li class="active nav-item"><a href="Event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../map/index.php">Venues</a></li>
-                    <li class="nav-item"><a href="../about.html">About Us</a></li>
+                    <li class="nav-item"><a href="../about.php">About Us</a></li>
                 </ul><!--nav-->
             </div><!--navabr-collapse-->
         </nav><!--main-nav-->

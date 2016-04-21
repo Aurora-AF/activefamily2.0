@@ -142,7 +142,7 @@ catch(PDOException $e) {
                         <form action="" method="post">
                             <td class="form-group">
                                 <button type="submit" name="<?php echo $btnView[$i]?>" class="btn btn-primary btn-lg">
-                                    <a href="../Event/view.php?eventId=<?php echo $eventId; ?>">
+                                    <a href="../event/view.php?eventId=<?php echo $eventId; ?>">
                                         <i class="glyphicon glyphicon-log-in"></i> View
                                     </a>
                                 </button>

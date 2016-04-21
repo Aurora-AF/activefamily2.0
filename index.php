@@ -68,8 +68,8 @@ if($login->is_loggedin()) : ?>
                                         <ul class="nav navbar-nav">
                         <li class="active nav-item"><a href="index.php">Home</a></li>
                         <li class="nav-item"><a href="map/index.php">Venues</a></li>
-                        <li class="nav-item"><a href="about.html">About Us</a></li>
-                        <li class="nav-item"><a href="Event/index.php">Events</a></li>
+                        <li class="nav-item"><a href="about.php">About Us</a></li>
+                        <li class="nav-item"><a href="event/index.php">Events</a></li>
                         <li class="nav-item"><a href="user/index.php" id="register">Log in</a></li>
                         <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="user/sign-up.php" id="register">Sign Up Free</a></li>
                                             <li class="nav-item dropdown" id="notlogedin">
