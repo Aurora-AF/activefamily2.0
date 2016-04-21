@@ -121,7 +121,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                     <li class="nav-item"><a href="../event/index.php">Events</a></li>
                     <li class="nav-item"><a href="../about.php">About Us</a></li>
                     <li class="nav-item"><a href="../user/index.php" id="register">Log in</a></li>
-                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="../user/sign-up.php">Sign Up Free</a></li>
+                    <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="../user/sign-up.php" id="register">Sign Up Free</a></li>
                     <li class="nav-item dropdown" id="notlogedin">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="flase">
                             <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['user_name']; ?>&nbsp;<span class="caret"></span></a>
