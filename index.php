@@ -1,8 +1,13 @@
 <?php
 session_start();
+$user_id = $_SESSION['user_session'];
+$sql = "SELECT * FROM users WHERE user_id = '$user_id'";
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 require_once("user/class.user.php");
 $login = new USER();
+$stmt = $login->runQuery($sql);
+$stmt->execute(array(":user_id"=>$user_id));
+$userRow = $stmt->fetch(PDO::FETCH_ASSOC);
 if($login->is_loggedin()) : ?>
     <style type="text/css">
         #register {
@@ -68,8 +73,8 @@ if($login->is_loggedin()) : ?>
                                         <ul class="nav navbar-nav">
                         <li class="active nav-item"><a href="index.php">Home</a></li>
                         <li class="nav-item"><a href="map/index.php">Venues</a></li>
-                        <li class="nav-item"><a href="about.php">About Us</a></li>
                         <li class="nav-item"><a href="event/index.php">Events</a></li>
+                        <li class="nav-item"><a href="about.php">About Us</a></li>
                         <li class="nav-item"><a href="user/index.php" id="register">Log in</a></li>
                         <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="user/sign-up.php" id="register">Sign Up Free</a></li>
                                             <li class="nav-item dropdown" id="notlogedin">
