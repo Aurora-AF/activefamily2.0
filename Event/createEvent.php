@@ -12,7 +12,7 @@
         $curr_capa = 0;
         $capacity = $_POST['capOption'];
 
-        $date = date('Y-m-d', strtotime($_POST['eDate']));
+        $date = date('Y-m-d G:i', strtotime($_POST['eDate']));
         $type = $_POST['taskOption'];
         $sql = "INSERT INTO events (create_user_id, eventName, eventDescription, type, address, suburb, capacity, curr_capa, date) VALUES ('$user_id', '$title', '$desc', '$type', '$address', '$suburb', $capacity, $curr_capa, '$date')";
         $stmt = $user->runQuery($sql);
@@ -117,7 +117,7 @@
                                 </div>
                                 <div class="form-group">
                                     Hold Date<span>*</span>
-                                        <input type="date" class="form-control" name="eDate" id="eDate">
+                                        <input id="datetimepicker" type="text" class="form-control" name="eDate" id="eDate">
                                     <span id="check-e"></span>
                                 </div>
                                 <div class="form-group">
@@ -157,7 +157,11 @@
 
                         </div>
 </section>
-
+<script>$(document).ready(function() {$('#datetimepicker').datetimepicker();});  </script>
 </body>
+<link rel="stylesheet" type="text/css" href="datetimepicker-master/jquery.datetimepicker.css"/ >
+<script src="datetimepicker-master/jquery.js"></script>
+<script src="datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+
 </html>
 
