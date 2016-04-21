@@ -93,11 +93,11 @@
     
     	<label class="h5">welcome : <?php print($userRow['user_name']); ?></label>
         <hr />
-        
-        <h1>
-        <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
-            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a>&nbsp;
-        <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
+
+        <h2>
+            <a href="home.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> home</a> &nbsp;
+            <a href="joinedEvent.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> Joined Events </a> &nbsp;
+        </h2>
         <hr />
         <p>&nbsp;</p>
 

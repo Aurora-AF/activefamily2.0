@@ -1,33 +1,33 @@
 <?php
-
-require_once("session.php");
-
-require_once("class.user.php");
-$auth_user = new USER();
-$username = "root";
-$password = "root";
-$hostname = "localhost";
-$dbname = "dblogin";
-
-$user_id = $_SESSION['user_session'];
-$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
-$stmt->execute(array(":user_id"=>$user_id));
-
-$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-
-//connection to the database
-try {
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
-    $sql = "SELECT * FROM events e, eventParticipant p where p.user_id = '$user_id' and e.eventId = p.eventId";
-    $stmt = $pdo->query($sql);
-    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-}
-catch(PDOException $e) {
-    echo $e->getMessage();
-}
-
-?>
+//
+//require_once("session.php");
+//
+//require_once("class.user.php");
+//$auth_user = new USER();
+//$username = "root";
+//$password = "root";
+//$hostname = "localhost";
+//$dbname = "dblogin";
+//
+//$user_id = $_SESSION['user_session'];
+//$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+//$stmt->execute(array(":user_id"=>$user_id));
+//
+//$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+//
+////connection to the database
+//try {
+//    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+//    $sql = "SELECT * FROM events e, eventParticipant p where p.user_id = '$user_id' and e.eventId = p.eventId";
+//    $stmt = $pdo->query($sql);
+//    $list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//
+//}
+//catch(PDOException $e) {
+//    echo $e->getMessage();
+//}
+//
+//?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -96,10 +96,10 @@ catch(PDOException $e) {
 
         <label class="h5">welcome : <?php print($userRow['user_name']); ?></label>
         <hr />
-        <h1>
-            <a href="home.php"><span class="glyphicon glyphicon-home"></span> home</a> &nbsp;
-            <a href="joinedEvent.php"><span class="glyphicon glyphicon-user"></span> Joined</a> &nbsp;
-            <a href="profile.php"><span class="glyphicon glyphicon-user"></span> profile</a></h1>
+        <h2>
+            <a href="home.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> home</a> &nbsp;
+            <a href="profile.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-user"></span> Profile</a>
+        </h2>
         <hr />
         <div class='row'>
             <table id='event' class="table table-striped table-bordered" style="width: 10%">

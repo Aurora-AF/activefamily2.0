@@ -1,7 +1,7 @@
 <?php
 
 	require_once("session.php");
-	
+
 	require_once("class.user.php");
     require_once('PHPMailer-master/class.phpmailer.php');
     require_once('PHPMailer-master/class.smtp.php');
@@ -14,7 +14,7 @@
 	$user_id = $_SESSION['user_session'];
 	$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
 	$stmt->execute(array(":user_id"=>$user_id));
-	
+
 	$userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 
     //connection to the database
@@ -140,7 +140,8 @@
          &nbsp;
 
             <a href="joinedEvent.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-calendar"></span> Joined Events </a> &nbsp;
-        <a href="profile.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-user"></span> Profile</a></h2>
+        <a href="profile.php" class="btn btn-cta btn-cta-secondary"><span class="glyphicon glyphicon-user"></span> Profile</a>
+        </h2>
        	<hr />
         <div class='row'>
             <table id='event' class="table table-striped table-bordered" style="width: 10%">
