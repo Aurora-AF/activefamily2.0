@@ -154,9 +154,6 @@ catch(PDOException $e) {
 <br/>
     <form actio="" method="post">
     <td class="form-group">
-        <button type="submit" name="btn-join" class="btn btn-primary btn-lg">
-            <i class="glyphicon glyphicon-log-in"></i> Join
-        </button>
         <?php
         $eventId = $list['eventId'];
         $curr_capa = $list['curr_capa'];
